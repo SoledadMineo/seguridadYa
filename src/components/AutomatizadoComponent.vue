@@ -1,8 +1,17 @@
 <template>
-  <div>
-    <h1>Portones <br />Automatizados</h1>
-    <img src="../assets/automatizados.jpg" alt="automatizados" />
-  </div>
+  <v-row>
+    <v-col md="6">
+      <h1>Portones <br />Automatización de portones</h1>
+    </v-col>
+    <v-col md="6">
+      <v-img
+        src="../assets/automatizados.png"
+        alt="automatizados"
+        height="700"
+        width="100%"
+      />
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -20,7 +29,9 @@ div {
   display: flex;
   justify-content: space-around;
 }
-
+h1 {
+  color: white;
+}
 img {
   width: 250px;
   height: auto;

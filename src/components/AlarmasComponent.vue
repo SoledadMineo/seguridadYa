@@ -1,8 +1,17 @@
 <template>
-  <div>
-    <img src="../assets/alarmas.jpg" alt="alarmas" />
-    <h1>Alarmas monitoreadas <br />sin abono mensual</h1>
-  </div>
+  <v-row>
+    <v-col md="6">
+      <v-img
+        src="../assets/alarmas.png"
+        alt="alarmas"
+        height="700"
+        width="100%"
+      />
+    </v-col>
+    <v-col md="6">
+      <h1>Alarmas monitoreadas <br />sin abono mensual</h1>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -24,6 +33,9 @@ div {
 img {
   width: 250px;
   height: auto;
+}
+h1 {
+  color: white;
 }
 h3 {
   margin: 40px 0 0;

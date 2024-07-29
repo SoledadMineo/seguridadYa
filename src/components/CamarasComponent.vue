@@ -1,8 +1,17 @@
 <template>
-  <div>
-    <h1>Cámaras de seguridad con <br />inteligencia artificial</h1>
-    <img src="../assets/camaras.jpg" alt="camaras" />
-  </div>
+  <v-row>
+    <v-col md="6">
+      <h1>Cámaras de seguridad con <br />inteligencia artificial</h1>
+    </v-col>
+    <v-col md="6">
+      <v-img
+        src="../assets/camaras.png"
+        alt="camaras"
+        height="700"
+        width="100%"
+      />
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -20,7 +29,9 @@ div {
   display: flex;
   justify-content: space-around;
 }
-
+h1 {
+  color: white;
+}
 img {
   width: 250px;
   height: auto;

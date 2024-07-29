@@ -1,39 +1,91 @@
 <template>
   <div id="app">
     <header>
-      <img alt="Logo" src="../src/assets/logo.jpg" style="float: left" />
-      <nav>
-        <a href="#QuienesSomos">Quienes Somos</a> |
-        <a href="#Cerco">Cercos Eléctricos</a> |
-        <a href="#Camaras">Camaras de seguridad</a> |
-        <a href="#Alarmas">Alarmas</a> |
-        <a href="#Automatizados">Automatizados</a> |
-        <a href="#Contacto">Contactos</a>
+      <div
+        class="d-flex justify-space-between align-center"
+        style="padding: 0 20px"
+      >
+        <v-img
+          alt="Logo Seguridad Ya"
+          src="../src/assets/logo.jpg"
+          style="width: 400px"
+        />
+      </div>
 
-        <!-- <router-link to="/">Quienes somos</router-link> |
-        <router-link to="/CercoComponent">Cercos Eléctricos</router-link> |
-        <router-link to="/about">Cámaras de Seguridad</router-link> |
-        <router-link to="#">Alarmas</router-link> |
-        <router-link to="#">Automatizados</router-link> |
-        <router-link to="#">Contacto</router-link> -->
-      </nav>
+      <div class="d-flex justify-space-around">
+        <v-menu>
+          <template v-slot:activator="{ props }">
+            <v-btn
+              class="mx-3"
+              color="#ffffff"
+              v-bind="props"
+              style="font-weight: bold"
+            >
+              Quienes Somos
+            </v-btn>
+          </template>
+        </v-menu>
+
+        <v-btn class="mx-3" color="#ffffff" style="font-weight: bold">
+          Productos
+          <v-menu activator="parent">
+            <v-list>
+              <v-list-item
+                v-for="(item, index) in items"
+                :key="index"
+                :value="index"
+              >
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        </v-btn>
+
+        <v-menu>
+          <template v-slot:activator="{ props }">
+            <v-btn
+              class="mx-3"
+              color="#ffffff"
+              v-bind="props"
+              style="font-weight: bold"
+            >
+              Preguntas Frecuentes
+            </v-btn>
+          </template>
+        </v-menu>
+
+        <v-menu>
+          <template v-slot:activator="{ props }">
+            <v-btn
+              class="mx-3"
+              color="#ffffff"
+              v-bind="props"
+              style="font-weight: bold"
+            >
+              Contactos
+            </v-btn>
+          </template>
+        </v-menu>
+      </div>
     </header>
-    <router-view />
+    <main class="mt-10">
+      <router-view />
+    </main>
     <footer>
-      <span>
-        <img
+      <div>
+        <v-img
           alt="Logo"
           src="../src/assets/logoRedondo.png"
-          style="float: left"
+          style="width: 100px"
         />
-      </span>
-      <div>
+      </div>
+      <div class="d-flex flex-row">
         <a
           href="https://www.instagram.com/seguridadyaoficial/"
           target="_blank"
           class="RNpQXe"
-          style="width: 30px; height: 30px"
-          ><img
+          style="width: 40px"
+          ><v-img
             src="../src/assets/instagram.png"
             alt="Instagram"
             class="xbGufb"
@@ -43,8 +95,8 @@
           href="https://www.facebook.com/Seguridadyaoficial-100856535495510"
           target="_blank"
           class="RNpQXe"
-          style="width: 30px; height: 30px"
-          ><img
+          style="width: 40px"
+          ><v-img
             src="../src/assets/facebook.png"
             alt="Facebook"
             class="xbGufb"
@@ -56,9 +108,9 @@
           href="https://api.whatsapp.com/send?phone=5492616675624"
           target="_blank"
           class="RNpQXe"
-          style="width: 30px; height: 30px"
+          style="width: 40px"
         >
-          <img
+          <v-img
             src="../src/assets/whatsapp.png"
             alt="Enlace"
             class="xbGufb"
@@ -71,13 +123,29 @@
   </div>
 </template>
 
+<script>
+export default {
+  data: () => ({
+    items: [
+      { title: "Alarmas" },
+      { title: "Automatización de portones" },
+      { title: "Cámaras de seguridad" },
+      { title: "Cercos eléctricos" },
+      { title: "Cierre perimetral" },
+    ],
+  }),
+};
+</script>
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
+  background-color: black;
 }
 
 nav {
@@ -107,19 +175,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  color: black;
 }
 footer div {
   flex: 1;
   text-align: center;
-}
-footer span img {
-  display: flex;
-  align-items: center;
-
-  width: 100px; /* Ajusta el ancho deseado */
-  height: auto; /* Mantiene la proporción de la imagen */
-  /* Alternativamente, podrías usar height para ajustar la altura */
-  /* height: 100px; width: auto; */
 }
 </style>
