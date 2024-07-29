@@ -1,14 +1,26 @@
 <template>
-  <div>
-    <h1>Datos de Contacto</h1>
+  <v-col md="6" class="text-center">
+    <h2>Estamos en Contacto</h2>
+    <br />
     <h3>
-      <b>Telefonos:</b><br />
-      Córdoba <br />
-      +54 9 3541 66-6709 <br /><b>Mendoza</b><br />
-      +54 9 2616 67-5624
+      <v-icon src="../src/assets/ubicacion.png" width="48" height="48"></v-icon
+      >España 1340, Piso 14 Oficina 3
+      <br />
+      Código postal 5500, Capital <br />
+      Mendoza, Argentina <br />
+      seguridadyamza@gmail.com <br />
+      +54 9 2616 67-5624<br /><br />
+      <a
+        href="https://api.whatsapp.com/send?phone=5492616675624"
+        target="_blank"
+        class="RNpQXe"
+      >
+        <v-btn rounded="xl" size="large" color="#40c351">
+          ENVIAR WHATSAPP
+        </v-btn></a
+      >
     </h3>
-    <h3>España 1340, Mendoza, Argentina 5500</h3>
-  </div>
+  </v-col>
 </template>
 
 <script>
@@ -22,17 +34,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-div {
-  display: flex;
-  justify-content: space-around;
+h1 {
+  color: white;
 }
-
 img {
   width: 250px;
   height: auto;
 }
+h2 {
+  color: white;
+}
 h3 {
-  margin: 40px 0 0;
+  color: white;
 }
 ul {
   list-style-type: none;
