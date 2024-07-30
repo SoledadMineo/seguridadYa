@@ -16,8 +16,8 @@
           target="_blank"
           class="RNpQXe"
         >
-          <v-btn rounded="xl" size="x-large" color="#40c351">
-            Pedir Presupuesto
+          <v-btn class="custom-button">
+            PEDIR PRESUPUESTO
           </v-btn></a
         >
       </v-col>
@@ -36,6 +36,24 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.custom-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: large;
+  font-weight: bold;
+  padding: 20px ; 
+  background-color: #40c351;
+  color: black; 
+  border-radius: 40px; /* Esquinas redondeadas */
+  transition: all 0.3s ease; /* Transición suave */
+}
+.custom-button:hover, .custom-button:focus {
+  background-color: #848484; /* Color de fondo al pasar el mouse */
+  color: #40c351;
+  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
+}
 div {
   display: flex;
   justify-content: space-around;
@@ -60,6 +78,7 @@ li {
 }
 a {
   color: #42b983;
+  text-decoration: none;
 }
 </style>
 ./QuienesSomos.vue./QuienesSomos.vue

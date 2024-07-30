@@ -13,18 +13,18 @@
       </div>
 
       <div class="d-flex justify-space-around">
-        <v-menu>
-          <template v-slot:activator="{ props }">
+            <a
+              href="#QuienesSomos"
+            >
             <v-btn
               class="mx-3"
               color="#848484"
-              v-bind="props"
               style="font-weight: bold"
             >
               Quienes Somos
             </v-btn>
-          </template>
-        </v-menu>
+          </a>
+        
 
         <v-btn class="mx-3" color="#848484" style="font-weight: bold">
           Productos
@@ -41,31 +41,29 @@
           </v-menu>
         </v-btn>
 
-        <v-menu>
-          <template v-slot:activator="{ props }">
+            <a
+              href="#PreguntasFrecuentes"
+            >
             <v-btn
               class="mx-3"
               color="#848484"
-              v-bind="props"
               style="font-weight: bold"
             >
               Preguntas Frecuentes
             </v-btn>
-          </template>
-        </v-menu>
-
-        <v-menu>
-          <template v-slot:activator="{ props }">
-            <v-btn
+          </a>
+          
+          <a
+            href="#ContactoComponent"
+          >
+           <v-btn
               class="mx-3"
               color="#848484"
-              v-bind="props"
               style="font-weight: bold"
             >
               Contactos
             </v-btn>
-          </template>
-        </v-menu>
+          </a>
       </div>
     </header>
     <main class="mt-10">
