@@ -21,9 +21,9 @@
 
         <v-carousel-item cover
           ><v-card-text class="custom-card-text">
-            Los cercos eléctricos son productos homologados que cumplen con las
-            normativas y regulaciones que garantizan su seguridad eléctrica y
-            capacidad para su uso previsto.
+            Trabajamos con productos homologados que cumplen con normativas y
+            regulaciones que garantizan su seguridad eléctrica y capacidad para
+            su uso previsto.
           </v-card-text>
         </v-carousel-item>
 

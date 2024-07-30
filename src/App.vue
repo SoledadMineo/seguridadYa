@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header>
+    <header class="fixed-header">
       <div
         class="d-flex justify-space-between align-center"
         style="padding: 0 20px"
@@ -17,7 +17,7 @@
           <template v-slot:activator="{ props }">
             <v-btn
               class="mx-3"
-              color="#ffffff"
+              color="#848484"
               v-bind="props"
               style="font-weight: bold"
             >
@@ -26,7 +26,7 @@
           </template>
         </v-menu>
 
-        <v-btn class="mx-3" color="#ffffff" style="font-weight: bold">
+        <v-btn class="mx-3" color="#848484" style="font-weight: bold">
           Productos
           <v-menu activator="parent">
             <v-list>
@@ -45,7 +45,7 @@
           <template v-slot:activator="{ props }">
             <v-btn
               class="mx-3"
-              color="#ffffff"
+              color="#848484"
               v-bind="props"
               style="font-weight: bold"
             >
@@ -58,7 +58,7 @@
           <template v-slot:activator="{ props }">
             <v-btn
               class="mx-3"
-              color="#ffffff"
+              color="#848484"
               v-bind="props"
               style="font-weight: bold"
             >
@@ -147,7 +147,13 @@ export default {
   color: black;
   background-color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
 
+div[id] {
+  scroll-margin-top: 100px;
+}
 nav {
   padding: 30px;
 }
@@ -179,5 +185,17 @@ footer {
 footer div {
   flex: 1;
   text-align: center;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+main {
+  padding-top: 138px;
+  background-color: #343434;
 }
 </style>
