@@ -1,7 +1,8 @@
 <template>
   <v-row>
     <v-col md="6">
-      <h1>Portones <br />Automatización de portones</h1>
+      <h1>Automatización de portones <br /></h1>
+      <h1>Instalación en una hora</h1>
     </v-col>
     <v-col md="6">
       <v-img
