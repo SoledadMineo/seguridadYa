@@ -18,7 +18,7 @@
     <div class="mt-10" id="PreguntasFrecuentes">
       <PreguntasFrecuentes />
     </div>
-    <div class="mt-10" id="Contacto">
+    <div class="mt-10" id="ContactoComponent">
       <ContactoComponent />
     </div>
   </div>

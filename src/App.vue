@@ -13,18 +13,11 @@
       </div>
 
       <div class="d-flex justify-space-around">
-            <a
-              href="#QuienesSomos"
-            >
-            <v-btn
-              class="mx-3"
-              color="#848484"
-              style="font-weight: bold"
-            >
-              Quienes Somos
-            </v-btn>
-          </a>
-        
+        <a href="#QuienesSomos">
+          <v-btn class="mx-3" color="#848484" style="font-weight: bold">
+            Quienes Somos
+          </v-btn>
+        </a>
 
         <v-btn class="mx-3" color="#848484" style="font-weight: bold">
           Productos
@@ -41,34 +34,24 @@
           </v-menu>
         </v-btn>
 
-            <a
-              href="#PreguntasFrecuentes"
-            >
-            <v-btn
-              class="mx-3"
-              color="#848484"
-              style="font-weight: bold"
-            >
-              Preguntas Frecuentes
-            </v-btn>
-          </a>
-          
-          <a
-            href="#ContactoComponent"
-          >
-           <v-btn
-              class="mx-3"
-              color="#848484"
-              style="font-weight: bold"
-            >
-              Contactos
-            </v-btn>
-          </a>
+        <a href="#PreguntasFrecuentes">
+          <v-btn class="mx-3" color="#848484" style="font-weight: bold">
+            Preguntas Frecuentes
+          </v-btn>
+        </a>
+
+        <a href="#ContactoComponent">
+          <v-btn class="mx-3" color="#848484" style="font-weight: bold">
+            Contactos
+          </v-btn>
+        </a>
       </div>
     </header>
+
     <main class="mt-10">
       <router-view />
     </main>
+
     <footer>
       <div>
         <v-img
