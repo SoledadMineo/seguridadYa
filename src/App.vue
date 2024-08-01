@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div id="contenedor">
+
+    
     <header class="fixed-header">
       <div
         class="d-flex justify-space-between align-center"
@@ -52,7 +55,7 @@
       <router-view />
     </main>
 
-    <footer>
+    <footer class="footer">
       <div>
         <v-img
           alt="Logo"
@@ -102,6 +105,7 @@
       </div>
     </footer>
   </div>
+  </div>
 </template>
 
 <script>
@@ -124,14 +128,24 @@ export default {
 </script>
 
 <style>
-#app {
+.app {
+  position: relative;
+  height: 100%;
+  margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
-  background-color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.contenedor{
+  flex: 1;
+  padding-top: 130px;
 }
 .button {
   color: black;
@@ -144,6 +158,7 @@ export default {
   font-size: 13px;
   display: flex;
   align-items: center;
+  background-color: white;
 }
 .custom-title {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -177,12 +192,14 @@ header {
   padding: 10px;
 }
 
-footer {
+.footer {
   background-color: black; /* Cambia este valor al color de fondo deseado */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  padding: 3rem;
+  width: 100%;
+  height: 7rem;
+  margin-top: auto;
 }
 footer div {
   flex: 1;
@@ -196,7 +213,10 @@ footer div {
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
 }
 main {
-  padding-top: 138px;
-  background-color: #343434;
+  padding-top: 130px;
+  background-color: white;
+}
+.mt-10{
+  padding-bottom: 7rem;
 }
 </style>

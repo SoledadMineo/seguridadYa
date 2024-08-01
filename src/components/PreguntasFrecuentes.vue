@@ -141,27 +141,28 @@
 .contenedor {
   display: flex;
   justify-content: center;
+  background-color: #ec0c05;
 }
 .custom-table {
-  width: 90%;
+  width: 100%;
   height: 100%;
   font-size: 15px;
   padding: 10px; /* Tamaño del padding para ajustar el tamaño de las celdas */
 }
 .custom-header {
-  background-color: gray; /* Cambiar color de fondo de las cabeceras */
+  background-color: #848484; /* Cambiar color de fondo de las cabeceras */
   height: 250px;
 }
 .custom-celda1 {
-  background-color: #ec0c05;
-  color: white;
+  background-color: #d7d7d7;
+  color: black;
   border: 30px;
   padding: 20px;
   vertical-align: top;
 }
 .custom-celda2 {
-  background-color: gray; /* Cambiar color de fondo de las celdas */
-  color: white;
+  background-color: #848484; /* Cambiar color de fondo de las celdas */
+  color: black;
   border: 30px;
   padding: 20px;
   vertical-align: top;
@@ -187,4 +188,5 @@ h2 {
 p {
   text-align: justify;
 }
+
 </style>

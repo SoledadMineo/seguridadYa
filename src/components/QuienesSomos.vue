@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <v-row class="contenedor">
     <v-col md="4">
       <h1>¿QUIENES SOMOS?</h1>
@@ -59,7 +59,7 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 .contenedor {
   height: 500px;
@@ -86,4 +86,101 @@ h1 {
   margin: 50px; /* Cambia los márgenes */
   text-align: justify; /* Centra el texto */
 }
+</style> -->
+
+
+
+<template>
+  <v-card color="basil">
+    <v-card-title class="title">
+      <v-img class="imagen" src="../assets/logoRedondo.png" width="100"
+      height="100"></v-img>
+      <h1 class="titulo">Quienes Somos</h1>
+    </v-card-title>
+    <h3 class="justified-text">
+      Somos una empresa mendocina con más de una década de trayectoria,
+      brindando siempre el mejor servicio de seguridad a través de
+      productos homologados, garantías extendidas por 5 años en
+      infraestructura, financiación propia, servicio posventa.
+    </h3>
+
+    <v-tabs v-model="tab" bg-color="transparent" color="basil" grow>
+      <v-tab v-for="(item, index) in items" :key="index"><strong><v-img src="{{ item.img }}"></v-img><h3>{{item.name}}</h3></strong>
+        
+      </v-tab>
+    </v-tabs>
+
+    <v-tabs-window v-model="tab">
+      <v-tabs-window-item v-for="(item, index) in items" :key="index">
+        <v-card color="basil" flat>
+          <v-card-text class="texto">{{ item.text }}</v-card-text>
+        </v-card>
+      </v-tabs-window-item>
+    </v-tabs-window>
+  </v-card>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        tab: 'Productos',
+        items: [
+          {
+            name: 'Productos Homologados', 
+            text: ' Trabajamos con productos homologados que cumplen con normativas y regulaciones que garantizan su seguridad eléctrica y capacidad para su uso previsto.',         
+            img: '../assets/pngegg(1).png'
+          },
+          {  
+            name: 'Garantía', 
+            text: 'Garantía extendida por 5 años en los trabajos de infraestructura.'},
+          {
+            name: 'Financiación', 
+            text: 'Financiación propia o bancario.'
+          },
+          {
+            name: 'Servicio Posventa', 
+            text: 'Servicio posventa y comunicación al instante entre la empresa y nuestros clientes.'
+          }, 
+      ]}
+    },
+  }
+</script>
+
+<style>
+  /* Helper classes */
+  .bg-basil {
+    background-color: #d7d7d7!important;
+  }
+  .text-basil {
+    color: #ec0c05 !important;
+  }
+  .justified-text{
+   text-align: justify;
+   padding: 50px;
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-bottom: 0%;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen{
+    width: 10%;
+    padding: 0%;
+    margin-right: 20px;
+  }
+  .titulo{
+    font-weight: bold;
+    font-size: 40px;
+    color: #ec0c05 ;
+    
+  }
+  .texto{
+    padding: 40px;
+    font-size: 16px;
+    margin-left: 5%;
+  }
 </style>
