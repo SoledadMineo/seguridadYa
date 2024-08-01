@@ -13,13 +13,11 @@
       </div>
 
       <div class="d-flex justify-space-around">
-        <a href="#QuienesSomos">
-          <v-btn class="mx-3" color="#848484" style="font-weight: bold">
-            Quienes Somos
-          </v-btn>
+        <a href="/quienesSomos">
+          <v-btn class="button">Quienes Somos</v-btn>
         </a>
 
-        <v-btn class="mx-3" color="#848484" style="font-weight: bold">
+        <v-btn class="button">
           Productos
           <v-menu activator="parent">
             <v-list>
@@ -27,23 +25,25 @@
                 v-for="(item, index) in items"
                 :key="index"
                 :value="index"
+                @click="scrollToSection(item.path)"
               >
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
+                <v-list-item-title class="custom-title">{{
+                  item.title
+                }}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
         </v-btn>
 
-        <a href="#PreguntasFrecuentes">
-          <v-btn class="mx-3" color="#848484" style="font-weight: bold">
-            Preguntas Frecuentes
-          </v-btn>
+        <a href="/preguntas">
+          <v-btn class="button"
+            >Preguntas <br />
+            Frecuentes</v-btn
+          >
         </a>
 
-        <a href="#ContactoComponent">
-          <v-btn class="mx-3" color="#848484" style="font-weight: bold">
-            Contactos
-          </v-btn>
+        <a href="/contactos">
+          <v-btn class="button">Contactos</v-btn>
         </a>
       </div>
     </header>
@@ -108,13 +108,18 @@
 export default {
   data: () => ({
     items: [
-      { title: "Alarmas" },
-      { title: "Automatización de portones" },
-      { title: "Cámaras de seguridad" },
-      { title: "Cercos eléctricos" },
-      { title: "Cierre perimetral" },
+      { title: "Alarmas", path: "/alarmas" },
+      { title: "Automatización de portones", path: "/automatizados" },
+      { title: "Cámaras de seguridad", path: "/camaras" },
+      { title: "Cercos eléctricos", path: "/cerco" },
+      { title: "Cierre perimetral", path: "/cierre" },
     ],
   }),
+  methods: {
+    scrollToSection(path) {
+      this.$router.push({ path });
+    },
+  },
 };
 </script>
 
@@ -128,24 +133,40 @@ export default {
   color: black;
   background-color: black;
 }
+.button {
+  color: black;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 10px;
+  width: 150px;
+  height: 20px;
+  margin-inline: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.custom-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px; /* Tamaño del texto */
+  color: black; /* Color del texto */
+}
+.button:hover,
+.button:focus {
+  background-color: #848484; /* Color de fondo al pasar el mouse */
+  color: white;
+  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 html {
   scroll-behavior: smooth;
 }
 
 div[id] {
   scroll-margin-top: 100px;
-}
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: white;
-}
-
-nav a.router-link-exact-active {
-  color: red;
 }
 
 header {
@@ -167,7 +188,6 @@ footer div {
   flex: 1;
   text-align: center;
 }
-
 .fixed-header {
   position: fixed;
   top: 0;

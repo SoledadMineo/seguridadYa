@@ -1,13 +1,13 @@
 <template>
-  <v-row>
+  <v-row class="contenedor">
     <v-col md="4">
       <h1>¿QUIENES SOMOS?</h1>
     </v-col>
-    <v-col class="carrousel" md="6">
+    <v-col class="carrousel" md="7">
       <v-carousel
         :continuous="false"
         :show-arrows="false"
-        height="400"
+        height="300"
         hide-delimiter-background
       >
         <v-carousel-item cover
@@ -61,46 +61,29 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.contenedor {
+  height: 500px;
+}
 header {
   margin-bottom: 20px;
 }
-div {
-  display: flex;
-  justify-content: space-around;
-}
-
 h1 {
   margin: 100px 50px 50px;
   color: white;
-  font-size: 50px;
-}
-h3 {
-  margin: 50px 50px 50px;
-  color: black;
-  font-size: 20px;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+  font-size: 40px;
 }
 .carrousel {
-  background-color: #848484;
-  color: white; /* Color de fondo personalizado */
+  background-color: #d7d7d7;
+  color: black; /* Color de fondo personalizado */
   border-radius: 20px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-  justify-content: "center";
+  font-weight: bold;
+  height: 400px;
 }
 
 .custom-card-text {
-  font-size: 25px; /* Cambia el tamaño de la letra */
-  margin: 70px; /* Cambia los márgenes */
+  font-size: 20px; /* Cambia el tamaño de la letra */
+  margin: 50px; /* Cambia los márgenes */
   text-align: justify; /* Centra el texto */
 }
 </style>

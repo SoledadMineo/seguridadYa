@@ -4,6 +4,10 @@ import AlarmasComponent from "@/components/AlarmasComponent.vue";
 import AutomatizadoComponent from "@/components/AutomatizadoComponent.vue";
 import CamarasComponent from "@/components/CamarasComponent.vue";
 import CercoComponent from "@/components/CercoComponent.vue";
+import QuienesSomos from "@/components/QuienesSomos.vue";
+import PreguntasFrecuentes from "../components/PreguntasFrecuentes.vue";
+import CierreComponent from "../components/CierreComponent.vue";
+import ContactoComponent from "@/components/ContactoComponent.vue";
 
 const routes = [
   {
@@ -12,34 +16,49 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/productos/alarmas",
+    path: "/quienesSomos",
+    name: "quienesSomos",
+    component: QuienesSomos,
+  },
+  {
+    path: "/preguntas",
+    name: "preguntas",
+    component: PreguntasFrecuentes,
+  },
+  {
+    path: "/cierre",
+    name: "cierre",
+    component: CierreComponent,
+  },
+  {
+    path: "/alarmas",
     name: "alarmas",
     component: AlarmasComponent,
   },
   {
-    path: "/productos/automatizados",
+    path: "/automatizados",
     name: "automatizados",
     component: AutomatizadoComponent,
   },
   {
-    path: "/productos/camaras",
+    path: "/camaras",
     name: "camaras",
     component: CamarasComponent,
   },
   {
-    path: "/productos/cerco",
+    path: "/cerco",
     name: "cerco",
     component: CercoComponent,
   },
   {
-    path: "/productos/alarmas",
-    name: "alarmas",
-    component: AlarmasComponent,
+    path: "/cierre",
+    name: "cierre",
+    component: CierreComponent,
   },
   {
-    path: "/productos/cierre",
-    name: "cierre",
-    component: AlarmasComponent,
+    path: "/contactos",
+    name: "contactos",
+    component: ContactoComponent,
   },
 ];
 
