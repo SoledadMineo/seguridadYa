@@ -30,7 +30,7 @@ div {
   justify-content: space-around;
 }
 h1 {
-  color: white;
+  color: #ec0c05;
 }
 img {
   width: 250px;

@@ -65,7 +65,8 @@ export default {
   background-color: #848484;
   padding: 50px;
   margin: auto;
-  height: auto;
+  height: 100%;
+  margin-bottom: 0%;
 }
 
 .custom-button {

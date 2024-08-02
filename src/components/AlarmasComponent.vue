@@ -35,7 +35,7 @@ img {
   height: auto;
 }
 h1 {
-  color: white;
+  color: #ec0c05;
 }
 h3 {
   margin: 40px 0 0;

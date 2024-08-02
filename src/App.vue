@@ -1,110 +1,108 @@
 <template>
   <div id="app">
     <div id="contenedor">
-
-    
-    <header class="fixed-header">
-      <div
-        class="d-flex justify-space-between align-center"
-        style="padding: 0 20px"
-      >
-        <v-img
-          alt="Logo Seguridad Ya"
-          src="../src/assets/logo.jpg"
-          style="width: 400px"
-        />
-      </div>
-
-      <div class="d-flex justify-space-around">
-        <a href="/quienesSomos">
-          <v-btn class="button">Quienes Somos</v-btn>
-        </a>
-
-        <v-btn class="button">
-          Productos
-          <v-menu activator="parent">
-            <v-list>
-              <v-list-item
-                v-for="(item, index) in items"
-                :key="index"
-                :value="index"
-                @click="scrollToSection(item.path)"
-              >
-                <v-list-item-title class="custom-title">{{
-                  item.title
-                }}</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu>
-        </v-btn>
-
-        <a href="/preguntas">
-          <v-btn class="button"
-            >Preguntas <br />
-            Frecuentes</v-btn
-          >
-        </a>
-
-        <a href="/contactos">
-          <v-btn class="button">Contactos</v-btn>
-        </a>
-      </div>
-    </header>
-
-    <main class="mt-10">
-      <router-view />
-    </main>
-
-    <footer class="footer">
-      <div>
-        <v-img
-          alt="Logo"
-          src="../src/assets/logoRedondo.png"
-          style="width: 100px"
-        />
-      </div>
-      <div class="d-flex flex-row">
-        <a
-          href="https://www.instagram.com/seguridadyaoficial/"
-          target="_blank"
-          class="RNpQXe"
-          style="width: 40px"
-          ><v-img
-            src="../src/assets/instagram.png"
-            alt="Instagram"
-            class="xbGufb"
-            style="width: 40px; height: 40px"
-        /></a>
-        <a
-          href="https://www.facebook.com/Seguridadyaoficial-100856535495510"
-          target="_blank"
-          class="RNpQXe"
-          style="width: 40px"
-          ><v-img
-            src="../src/assets/facebook.png"
-            alt="Facebook"
-            class="xbGufb"
-            style="width: 40px; height: 40px"
-            width="48"
-            height="48"
-        /></a>
-        <a
-          href="https://api.whatsapp.com/send?phone=5492616675624"
-          target="_blank"
-          class="RNpQXe"
-          style="width: 40px"
+      <header class="fixed-header">
+        <div
+          class="d-flex justify-space-between align-center"
+          style="padding: 0 20px"
         >
           <v-img
-            src="../src/assets/whatsapp.png"
-            alt="Enlace"
-            class="xbGufb"
-            style="width: 40px; height: 40px"
-            width="48"
-            height="48"
-        /></a>
-      </div>
-    </footer>
-  </div>
+            alt="Logo Seguridad Ya"
+            src="../src/assets/logo.jpg"
+            style="width: 400px"
+          />
+        </div>
+
+        <div class="d-flex justify-space-around">
+          <a href="/quienesSomos">
+            <v-btn class="button">Quienes Somos</v-btn>
+          </a>
+
+          <v-btn class="button">
+            Productos
+            <v-menu activator="parent">
+              <v-list>
+                <v-list-item
+                  v-for="(item, index) in items"
+                  :key="index"
+                  :value="index"
+                  @click="scrollToSection(item.path)"
+                >
+                  <v-list-item-title class="custom-title">{{
+                    item.title
+                  }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+          </v-btn>
+
+          <a href="/preguntas">
+            <v-btn class="button"
+              >Preguntas <br />
+              Frecuentes</v-btn
+            >
+          </a>
+
+          <a href="/contactos">
+            <v-btn class="button">Contactos</v-btn>
+          </a>
+        </div>
+      </header>
+
+      <main class="mt-10">
+        <router-view />
+      </main>
+
+      <footer class="footer">
+        <div>
+          <v-img
+            alt="Logo"
+            src="../src/assets/logoRedondo.png"
+            style="width: 100px"
+          />
+        </div>
+        <div class="d-flex flex-row">
+          <a
+            href="https://www.instagram.com/seguridadyaoficial/"
+            target="_blank"
+            class="RNpQXe"
+            style="width: 40px"
+            ><v-img
+              src="../src/assets/instagram.png"
+              alt="Instagram"
+              class="xbGufb"
+              style="width: 40px; height: 40px"
+          /></a>
+          <a
+            href="https://www.facebook.com/Seguridadyaoficial-100856535495510"
+            target="_blank"
+            class="RNpQXe"
+            style="width: 40px"
+            ><v-img
+              src="../src/assets/facebook.png"
+              alt="Facebook"
+              class="xbGufb"
+              style="width: 40px; height: 40px"
+              width="48"
+              height="48"
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5492616675624"
+            target="_blank"
+            class="RNpQXe"
+            style="width: 40px"
+          >
+            <v-img
+              src="../src/assets/whatsapp.png"
+              alt="Enlace"
+              class="xbGufb"
+              style="width: 40px; height: 40px"
+              width="48"
+              height="48"
+          /></a>
+        </div>
+      </footer>
+    </div>
   </div>
 </template>
 
@@ -143,7 +141,7 @@ export default {
   flex-direction: column;
   min-height: 100vh;
 }
-.contenedor{
+.contenedor {
   flex: 1;
   padding-top: 130px;
 }
@@ -216,7 +214,7 @@ main {
   padding-top: 130px;
   background-color: white;
 }
-.mt-10{
+.mt-10 {
   padding-bottom: 7rem;
 }
 </style>

@@ -26,7 +26,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-  color: white;
+  color: #ec0c05;
 }
 img {
   width: 250px;

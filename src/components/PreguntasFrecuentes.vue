@@ -142,6 +142,7 @@
   display: flex;
   justify-content: center;
   background-color: #ec0c05;
+  width: 68%;
 }
 .custom-table {
   width: 100%;
@@ -177,6 +178,7 @@
   color: black;
   font-size: 40px;
   font-weight: bold;
+  margin-left: 30%;
 }
 .medium-celda {
   width: 50%;
@@ -188,5 +190,4 @@ h2 {
 p {
   text-align: justify;
 }
-
 </style>
