@@ -70,74 +70,86 @@
 <!--OTRA OPCION-->
 
 <template>
-  <v-container class="contenedor">
-    <v-table class="custom-table">
-      <tr>
-        <td colspan="2">
-          <div class="custom-header">
-            <v-img src="../assets/pregunta.png" class="image"></v-img>
-            <div class="title">PREGUNTAS FRECUENTES</div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="custom-celda1 medium-celda">
-          <h2>1. ¿ES LEGAL INSTALAR CERCOS ELÉCTRICOS?</h2>
-          <br />
-          <p>
-            Si, además de ser una empresa homologada por el laboratorio Lenor,
-            dentro de las leyes de Argentina, éste sistema queda perfectamente
-            definido en lo que se denomina legítima defensa.
-          </p>
-        </td>
-        <td class="custom-celda2 medium-celda">
-          <h2>2. ¿ES LETAL?</h2>
-          <br />
-          <p>
-            Nuestos equipos no son letales. La descarga no genera quemaduras ni
-            daños permanentes.
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td class="custom-celda2 medium-celda">
-          <h2>3. ¿SE NECESITA INFORMACIÓN PARA INSTALAR MI CERCO ELÉCTRICO?</h2>
-          <br />
-          <p>
-            Nuestros operarios están altamente capacitados y avalados por la
-            planta de elaboración del producto, para poder brindarte toda la
-            información que necesites.
-          </p>
-        </td>
-        <td class="custom-celda1 medium-celda">
-          <h2>4. ¿EL CONSUMO ELÉCTRICO ES MUY ALTO?</h2>
-          <br />
-          <p>
-            No, su consumo es de 6 watts, similar al consumo de una lámpara de
-            luz de 20 watts.
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td class="custom-celda1 medium-celda" colspan="2">
-          <h2>5. ¿REQUIERE MANTENIMIENTO?</h2>
-          <br />
-          <p>
-            Si, requiere un mínimo mantenimiento. Los
-            <strong>usuarios</strong> deben mantener una poda prolija. Nosotros
-            debemos realizar un <strong>mantenimiento anual</strong> que
-            consiste en cambio de batería, control de estructura y tensado,
-            reemplazo de los LEDs y Cambio de carteles reguladores preventivos.
-          </p>
-        </td>
-      </tr>
-    </v-table>
-  </v-container>
+  <div class="caja">
+    <v-container class="contenedor">
+      <v-table class="custom-table">
+        <tr>
+          <td colspan="2">
+            <div class="custom-header">
+              <v-img src="../assets/pregunta.png" class="image"></v-img>
+              <div class="title">PREGUNTAS FRECUENTES</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="custom-celda1 medium-celda">
+            <h2>1. ¿ES LEGAL INSTALAR CERCOS ELÉCTRICOS?</h2>
+            <br />
+            <p>
+              Si, además de ser una empresa homologada por el organismo Lenor
+              Group, dentro de las leyes de Argentina, éste sistema queda
+              perfectamente definido en lo que se denomina legítima defensa.
+            </p>
+          </td>
+          <td class="custom-celda2 medium-celda">
+            <h2>2. ¿ES LETAL?</h2>
+            <br />
+            <p>
+              Nuestos equipos no son letales. La descarga no genera quemaduras
+              ni daños permanentes.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="custom-celda2 medium-celda">
+            <h2>
+              3. ¿SE NECESITA INFORMACIÓN PARA INSTALAR MI CERCO ELÉCTRICO?
+            </h2>
+            <br />
+            <p>
+              Nuestros operarios están altamente capacitados y avalados por la
+              planta de elaboración del producto, para poder brindarte toda la
+              información que necesites.
+            </p>
+          </td>
+          <td class="custom-celda1 medium-celda">
+            <h2>4. ¿EL CONSUMO ELÉCTRICO ES MUY ALTO?</h2>
+            <br />
+            <p>
+              No, su consumo es de 6 watts, similar al consumo de una lámpara de
+              luz de 20 watts.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="custom-celda1 medium-celda" colspan="2">
+            <h2>5. ¿REQUIERE MANTENIMIENTO?</h2>
+            <br />
+            <p>
+              Si, requiere un mínimo mantenimiento. Los
+              <strong>usuarios</strong> deben mantener una poda prolija.
+              Nosotros debemos realizar un
+              <strong>mantenimiento anual</strong> que consiste en cambio de
+              batería, control de estructura y tensado, reemplazo de los LEDs y
+              Cambio de carteles reguladores preventivos.
+            </p>
+          </td>
+        </tr>
+      </v-table>
+    </v-container>
+  </div>
 </template>
 
 <script></script>
 
 <style scoped>
+.caja {
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-position: 25%;
+  margin-top: 5%;
+}
+
 .contenedor {
   display: flex;
   justify-content: center;

@@ -15,7 +15,7 @@
     "roboto-fontface": "*",
     "swiper": "^11.1.5",
     "vue": "^3.4.34",
-    "vue-router": "^4.4.0",
+    "vue-router": "^4.4.2",
     "vuetify": "^3.6.13",
     "vuex": "^4.1.0",
     "webfontloader": "^1.0.0"

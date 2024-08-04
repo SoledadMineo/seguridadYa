@@ -1,22 +1,24 @@
 <template>
-  <div id="app">
+  <div id="app" class="background-container">
     <div id="contenedor">
       <header class="fixed-header">
         <div
           class="d-flex justify-space-between align-center"
           style="padding: 0 20px"
         >
-          <v-img
-            alt="Logo Seguridad Ya"
-            src="../src/assets/logo.jpg"
-            style="width: 400px"
-          />
+          <router-link :to="{ name: 'home' }">
+            <v-img
+              alt="Logo Seguridad Ya"
+              src="../src/assets/logo.jpg"
+              style="width: 400px"
+            />
+          </router-link>
         </div>
 
         <div class="d-flex justify-space-around">
-          <a href="/quienesSomos">
+          <router-link :to="{ name: 'quienesSomos' }">
             <v-btn class="button">Quienes Somos</v-btn>
-          </a>
+          </router-link>
 
           <v-btn class="button">
             Productos
@@ -36,20 +38,20 @@
             </v-menu>
           </v-btn>
 
-          <a href="/preguntas">
+          <router-link :to="{ name: 'preguntas' }">
             <v-btn class="button"
               >Preguntas <br />
               Frecuentes</v-btn
             >
-          </a>
+          </router-link>
 
-          <a href="/contactos">
+          <router-link :to="{ name: 'contactos' }">
             <v-btn class="button">Contactos</v-btn>
-          </a>
+          </router-link>
         </div>
       </header>
 
-      <main class="mt-10">
+      <main>
         <router-view />
       </main>
 
@@ -170,6 +172,10 @@ export default {
   color: white;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
+main {
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
   color: black;
@@ -187,17 +193,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 3%;
+  margin: 0;
 }
 
 .footer {
   background-color: black; /* Cambia este valor al color de fondo deseado */
   display: flex;
   align-items: center;
-  padding: 3rem;
   width: 100%;
   height: 7rem;
-  margin-top: auto;
 }
 footer div {
   flex: 1;

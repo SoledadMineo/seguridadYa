@@ -1,16 +1,27 @@
 <template>
-  <div>
+  <div class="contenedor">
     <v-row>
       <v-col md="6">
         <v-img
-          src="../assets/cercos.png"
+          src="../assets/cerco.png"
           alt="cercos"
-          height="700"
+          height="600"
           width="100%"
         />
       </v-col>
-      <v-col md="6" class="d-flex flex-column align-center">
-        <h1>Cercos electricos<br />inteligencia artificial</h1>
+      <v-col md="6" class="columna">
+        <div class="titulo mr-10">
+          <h1>cercos</h1>
+          <h3>eléctricos</h3>
+        </div>
+        <div>
+          <p class="mr-10">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
+            Eum natus labore delectus aperiam, expedita doloribus voluptatibus
+            harum! Nobis ipsa quibusdam quam? Ullam?
+          </p>
+        </div>
         <a
           href="https://api.whatsapp.com/send?phone=5492616675624"
           target="_blank"
@@ -34,6 +45,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.contenedor {
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 20%;
+}
 .custom-button {
   display: flex;
   align-items: center;
@@ -52,19 +69,38 @@ export default {
   color: #40c351;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
+.titulo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: start;
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 div {
   display: flex;
   justify-content: space-around;
 }
 h1 {
   color: #ec0c05;
+  font-size: 80px;
+}
+p {
+  font-size: 20px;
 }
 img {
   width: 250px;
   height: auto;
 }
 h3 {
-  margin: 40px 0 0;
+  color: black;
+  font-size: 40px;
 }
 ul {
   list-style-type: none;

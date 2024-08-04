@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row class="contenedor">
     <v-col md="6">
       <h1>Cierre Perimetral <br /></h1>
     </v-col>
@@ -7,7 +7,7 @@
       <v-img
         src="../assets/automatizados.png"
         alt="automatizados"
-        height="700"
+        height="600"
         width="100%"
       />
     </v-col>
@@ -25,6 +25,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.contenedor {
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 25%;
+}
 h1 {
   color: #ec0c05;
 }

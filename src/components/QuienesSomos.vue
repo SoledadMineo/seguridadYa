@@ -201,7 +201,7 @@ export default {
 
 <!--TERCER OPCION-->
 <template>
-  <v-div>
+  <div class="contenedor">
     <v-row justify="center"
       ><v-col cols="12" md="6">
         <v-card class="card" elevation="20">
@@ -261,10 +261,15 @@ export default {
         </v-card>
       </v-col>
     </v-row>
-  </v-div>
+  </div>
 </template>
 
 <style scoped>
+.contenedor {
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-position: 25%;
+}
 .card {
   background-color: #d7d7d7;
   height: 100%;

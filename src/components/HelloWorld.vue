@@ -1,27 +1,27 @@
 <template>
-  <div>
-    <div class="mt-10" id="QuienesSomos">
-      <QuienesSomos />
-    </div>
-    <div class="mt-10" id="Cerco">
+  <body>
+    <section id="Cerco">
       <CercoComponent />
-    </div>
-    <div class="mt-10" id="Camaras">
+    </section>
+    <section id="Camaras">
       <CamarasComponent />
-    </div>
-    <div class="mt-10" id="Alarmas">
+    </section>
+    <section id="Alarmas">
       <AlarmasComponent />
-    </div>
-    <div class="mt-10" id="Automatizados">
+    </section>
+    <section id="Automatizados">
       <AutomatizadoComponent />
-    </div>
-    <div class="mt-10" id="PreguntasFrecuentes">
+    </section>
+    <section id="QuienesSomos">
+      <QuienesSomos />
+    </section>
+    <section id="PreguntasFrecuentes">
       <PreguntasFrecuentes />
-    </div>
-    <div id="ContactoComponent">
+    </section>
+    <section id="ContactoComponent">
       <ContactoComponent />
-    </div>
-  </div>
+    </section>
+  </body>
 </template>
 
 <script>
@@ -46,3 +46,5 @@ export default {
   },
 };
 </script>
+
+<style></style>
