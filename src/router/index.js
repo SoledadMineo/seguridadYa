@@ -1,5 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import AlarmasComponent from "@/components/AlarmasComponent.vue";
+import AutomatizadoComponent from "@/components/AutomatizadoComponent.vue";
+import CamarasComponent from "@/components/CamarasComponent.vue";
+import CercoComponent from "@/components/CercoComponent.vue";
+import QuienesSomos from "@/components/QuienesSomos.vue";
+import PreguntasFrecuentes from "../components/PreguntasFrecuentes.vue";
+import CierreComponent from "../components/CierreComponent.vue";
+import ContactoComponent from "@/components/ContactoComponent.vue";
 
 const routes = [
   {
@@ -8,22 +16,49 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/quienesSomos",
+    name: "quienesSomos",
+    component: QuienesSomos,
   },
   {
-    path: "/about1",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/preguntas",
+    name: "preguntas",
+    component: PreguntasFrecuentes,
+  },
+  {
+    path: "/cierre",
+    name: "cierre",
+    component: CierreComponent,
+  },
+  {
+    path: "/alarmas",
+    name: "alarmas",
+    component: AlarmasComponent,
+  },
+  {
+    path: "/automatizados",
+    name: "automatizados",
+    component: AutomatizadoComponent,
+  },
+  {
+    path: "/camaras",
+    name: "camaras",
+    component: CamarasComponent,
+  },
+  {
+    path: "/cerco",
+    name: "cerco",
+    component: CercoComponent,
+  },
+  {
+    path: "/cierre",
+    name: "cierre",
+    component: CierreComponent,
+  },
+  {
+    path: "/contactos",
+    name: "contactos",
+    component: ContactoComponent,
   },
 ];
 
