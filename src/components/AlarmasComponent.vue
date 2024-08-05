@@ -1,6 +1,6 @@
 <template>
   <v-row class="contenedor">
-    <v-col md="6">
+    <v-col cols="6">
       <v-img
         src="../assets/alarmas.png"
         alt="alarmas"
@@ -8,7 +8,7 @@
         width="100%"
       />
     </v-col>
-    <v-col md="6" class="columna">
+    <v-col cols="6" class="columna">
       <div class="titulo">
         <h1>alarmas</h1>
         <h3>monitoreadas</h3>

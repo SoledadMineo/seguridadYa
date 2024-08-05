@@ -15,7 +15,11 @@
           </router-link>
         </div>
 
-        <div class="d-flex justify-space-around">
+        <div id="navigation-icon" v-if="mobileView">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="d-flex justify-space-around" v-if="!mobileView">
           <router-link :to="{ name: 'quienesSomos' }">
             <v-btn class="button">Quienes Somos</v-btn>
           </router-link>
@@ -48,6 +52,10 @@
           <router-link :to="{ name: 'contactos' }">
             <v-btn class="button">Contactos</v-btn>
           </router-link>
+        </div>
+
+        <div id="navigation-icon" v-if="mobileView">
+          <i class="fas fa-bars"></i>
         </div>
       </header>
 
@@ -118,11 +126,21 @@ export default {
       { title: "Cercos eléctricos", path: "/cerco" },
       { title: "Cierre perimetral", path: "/cierre" },
     ],
+    mobileView: window.innerWidth <= 1025,
   }),
   methods: {
     scrollToSection(path) {
       this.$router.push({ path });
     },
+    handleView() {
+      this.mobileView = window.innerWidth <= 1025;
+    },
+  },
+  mounted() {
+    window.addEventListener("resize", this.handleView);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.handleView);
   },
 };
 </script>
@@ -172,6 +190,15 @@ export default {
   color: white;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
+#navigation-icon {
+  padding: 10px 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#navigation-icon i {
+  font-size: 2rem;
+}
 main {
   margin: 0;
   padding: 0;
@@ -214,6 +241,46 @@ footer div {
   left: 0;
   width: 100%;
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+#navigation-icon {
+  display: none; /* Ocultar por defecto */
+}
+@media (max-width: 1024px) {
+  .fixed-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navigation-icon {
+    display: block; /* Mostrar icono de menú en móviles */
+  }
+
+  .d-flex {
+    display: none; /* Ocultar elementos de navegación en móviles */
+  }
+
+  .mobile-view {
+    display: block; /* Mostrar vista móvil */
+  }
+}
+#icon-menu {
+  display: none; /* Ocultar por defecto */
+}
+
+@media (max-width: 768px) {
+  #icon-menu {
+    display: block; /* Mostrar icono de menú en pantallas más pequeñas */
+  }
+}
+@media (min-width: 1025px) {
+  .mobile-view {
+    display: none; /* Ocultar vista móvil en pantallas grandes */
+  }
 }
 main {
   padding-top: 130px;
@@ -221,5 +288,16 @@ main {
 }
 .mt-10 {
   padding-bottom: 7rem;
+}
+
+.icon-menu {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+
+@media screen and(max-width: 1700px) {
 }
 </style>

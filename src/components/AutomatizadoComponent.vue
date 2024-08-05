@@ -2,9 +2,10 @@
   <v-row class="contenedor">
     <v-col md="6" class="columna">
       <div class="titulo">
-        <h1>cámaras</h1>
-        <h3>de seguridad</h3>
+        <h1>automatización</h1>
+        <h3>de portones</h3>
         <br /><br /><br /><br /><br /><br />
+        <v-space></v-space>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
