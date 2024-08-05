@@ -1,10 +1,11 @@
 <template>
   <v-row class="contenedor">
-    <v-col md="6" class="columna">
+    <v-col cols="6" md="6" xs="12">
       <div class="titulo">
-        <h1>cámaras</h1>
-        <h3>de seguridad</h3>
-        <br /><br /><br /><br /><br /><br />
+        <div class="subtitulo">
+          <h1>cámaras</h1>
+          <h3>de seguridad</h3>
+        </div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
@@ -13,7 +14,7 @@
         </p>
       </div>
     </v-col>
-    <v-col md="6">
+    <v-col cols="6" md="6" xs="12">
       <v-img
         src="../assets/camaras.png"
         alt="camaras"
@@ -46,18 +47,16 @@ export default {
   flex-direction: column;
   align-items: left;
   justify-content: space-between;
-  margin-left: 10%;
+  margin-left: 17%;
   padding: 0;
 }
-.columna {
+.subtitulo{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: start;
 }
 div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 h1 {
   color: #ec0c05;
@@ -84,6 +83,28 @@ li {
 }
 a {
   color: #42b983;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 960px) {
+  h1 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
 }
 </style>
 ./QuienesSomos.vue./QuienesSomos.vue

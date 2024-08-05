@@ -1,37 +1,39 @@
 <template>
-  <div class="contenedor">
-    <v-row>
-      <v-col md="6">
+    <v-row class="contenedor">
+      <v-col sm="12" xs="12" md="6">
         <v-img
+          class="responsive-img"
           src="../assets/cerco.png"
           alt="cercos"
           height="600"
           width="100%"
         />
       </v-col>
-      <v-col md="6" class="columna">
-        <div class="titulo mr-10">
-          <h1>cercos</h1>
-          <h3>eléctricos</h3>
-        </div>
-        <div>
-          <p class="mr-10">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
-            Eum natus labore delectus aperiam, expedita doloribus voluptatibus
-            harum! Nobis ipsa quibusdam quam? Ullam?
-          </p>
-        </div>
-        <a
+      <v-col sm="12" xs="12" md="6">
+        <div class="titulo">
+          <div class="subtitulo">
+            <h1>cercos</h1>
+            <h3>eléctricos</h3>
+          </div>
+
+          <div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              veritatis numquam reiciendis blanditiis accusantium deserunt
+              fugiat. Eum natus labore delectus aperiam, expedita doloribus
+              voluptatibus harum! Nobis ipsa quibusdam quam? Ullam?
+            </p>
+          </div>
+          <a
           href="https://api.whatsapp.com/send?phone=5492616675624"
           target="_blank"
           class="RNpQXe"
-        >
+          >
           <v-btn class="custom-button"> PEDIR PRESUPUESTO </v-btn></a
-        >
+          >
+        </div>
       </v-col>
     </v-row>
-  </div>
 </template>
 
 <script>
@@ -49,7 +51,8 @@ export default {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 20%;
+  background-position: 25%;
+  margin: 2%;
 }
 .custom-button {
   display: flex;
@@ -72,17 +75,15 @@ export default {
 .titulo {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: left;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 10%;
 }
-.columna {
+.subtitulo {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
 }
+
 div {
   display: flex;
   justify-content: space-around;
@@ -94,25 +95,40 @@ h1 {
 p {
   font-size: 20px;
 }
-img {
-  width: 250px;
-  height: auto;
-}
 h3 {
   color: black;
   font-size: 40px;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
 }
 a {
   color: #42b983;
   text-decoration: none;
 }
+@media (max-width: 600px) {
+  .subtitulo h1 {
+    font-size: 50px;
+  }
+
+  .subtitulo {
+    margin: 0;
+    padding: 10px;
+    align-items: left;
+  }
+  .titulo {
+    margin-left:10%;
+    align-items: center;
+  }
+  p {
+    font-size: 14px;
+    text-align: justify;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 960px) {
+  h1{
+    font-size: 60px;
+  }
+ 
+}
+
 </style>
 ./QuienesSomos.vue./QuienesSomos.vue

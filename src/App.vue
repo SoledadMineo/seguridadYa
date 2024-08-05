@@ -16,7 +16,7 @@
         </div>
 
         <div id="navigation-icon" v-if="mobileView">
-          <i class="fas fa-bars"></i>
+          <v-img src="klipartz.com.png" />
         </div>
 
         <div class="d-flex justify-space-around" v-if="!mobileView">

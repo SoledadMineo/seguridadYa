@@ -274,17 +274,22 @@ export default {
   background-color: #d7d7d7;
   height: 100%;
   padding: 10px;
-  border: 1px solid black;
+
 }
 
 .card1 {
-  border: 1px solid black;
+  
   height: 90%;
   padding: 10px;
   border-radius: 10px;
   margin: 15px;
 }
-
+.card1:hover {
+  border: 2px solid black;
+}
+.card:hover {
+  border: 2px solid black;
+}
 .panel {
 }
 </style>

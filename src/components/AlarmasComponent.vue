@@ -1,18 +1,20 @@
 <template>
-  <v-row class="contenedor">
-    <v-col cols="6">
+  <v-row class="contenedor" >
+    <v-col sm="12" xs="12" md="6" >
       <v-img
+        class="responsive-img"
         src="../assets/alarmas.png"
         alt="alarmas"
         height="600"
         width="100%"
       />
     </v-col>
-    <v-col cols="6" class="columna">
+    <v-col sm="12" xs="12" md="6" >
       <div class="titulo">
-        <h1>alarmas</h1>
-        <h3>monitoreadas</h3>
-        <br /><br /><br /><br /><br /><br />
+        <div class="subtitulo">
+          <h1>alarmas</h1>
+          <h3>monitoreadas</h3>
+        </div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
@@ -40,25 +42,23 @@ export default {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 25%;
+  margin: 2%;
 }
 .titulo {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-between;
   margin-left: 10%;
-  padding: 0;
 }
-.columna {
+.subtitulo{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
+  flex-direction:column;
 }
 
 div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 img {
@@ -76,16 +76,23 @@ h3 {
 p {
   font-size: 20px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+@media (max-width: 600px) {
+  .subtitulo h1{
+    font-size: 50px;
+  }
+  .responsive-img{
+    width: 80%;
+  }
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+@media (max-width: 960px) {
+  h1{
+    font-size: 60px;
+  }
+  .responsive-img{
+    widows: 10%;
+  }
+ 
 }
 </style>
 ./QuienesSomos.vue./QuienesSomos.vue
