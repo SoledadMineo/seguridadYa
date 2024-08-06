@@ -1,5 +1,5 @@
 <template>
-  <div class="centered-column">
+  <div class="centered-column" id="contactos">
     <h2>Estamos en Contacto</h2>
 
     <div class="clase">

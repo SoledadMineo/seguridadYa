@@ -1,5 +1,5 @@
 <template>
-    <v-row class="contenedor">
+    <v-row class="contenedor" id="cerco">
       <v-col sm="12" xs="12" md="6">
         <v-img
           class="responsive-img"

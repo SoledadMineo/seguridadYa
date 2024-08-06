@@ -6,13 +6,14 @@
           class="d-flex justify-space-between align-center"
           style="padding: 0 20px"
         >
-          <router-link :to="{ name: 'home' }">
+          
             <v-img
               alt="Logo Seguridad Ya"
               src="../src/assets/logo.jpg"
               style="width: 400px"
+              @click="scrollToSection('cerco')"
             />
-          </router-link>
+          
         </div>
 
         <div id="navigation-icon" v-if="mobileView">
@@ -20,9 +21,9 @@
         </div>
 
         <div class="d-flex justify-space-around" v-if="!mobileView">
-          <router-link :to="{ name: 'quienesSomos' }">
-            <v-btn class="button">Quienes Somos</v-btn>
-          </router-link>
+          <!-- <router-link :to="{ name: 'quienesSomos' }"> -->
+            <v-btn class="button" @click="scrollToSection('quienesSomos')">Quienes Somos</v-btn>
+          <!-- </router-link> -->
 
           <v-btn class="button">
             Productos
@@ -42,16 +43,12 @@
             </v-menu>
           </v-btn>
 
-          <router-link :to="{ name: 'preguntas' }">
-            <v-btn class="button"
+            <v-btn class="button" @click="scrollToSection('preguntas')" 
               >Preguntas <br />
-              Frecuentes</v-btn
-            >
-          </router-link>
+              Frecuentes</v-btn>
 
-          <router-link :to="{ name: 'contactos' }">
-            <v-btn class="button">Contactos</v-btn>
-          </router-link>
+            <v-btn class="button" @click="scrollToSection('contactos')">Contactos</v-btn>
+
         </div>
 
         <div id="navigation-icon" v-if="mobileView">
@@ -62,7 +59,18 @@
       <main>
         <router-view />
       </main>
-
+        
+        <v-btn
+        fab
+        dark
+        fixed
+        bottom
+        right
+        color="primary"
+        @click="scrollToSection('cerco')"
+      >
+        <v-icon>mdi-arrow-up</v-icon>
+      </v-btn>
       <footer class="footer">
         <div>
           <v-img
@@ -120,17 +128,20 @@
 export default {
   data: () => ({
     items: [
-      { title: "Alarmas", path: "/alarmas" },
-      { title: "Automatización de portones", path: "/automatizados" },
-      { title: "Cámaras de seguridad", path: "/camaras" },
-      { title: "Cercos eléctricos", path: "/cerco" },
-      { title: "Cierre perimetral", path: "/cierre" },
+      { title: "Alarmas", path: "alarmas" },
+      { title: "Automatización de portones", path: "automatizados" },
+      { title: "Cámaras de seguridad", path: "camaras" },
+      { title: "Cercos eléctricos", path: "cerco" },
+      { title: "Cierre perimetral", path: "cierre" },
     ],
     mobileView: window.innerWidth <= 1025,
   }),
   methods: {
     scrollToSection(path) {
-      this.$router.push({ path });
+      const element = document.getElementById(path);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     },
     handleView() {
       this.mobileView = window.innerWidth <= 1025;

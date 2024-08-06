@@ -1,6 +1,6 @@
 <template>
-  <v-row class="contenedor">
-    <v-col sm="12" xs="12" md="6" >
+  <v-row class="contenedor" id="automatizados">
+    <v-col cols="12" sm="12" xs="12" md="6" >
       <div class="titulo">
         <div class="subtitulo">
           <h1>automatización</h1>
@@ -15,7 +15,7 @@
       </div>
     </v-col>
 
-    <v-col sm="12" xs="12" md="6">
+    <v-col cols="12" sm="12" xs="12" md="6">
       <v-img
         src="../assets/automatizados.png"
         alt="automatizados"
@@ -79,7 +79,6 @@ h3 {
 @media (max-width: 600px) {
   .contenedor {
     
-    margin: 1%;
   }
   .titulo {
     margin-left: 5%;
@@ -88,10 +87,10 @@ h3 {
   .subtitulo {
     align-items: center; /* Centrar contenido horizontalmente */
   }
-  h1 {
-    font-size: 40px; /* Reducir tamaño de fuente para h1 */
+  .subtitulo h1 {
+    font-size: 10px;
   }
-  h3 {
+  .subtitulo h3 {
     font-size: 20px; /* Reducir tamaño de fuente para h3 */
   }
   p {
@@ -101,9 +100,6 @@ h3 {
   }
   .responsive-img {
     width: 80%; /* Ajustar el ancho de la imagen al 80% del contenedor */
-  }
-  .subtitulo h1 {
-    font-size: 40px;
   }
 
 

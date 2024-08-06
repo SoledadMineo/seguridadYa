@@ -1,5 +1,5 @@
 <template>
-  <v-row class="contenedor">
+  <v-row class="contenedor" id="cierre">
     <v-col md="6">
       <h1>Cierre Perimetral <br /></h1>
     </v-col>

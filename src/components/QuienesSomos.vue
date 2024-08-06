@@ -202,7 +202,7 @@ export default {
 <!--TERCER OPCION-->
 <template>
   <div class="contenedor">
-    <v-row justify="center"
+    <v-row justify="center" id="quienesSomos"
       ><v-col cols="12" md="6">
         <v-card class="card" elevation="20">
           <v-img

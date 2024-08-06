@@ -1,5 +1,5 @@
 <template>
-  <v-row class="contenedor">
+  <v-row class="contenedor" id="camaras">
     <v-col cols="6" md="6" xs="12">
       <div class="titulo">
         <div class="subtitulo">
