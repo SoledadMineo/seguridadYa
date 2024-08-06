@@ -6,14 +6,12 @@
           class="d-flex justify-space-between align-center"
           style="padding: 0 20px"
         >
-          
-            <v-img
-              alt="Logo Seguridad Ya"
-              src="../src/assets/logo.jpg"
-              style="width: 400px"
-              @click="scrollToSection('cerco')"
-            />
-          
+          <v-img
+            alt="Logo Seguridad Ya"
+            src="../src/assets/logo.jpg"
+            style="width: 400px"
+            @click="scrollToSection('cerco')"
+          />
         </div>
 
         <div id="navigation-icon" v-if="mobileView">
@@ -22,7 +20,9 @@
 
         <div class="d-flex justify-space-around" v-if="!mobileView">
           <!-- <router-link :to="{ name: 'quienesSomos' }"> -->
-            <v-btn class="button" @click="scrollToSection('quienesSomos')">Quienes Somos</v-btn>
+          <v-btn class="button" @click="scrollToSection('quienesSomos')"
+            >Quienes Somos</v-btn
+          >
           <!-- </router-link> -->
 
           <v-btn class="button">
@@ -43,12 +43,14 @@
             </v-menu>
           </v-btn>
 
-            <v-btn class="button" @click="scrollToSection('preguntas')" 
-              >Preguntas <br />
-              Frecuentes</v-btn>
+          <v-btn class="button" @click="scrollToSection('preguntas')"
+            >Preguntas <br />
+            Frecuentes</v-btn
+          >
 
-            <v-btn class="button" @click="scrollToSection('contactos')">Contactos</v-btn>
-
+          <v-btn class="button" @click="scrollToSection('contactos')"
+            >Contactos</v-btn
+          >
         </div>
 
         <div id="navigation-icon" v-if="mobileView">
@@ -59,8 +61,8 @@
       <main>
         <router-view />
       </main>
-        
-        <v-btn
+
+      <v-btn
         fab
         dark
         fixed
@@ -140,7 +142,7 @@ export default {
     scrollToSection(path) {
       const element = document.getElementById(path);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     },
     handleView() {
