@@ -19,11 +19,9 @@
         </div>
 
         <div class="d-flex justify-space-around" v-if="!mobileView">
-          <!-- <router-link :to="{ name: 'quienesSomos' }"> -->
           <v-btn class="button" @click="scrollToSection('quienesSomos')"
             >Quienes Somos</v-btn
           >
-          <!-- </router-link> -->
 
           <v-btn class="button">
             Productos
@@ -52,27 +50,37 @@
             >Contactos</v-btn
           >
         </div>
-
-        <div id="navigation-icon" v-if="mobileView">
-          <i class="fas fa-bars"></i>
-        </div>
       </header>
 
       <main>
         <router-view />
       </main>
 
-      <v-btn
-        fab
-        dark
-        fixed
-        bottom
-        right
-        color="primary"
-        @click="scrollToSection('cerco')"
-      >
-        <v-icon>mdi-arrow-up</v-icon>
-      </v-btn>
+      <v-fab-transition>
+        <v-btn
+          icon="d-flex justify-sm-space-between px-6 pt-2 pb-6"
+          size="large"
+          @click="handleClick"
+          class="whatsapp-button"
+          elevation="24"
+        >
+          <a
+            href="https://api.whatsapp.com/send?phone=5492616675624"
+            target="_blank"
+            class="RNpQXe"
+            style="width: 40px"
+          >
+            <v-img
+              src="../src/assets/whatsapp.png"
+              alt="Enlace"
+              class="xbGufb"
+              style="width: 40px; height: 40px"
+              width="48"
+              height="48"
+          /></a>
+        </v-btn>
+      </v-fab-transition>
+
       <footer class="footer">
         <div>
           <v-img
@@ -202,6 +210,13 @@ export default {
   background-color: #848484; /* Color de fondo al pasar el mouse */
   color: white;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366 !important; /* Color verde de WhatsApp */
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
 #navigation-icon {
   padding: 10px 10px 20px;

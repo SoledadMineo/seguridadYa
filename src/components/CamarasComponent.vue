@@ -15,12 +15,7 @@
       </div>
     </v-col>
     <v-col cols="6" md="6" xs="12">
-      <v-img
-        src="../assets/camaras.png"
-        alt="camaras"
-        height="600"
-        width="100%"
-      />
+      <v-img class="responsive-img" src="../assets/camaras.png" alt="camaras" />
     </v-col>
   </v-row>
 </template>
@@ -50,7 +45,7 @@ export default {
   margin-left: 17%;
   padding: 0;
 }
-.subtitulo{
+.subtitulo {
   display: flex;
   flex-direction: column;
 }
@@ -62,8 +57,8 @@ h1 {
   color: #ec0c05;
   font-size: 80px;
 }
-img {
-  width: 250px;
+.responsive-img {
+  width: 100%;
   height: auto;
 }
 p {
@@ -73,37 +68,34 @@ h3 {
   color: black;
   font-size: 40px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 @media (max-width: 600px) {
-  h1 {
-    font-size: 40px;
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
   }
-  h3 {
-    font-size: 32px;
+  .titulo {
+    margin: 0;
+    align-items: left; /* Centrar contenido horizontalmente */
+  }
+  .subtitulo h1 {
+    font-size: 25px;
+  }
+  .subtitulo h3 {
+    font-size: 20px; /* Reducir tamaño de fuente para h3 */
   }
   p {
-    font-size: 18px;
+    font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
+    text-align: justify;
+    margin-right: 5%;
+  }
+  .responsive-img {
+    width: 30%; /* Ajustar el ancho de la imagen al 80% del contenedor */
   }
 }
 @media (max-width: 960px) {
-  h1 {
-    font-size: 60px;
-  }
-  h3 {
-    font-size: 40px;
-  }
-  p {
-    font-size: 20px;
+  .responsive-img {
+    width: 60%;
   }
 }
 </style>

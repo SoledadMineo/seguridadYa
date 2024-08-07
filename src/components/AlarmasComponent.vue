@@ -1,15 +1,9 @@
 <template>
   <v-row class="contenedor" id="alarmas">
-    <v-col sm="12" xs="12" md="6" >
-      <v-img
-        class="responsive-img"
-        src="../assets/alarmas.png"
-        alt="alarmas"
-        height="600"
-        width="100%"
-      />
+    <v-col sm="12" xs="12" md="6">
+      <v-img class="responsive-img" src="../assets/alarmas.png" alt="alarmas" />
     </v-col>
-    <v-col sm="12" xs="12" md="6" >
+    <v-col sm="12" xs="12" md="6">
       <div class="titulo">
         <div class="subtitulo">
           <h1>alarmas</h1>
@@ -51,9 +45,9 @@ export default {
   justify-content: space-between;
   margin-left: 10%;
 }
-.subtitulo{
+.subtitulo {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 div {
@@ -62,7 +56,7 @@ div {
 }
 
 img {
-  width: 250px;
+  width: 100%;
   height: auto;
 }
 h1 {
@@ -78,21 +72,37 @@ p {
 }
 
 @media (max-width: 600px) {
-  .subtitulo h1{
-    font-size: 50px;
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
   }
-  .responsive-img{
-    width: 80%;
+  .titulo {
+    margin: 0;
+    align-items: left; /* Centrar contenido horizontalmente */
+  }
+  .subtitulo h1 {
+    font-size: 25px;
+  }
+  .subtitulo h3 {
+    font-size: 20px;
+  }
+  .responsive-img {
+    width: 30%;
+  }
+  p {
+    font-size: 16px;
+    text-align: justify;
+    margin-right: 5%;
   }
 }
 @media (max-width: 960px) {
-  h1{
+  h1 {
     font-size: 60px;
   }
-  .responsive-img{
-    widows: 10%;
+  .responsive-img {
+    width: 80%;
   }
- 
 }
 </style>
 ./QuienesSomos.vue./QuienesSomos.vue

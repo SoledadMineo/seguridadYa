@@ -1,11 +1,12 @@
 <template>
   <v-row class="contenedor" id="automatizados">
-    <v-col cols="12" sm="12" xs="12" md="6" >
+    <v-col cols="12" sm="12" xs="12" md="6">
       <div class="titulo">
         <div class="subtitulo">
           <h1>automatización</h1>
           <h3>de portones</h3>
         </div>
+
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
@@ -17,10 +18,9 @@
 
     <v-col cols="12" sm="12" xs="12" md="6">
       <v-img
+        class="responsive-img"
         src="../assets/automatizados.png"
         alt="automatizados"
-        height="600"
-        width="100%"
       />
     </v-col>
   </v-row>
@@ -51,7 +51,7 @@ export default {
   justify-content: space-between;
   margin-left: 10%;
 }
-.subtitulo{
+.subtitulo {
   display: flex;
   flex-direction: column;
 }
@@ -63,8 +63,8 @@ h1 {
   color: #ec0c05;
   font-size: 80px;
 }
-img {
-  width: 250px;
+.responsive-img {
+  width: 100%;
   height: auto;
 }
 p {
@@ -78,17 +78,16 @@ h3 {
 /* Media Queries para dispositivos más grandes */
 @media (max-width: 600px) {
   .contenedor {
-    
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
   }
   .titulo {
-    margin-left: 5%;
-    align-items: center; /* Centrar contenido horizontalmente */
-  }
-  .subtitulo {
-    align-items: center; /* Centrar contenido horizontalmente */
+    margin: 0;
+    align-items: left; /* Centrar contenido horizontalmente */
   }
   .subtitulo h1 {
-    font-size: 10px;
+    font-size: 25px;
   }
   .subtitulo h3 {
     font-size: 20px; /* Reducir tamaño de fuente para h3 */
@@ -99,13 +98,12 @@ h3 {
     margin-right: 5%;
   }
   .responsive-img {
-    width: 80%; /* Ajustar el ancho de la imagen al 80% del contenedor */
+    width: 30%; /* Ajustar el ancho de la imagen al 80% del contenedor */
   }
-
-
 }
 @media (max-width: 960px) {
-  
- 
+  .responsive-img {
+    width: 60%;
+  }
 }
 </style>
