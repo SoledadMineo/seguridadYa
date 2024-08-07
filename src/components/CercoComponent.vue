@@ -47,12 +47,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.contenedor {
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 25%;
-}
 .custom-button {
   display: flex;
   align-items: center;
@@ -71,21 +65,30 @@ export default {
   color: #40c351;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
+.contenedor {
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 25%;
+}
 .titulo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin-right: 10%;
+  margin-left: 10%;
 }
 .subtitulo {
   display: flex;
   flex-direction: column;
 }
-
+.responsive-img {
+  height: 700px;
+  width: auto;
+}
 div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 h1 {
   color: #ec0c05;
@@ -98,19 +101,14 @@ h3 {
   color: black;
   font-size: 40px;
 }
-a {
-  color: #42b983;
-  text-decoration: none;
-}
+
+/* Media Queries para dispositivos más grandes */
 @media (max-width: 600px) {
   .contenedor {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 5%;
-  }
-  .titulo {
-    margin: 0;
-    align-items: left; /* Centrar contenido horizontalmente */
   }
   .subtitulo h1 {
     font-size: 25px;
@@ -118,19 +116,37 @@ a {
   .subtitulo h3 {
     font-size: 20px; /* Reducir tamaño de fuente para h3 */
   }
+  .responsive-img {
+    height: 500px;
+    width: auto;
+  }
+  .custom-button {
+    size: small;
+  }
   p {
     font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
     text-align: justify;
     margin-right: 5%;
   }
-  .responsive-img {
-    width: 30%; /* Ajustar el ancho de la imagen al 80% del contenedor */
-  }
 }
-@media (max-width: 960px) {
+@media (max-width: 1136px) {
   .responsive-img {
-    width: 60%;
+    height: 500px;
+    width: auto;
+  }
+  .subtitulo h1 {
+    font-size: 40px;
+  }
+  .subtitulo h3 {
+    font-size: 30px; /* Reducir tamaño de fuente para h3 */
+  }
+  .titulo {
+    margin: 0;
+    padding: 5%;
+    align-items: left; /* Centrar contenido horizontalmente */
+  }
+  p {
+    font-size: 15px; /* Reducir tamaño de fuente para el párrafo */
   }
 }
 </style>
-./QuienesSomos.vue./QuienesSomos.vue

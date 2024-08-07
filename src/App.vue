@@ -13,42 +13,59 @@
             @click="scrollToSection('cerco')"
           />
         </div>
+        <div>
+          <div id="navigation-icon" v-if="mobileView">
+            <v-img src="klipartz.com.png" />
+          </div>
 
-        <div id="navigation-icon" v-if="mobileView">
-          <v-img src="klipartz.com.png" />
+          <div class="d-flex justify-space-around" v-if="!mobileView">
+            <v-btn class="button" @click="scrollToSection('quienesSomos')"
+              >Quienes Somos</v-btn
+            >
+
+            <v-btn class="button">
+              Productos
+              <v-menu activator="parent">
+                <v-list>
+                  <v-list-item
+                    v-for="(item, index) in items"
+                    :key="index"
+                    :value="index"
+                    @click="scrollToSection(item.path)"
+                  >
+                    <v-list-item-title class="custom-title">{{
+                      item.title
+                    }}</v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </v-btn>
+
+            <v-btn class="button" @click="scrollToSection('preguntas')"
+              >Preguntas <br />
+              Frecuentes</v-btn
+            >
+
+            <v-btn class="button" @click="scrollToSection('contactos')"
+              >Contactos</v-btn
+            >
+          </div>
         </div>
+        <div
+          class="d-flex justify-space-between align-center"
+          style="padding: 0 20px"
+        >
+          <v-menu>
+            <template v-slot:activator="{ props }">
+              <v-btn icon="mdi-menu" v-bind="props"></v-btn>
+            </template>
 
-        <div class="d-flex justify-space-around" v-if="!mobileView">
-          <v-btn class="button" @click="scrollToSection('quienesSomos')"
-            >Quienes Somos</v-btn
-          >
-
-          <v-btn class="button">
-            Productos
-            <v-menu activator="parent">
-              <v-list>
-                <v-list-item
-                  v-for="(item, index) in items"
-                  :key="index"
-                  :value="index"
-                  @click="scrollToSection(item.path)"
-                >
-                  <v-list-item-title class="custom-title">{{
-                    item.title
-                  }}</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </v-menu>
-          </v-btn>
-
-          <v-btn class="button" @click="scrollToSection('preguntas')"
-            >Preguntas <br />
-            Frecuentes</v-btn
-          >
-
-          <v-btn class="button" @click="scrollToSection('contactos')"
-            >Contactos</v-btn
-          >
+            <v-list>
+              <v-list-item v-for="(menu, i) in menus" :key="i">
+                <v-list-item-title>{{ menu.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
         </div>
       </header>
 
@@ -143,6 +160,16 @@ export default {
       { title: "Cámaras de seguridad", path: "camaras" },
       { title: "Cercos eléctricos", path: "cerco" },
       { title: "Cierre perimetral", path: "cierre" },
+    ],
+    menus: [
+      { title: "Quienes Somos", path: "quienesSomos" },
+      { title: "Alarmas", path: "alarmas" },
+      { title: "Automatización de portones", path: "automatizados" },
+      { title: "Cámaras de seguridad", path: "camaras" },
+      { title: "Cercos eléctricos", path: "cerco" },
+      { title: "Cierre perimetral", path: "cierre" },
+      { title: "Preguntas Frecuentes", path: "preguntas" },
+      { title: "Contactos", path: "contactos" },
     ],
     mobileView: window.innerWidth <= 1025,
   }),

@@ -2,7 +2,7 @@
   <div class="caja">
     <v-container class="contenedor" id="preguntas">
       <v-table class="custom-table">
-        <tr>
+        <tr class="custom-celda">
           <td colspan="2">
             <div class="custom-header">
               <v-img src="../assets/pregunta.png" class="image"></v-img>
@@ -11,7 +11,7 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda1 medium-celda">
+          <td class="custom-celda1 medium-celda" cols="12" md="6">
             <h2>1. ¿ES LEGAL INSTALAR CERCOS ELÉCTRICOS?</h2>
             <br />
             <p>
@@ -20,7 +20,7 @@
               perfectamente definido en lo que se denomina legítima defensa.
             </p>
           </td>
-          <td class="custom-celda2 medium-celda">
+          <td class="custom-celda2 medium-celda" cols="12" md="6">
             <h2>2. ¿ES LETAL?</h2>
             <br />
             <p>
@@ -30,7 +30,7 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda2 medium-celda">
+          <td class="custom-celda3 medium-celda" cols="12" md="6">
             <h2>
               3. ¿SE NECESITA INFORMACIÓN PARA INSTALAR MI CERCO ELÉCTRICO?
             </h2>
@@ -41,7 +41,7 @@
               información que necesites.
             </p>
           </td>
-          <td class="custom-celda1 medium-celda">
+          <td class="custom-celda4 medium-celda" cols="12" md="6">
             <h2>4. ¿EL CONSUMO ELÉCTRICO ES MUY ALTO?</h2>
             <br />
             <p>
@@ -51,7 +51,7 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda1 medium-celda" colspan="2">
+          <td class="custom-celda5 medium-celda" colspan="2" cols="12" md="6">
             <h2>5. ¿REQUIERE MANTENIMIENTO?</h2>
             <br />
             <p>
@@ -75,51 +75,62 @@
 .caja {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-position: 25%;
-  margin-top: 5%;
+  overflow-x: auto;
 }
 
 .contenedor {
   display: flex;
   justify-content: center;
   background-color: #ec0c05;
-  width: 68%;
+  
+  
+  box-sizing: border-box;
 }
 .custom-table {
   width: 100%;
-  height: 100%;
+  max-width: 100%;
   font-size: 15px;
-  padding: 10px; /* Tamaño del padding para ajustar el tamaño de las celdas */
+  padding: 10px;
 }
 .custom-header {
   background-color: #848484; /* Cambiar color de fondo de las cabeceras */
-  height: 250px;
+  height: auto;
+}
+.custom-celda .custom-celda1, .custom-celda2, .custom-celda3, .custom-celda4, .custom-celda5 {
+  color: black;
+  border: 30px;
+  padding: 10px;
+  vertical-align: top;
 }
 .custom-celda1 {
   background-color: #d7d7d7;
-  color: black;
-  border: 30px;
-  padding: 20px;
-  vertical-align: top;
 }
-.custom-celda2 {
+.custom-celda2  {
   background-color: #848484; /* Cambiar color de fondo de las celdas */
-  color: black;
-  border: 30px;
-  padding: 20px;
-  vertical-align: top;
-  /*  font-size: 16px; /* Tamaño del texto de las celdas */
 }
+.custom-celda4 {
+  background-color: #d7d7d7;
+}
+.custom-celda3  {
+  background-color: #848484; /* Cambiar color de fondo de las celdas */
+}
+.custom-celda5 {
+  background-color: #d7d7d7;
+}
+
 .image {
-  width: 150px;
-  height: 150px;
-  margin-inline-start: 42%;
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 .title {
   color: black;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
-  margin-left: 30%;
+  text-align: center;
 }
 .medium-celda {
   width: 50%;
@@ -131,4 +142,51 @@ h2 {
 p {
   text-align: justify;
 }
+
+@media (max-width: 600px) {
+  .custom-header {
+    width: 100%;
+  }
+  .medium-celda {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Ajusta la altura según el contenido */
+  }
+  .title {
+    font-size: 18px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo */
+  }
+  .custom-celda{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .custom-celda1{
+  background-color: #d7d7d7;
+  color: black;
+}
+.custom-celda2 {
+  background-color: #848484;
+  color: black;
+}
+ .custom-celda3{
+  background-color: #d7d7d7;
+  color: black;
+ }
+ .custom-celda4 {
+  background-color: #848484;
+  color: black;
+}
+
+ .custom-celda5{
+  background-color: #d7d7d7;
+  color: black;
+ }
+
+  tr{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 </style>
