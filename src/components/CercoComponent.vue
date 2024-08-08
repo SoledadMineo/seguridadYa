@@ -5,10 +5,9 @@
         class="responsive-img"
         src="../assets/cerco.png"
         alt="cercos"
-        height="600"
-        width="100%"
       />
     </v-col>
+    
     <v-col sm="12" xs="12" md="6">
       <div class="titulo">
         <div class="subtitulo">
@@ -82,10 +81,7 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.responsive-img {
-  height: 700px;
-  width: auto;
-}
+
 div {
   display: flex;
   justify-content: space-between;
@@ -127,26 +123,6 @@ h3 {
     font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
     text-align: justify;
     margin-right: 5%;
-  }
-}
-@media (max-width: 1136px) {
-  .responsive-img {
-    height: 500px;
-    width: auto;
-  }
-  .subtitulo h1 {
-    font-size: 40px;
-  }
-  .subtitulo h3 {
-    font-size: 30px; /* Reducir tamaño de fuente para h3 */
-  }
-  .titulo {
-    margin: 0;
-    padding: 5%;
-    align-items: left; /* Centrar contenido horizontalmente */
-  }
-  p {
-    font-size: 15px; /* Reducir tamaño de fuente para el párrafo */
   }
 }
 </style>
