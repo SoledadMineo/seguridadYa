@@ -1,136 +1,117 @@
 <template>
   <div id="app" class="background-container">
-    <div id="contenedor">
-      <header class="fixed-header">
-        <div
-          class="d-flex justify-space-between align-center"
-          style="padding: 0 20px"
-        >
-          <router-link :to="{ name: 'home' }">
-            <v-img
-              alt="Logo Seguridad Ya"
-              src="../src/assets/logo.jpg"
-              style="width: 400px"
-            />
-          </router-link>
-        </div>
+    <v-app>
+      <v-navigation-drawer v-model="drawer" app temporary>
+        <v-list>
+          <v-list-item @click="scrollToSection('quienesSomos')">
+            <v-list-item-title>Quienes Somos</v-list-item-title>
+          </v-list-item>
+          <v-list-item v-for="(item, index) in items" :key="index" @click="scrollToSection(item.path)">
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="scrollToSection('preguntas')">
+            <v-list-item-title>Preguntas Frecuentes</v-list-item-title>
+          </v-list-item>
+          <v-list-item @click="scrollToSection('contactos')">
+            <v-list-item-title>Contactos</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-navigation-drawer>
 
-        <div id="navigation-icon" v-if="mobileView">
-          <v-img src="klipartz.com.png" />
-        </div>
+      <v-app-bar app color="black" dark class="d-flex justify-space-around">
+        <v-img
+          alt="Logo Seguridad Ya"
+          src="../src/assets/logo.jpg"
+          style="width: 400px"
+          @click="scrollToSection('cerco')"
+        />
 
-        <div class="d-flex justify-space-around" v-if="!mobileView">
-          <router-link :to="{ name: 'quienesSomos' }">
-            <v-btn class="button">Quienes Somos</v-btn>
-          </router-link>
+        <v-spacer></v-spacer>
 
+        <v-app-bar-nav-icon @click="drawer = !drawer" v-if="mobileView"></v-app-bar-nav-icon>
+
+        <div v-if="!mobileView" class="menu-buttons d-flex justify-space-between">
+          <v-btn class="button" @click="scrollToSection('quienesSomos')">Quienes Somos</v-btn>
           <v-btn class="button">
             Productos
             <v-menu activator="parent">
               <v-list>
-                <v-list-item
-                  v-for="(item, index) in items"
-                  :key="index"
-                  :value="index"
-                  @click="scrollToSection(item.path)"
-                >
-                  <v-list-item-title class="custom-title">{{
-                    item.title
-                  }}</v-list-item-title>
+                <v-list-item v-for="(item, index) in items" :key="index" @click="scrollToSection(item.path)">
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-menu>
           </v-btn>
-
-          <router-link :to="{ name: 'preguntas' }">
-            <v-btn class="button"
-              >Preguntas <br />
-              Frecuentes</v-btn
-            >
-          </router-link>
-
-          <router-link :to="{ name: 'contactos' }">
-            <v-btn class="button">Contactos</v-btn>
-          </router-link>
+          <v-btn class="button" @click="scrollToSection('preguntas')">Preguntas Frecuentes</v-btn>
+          <v-btn class="button" @click="scrollToSection('contactos')">Contactos</v-btn>
         </div>
-
-        <div id="navigation-icon" v-if="mobileView">
-          <i class="fas fa-bars"></i>
-        </div>
-      </header>
+      </v-app-bar>
 
       <main>
         <router-view />
       </main>
 
+      <v-fab-transition>
+        <v-btn
+          icon
+          large
+          @click="handleClick"
+          class="whatsapp-button"
+          elevation="24"
+        >
+          <a href="https://api.whatsapp.com/send?phone=5492616675624" target="_blank" class="RNpQXe" style="width: 40px">
+            <v-img src="../src/assets/whatsapp.png" alt="Enlace" class="xbGufb" style="width: 40px; height: 40px" width="48" height="48"/>
+          </a>
+        </v-btn>
+      </v-fab-transition>
+
       <footer class="footer">
         <div>
-          <v-img
-            alt="Logo"
-            src="../src/assets/logoRedondo.png"
-            style="width: 100px"
-          />
+          <v-img alt="Logo" src="../src/assets/logoRedondo.png" style="width: 100px"/>
         </div>
         <div class="d-flex flex-row">
-          <a
-            href="https://www.instagram.com/seguridadyaoficial/"
-            target="_blank"
-            class="RNpQXe"
-            style="width: 40px"
-            ><v-img
-              src="../src/assets/instagram.png"
-              alt="Instagram"
-              class="xbGufb"
-              style="width: 40px; height: 40px"
-          /></a>
-          <a
-            href="https://www.facebook.com/Seguridadyaoficial-100856535495510"
-            target="_blank"
-            class="RNpQXe"
-            style="width: 40px"
-            ><v-img
-              src="../src/assets/facebook.png"
-              alt="Facebook"
-              class="xbGufb"
-              style="width: 40px; height: 40px"
-              width="48"
-              height="48"
-          /></a>
-          <a
-            href="https://api.whatsapp.com/send?phone=5492616675624"
-            target="_blank"
-            class="RNpQXe"
-            style="width: 40px"
-          >
-            <v-img
-              src="../src/assets/whatsapp.png"
-              alt="Enlace"
-              class="xbGufb"
-              style="width: 40px; height: 40px"
-              width="48"
-              height="48"
-          /></a>
+          <a href="https://www.instagram.com/seguridadyaoficial/" target="_blank" class="RNpQXe" style="width: 40px">
+            <v-img src="../src/assets/instagram.png" alt="Instagram" class="xbGufb" style="width: 40px; height: 40px"/>
+          </a>
+          <a href="https://www.facebook.com/Seguridadyaoficial-100856535495510" target="_blank" class="RNpQXe" style="width: 40px">
+            <v-img src="../src/assets/facebook.png" alt="Facebook" class="xbGufb" style="width: 40px; height: 40px" width="48" height="48"/>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5492616675624" target="_blank" class="RNpQXe" style="width: 40px">
+            <v-img src="../src/assets/whatsapp.png" alt="Enlace" class="xbGufb" style="width: 40px; height: 40px" width="48" height="48"/>
+          </a>
         </div>
       </footer>
-    </div>
+    </v-app>
   </div>
 </template>
-
 <script>
 export default {
   data: () => ({
     items: [
-      { title: "Alarmas", path: "/alarmas" },
-      { title: "Automatización de portones", path: "/automatizados" },
-      { title: "Cámaras de seguridad", path: "/camaras" },
-      { title: "Cercos eléctricos", path: "/cerco" },
-      { title: "Cierre perimetral", path: "/cierre" },
+      { title: "Alarmas", path: "alarmas" },
+      { title: "Automatización de portones", path: "automatizados" },
+      { title: "Cámaras de seguridad", path: "camaras" },
+      { title: "Cercos eléctricos", path: "cerco" },
+      { title: "Cierre perimetral", path: "cierre" },
+    ],
+    menus: [
+      { title: "Quienes Somos", path: "quienesSomos" },
+      { title: "Alarmas", path: "alarmas" },
+      { title: "Automatización de portones", path: "automatizados" },
+      { title: "Cámaras de seguridad", path: "camaras" },
+      { title: "Cercos eléctricos", path: "cerco" },
+      { title: "Cierre perimetral", path: "cierre" },
+      { title: "Preguntas Frecuentes", path: "preguntas" },
+      { title: "Contactos", path: "contactos" },
     ],
     mobileView: window.innerWidth <= 1025,
   }),
   methods: {
     scrollToSection(path) {
-      this.$router.push({ path });
+      const element = document.getElementById(path);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     },
     handleView() {
       this.mobileView = window.innerWidth <= 1025;
@@ -161,6 +142,7 @@ export default {
   flex-direction: column;
   min-height: 100vh;
 }
+
 .contenedor {
   flex: 1;
   padding-top: 130px;
@@ -190,6 +172,13 @@ export default {
   color: white;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
+.whatsapp-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366 !important; /* Color verde de WhatsApp */
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
 #navigation-icon {
   padding: 10px 10px 20px;
   margin-right: 10px;
@@ -198,6 +187,11 @@ export default {
 
 #navigation-icon i {
   font-size: 2rem;
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  width: 25rem;
 }
 main {
   margin: 0;
@@ -223,7 +217,6 @@ header {
   padding: 3%;
   margin: 0;
 }
-
 .footer {
   background-color: black; /* Cambia este valor al color de fondo deseado */
   display: flex;
@@ -244,11 +237,10 @@ footer div {
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 10px;
 }
 #navigation-icon {
-  display: none; /* Ocultar por defecto */
+  display: block; /* Ocultar por defecto */
 }
 @media (max-width: 1024px) {
   .fixed-header {
@@ -267,21 +259,28 @@ footer div {
   .mobile-view {
     display: block; /* Mostrar vista móvil */
   }
-}
-#icon-menu {
-  display: none; /* Ocultar por defecto */
+  #icon-menu {
+    display: none; /* Ocultar por defecto */
+  }
 }
 
 @media (max-width: 768px) {
+  .header-content {
+    display: flex;
+
+    width: 15rem;
+  }
+  v-img {
+    width: 100px;
+  }
   #icon-menu {
     display: block; /* Mostrar icono de menú en pantallas más pequeñas */
   }
-}
-@media (min-width: 1025px) {
-  .mobile-view {
-    display: none; /* Ocultar vista móvil en pantallas grandes */
+  .fixed-header {
+    display: flex;
   }
 }
+
 main {
   padding-top: 130px;
   background-color: white;
@@ -296,8 +295,5 @@ main {
   position: absolute;
   right: 20px;
   top: 16px;
-}
-
-@media screen and(max-width: 1700px) {
 }
 </style>

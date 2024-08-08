@@ -1,11 +1,12 @@
 <template>
-  <v-row class="contenedor">
-    <v-col sm="12" xs="12" md="6" >
+  <v-row class="contenedor" id="automatizados">
+    <v-col cols="12" sm="12" xs="12" md="6">
       <div class="titulo">
         <div class="subtitulo">
           <h1>automatización</h1>
           <h3>de portones</h3>
         </div>
+
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
@@ -15,12 +16,11 @@
       </div>
     </v-col>
 
-    <v-col sm="12" xs="12" md="6">
+    <v-col cols="12" sm="12" xs="12" md="6">
       <v-img
+        class="responsive-img"
         src="../assets/automatizados.png"
         alt="automatizados"
-        height="600"
-        width="100%"
       />
     </v-col>
   </v-row>
@@ -42,7 +42,7 @@ export default {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 25%;
-  margin: 2%;
+  
 }
 .titulo {
   display: flex;
@@ -51,9 +51,13 @@ export default {
   justify-content: space-between;
   margin-left: 10%;
 }
-.subtitulo{
+.subtitulo {
   display: flex;
   flex-direction: column;
+}
+.responsive-img {
+  height: 700px;
+  width: auto;
 }
 div {
   display: flex;
@@ -62,10 +66,6 @@ div {
 h1 {
   color: #ec0c05;
   font-size: 80px;
-}
-img {
-  width: 250px;
-  height: auto;
 }
 p {
   font-size: 20px;
@@ -78,38 +78,48 @@ h3 {
 /* Media Queries para dispositivos más grandes */
 @media (max-width: 600px) {
   .contenedor {
-    
-    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5%;
   }
   .titulo {
-    margin-left: 5%;
-    align-items: center; /* Centrar contenido horizontalmente */
+   
   }
-  .subtitulo {
-    align-items: center; /* Centrar contenido horizontalmente */
+  .subtitulo h1 {
+    font-size: 25px;
   }
-  h1 {
-    font-size: 40px; /* Reducir tamaño de fuente para h1 */
-  }
-  h3 {
+  .subtitulo h3 {
     font-size: 20px; /* Reducir tamaño de fuente para h3 */
+  }
+  .responsive-img {
+    height: 200px;
+    width: auto;
   }
   p {
     font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
     text-align: justify;
     margin-right: 5%;
   }
+}
+@media (max-width: 1136px) {
   .responsive-img {
-    width: 80%; /* Ajustar el ancho de la imagen al 80% del contenedor */
+    height: 500px;
+    width: auto;
   }
   .subtitulo h1 {
     font-size: 40px;
   }
-
-
-}
-@media (max-width: 960px) {
-  
- 
+  .subtitulo h3 {
+    font-size: 30px; /* Reducir tamaño de fuente para h3 */
+  }
+  .titulo {
+    margin: 0;
+    padding: 5%;
+    align-items: left; /* Centrar contenido horizontalmente */
+  }
+  p {
+    font-size: 15px; /* Reducir tamaño de fuente para el párrafo */
+  }
 }
 </style>

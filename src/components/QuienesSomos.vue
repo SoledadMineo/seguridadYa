@@ -202,7 +202,7 @@ export default {
 <!--TERCER OPCION-->
 <template>
   <div class="contenedor">
-    <v-row justify="center"
+    <v-row justify="center" id="quienesSomos"
       ><v-col cols="12" md="6">
         <v-card class="card" elevation="20">
           <v-img
@@ -213,7 +213,11 @@ export default {
           <v-card-text
             ><strong
               >Somos una empresa mendocina con más de una década de trayectoria,
-              brindando siempre el mejor servicio de seguridad .....
+              brindando siempre el mejor servicio de seguridad ..... Somos una
+              empresa mendocina con más de una década de trayectoria, brindando
+              siempre el mejor servicio de seguridad ..... Somos una empresa
+              mendocina con más de una década de trayectoria, brindando siempre
+              el mejor servicio de seguridad .....
             </strong></v-card-text
           >
         </v-card>
@@ -274,11 +278,9 @@ export default {
   background-color: #d7d7d7;
   height: 100%;
   padding: 10px;
-
 }
 
 .card1 {
-  
   height: 90%;
   padding: 10px;
   border-radius: 10px;
