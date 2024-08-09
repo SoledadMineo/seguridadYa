@@ -1,37 +1,38 @@
 <template>
-  <v-row class="contenedor" id="cerco">
-    <v-col sm="12" xs="12" md="6">
-      <v-img
-        class="responsive-img"
-        src="../assets/cerco.png"
-        alt="cercos"
-      />
-    </v-col>
-    
-    <v-col sm="12" xs="12" md="6">
-      <div class="titulo">
-        <div class="subtitulo">
-          <h1>cercos</h1>
-          <h3>eléctricos</h3>
-        </div>
+  <v-row id="cerco">
+    <div>
+      <v-img src="../assets/logoRedondo-sinFondo.png" class="custom-img" />
+    </div>
+    <div class="contenedor">
+      <v-col sm="12" xs="12" md="6">
+        <v-img class="responsive-img" src="../assets/cerco.png" alt="cercos" />
+      </v-col>
 
-        <div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
-            Eum natus labore delectus aperiam, expedita doloribus voluptatibus
-            harum! Nobis ipsa quibusdam quam? Ullam?
-          </p>
+      <v-col sm="12" xs="12" md="6">
+        <div class="titulo">
+          <div class="subtitulo">
+            <h1>cercos</h1>
+            <h3>eléctricos</h3>
+          </div>
+
+          <div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              veritatis numquam reiciendis blanditiis accusantium deserunt
+              fugiat. Eum natus labore delectus aperiam, expedita doloribus
+              voluptatibus harum! Nobis ipsa quibusdam quam? Ullam?
+            </p>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=5492616675624"
+            target="_blank"
+            class="RNpQXe"
+          >
+            <v-btn class="custom-button"> PEDIR PRESUPUESTO </v-btn></a
+          >
         </div>
-        <a
-          href="https://api.whatsapp.com/send?phone=5492616675624"
-          target="_blank"
-          class="RNpQXe"
-        >
-          <v-btn class="custom-button"> PEDIR PRESUPUESTO </v-btn></a
-        >
-      </div>
-    </v-col>
+      </v-col>
+    </div>
   </v-row>
 </template>
 
@@ -46,6 +47,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.custom-img {
+  width: 100px;
+  height: auto;
+  display: flex;
+  align-content: center;
+}
 .custom-button {
   display: flex;
   align-items: center;

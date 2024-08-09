@@ -1,40 +1,37 @@
 <template>
-  <div id="app" class="background-container">
+  <div id="app">
     <v-app>
-      <v-navigation-drawer v-model="drawer" app temporary>
+      <v-navigation-drawer v-model="drawer" temporary right>
         <v-list>
-          <v-list-item @click="scrollToSection('quienesSomos')">
-            <v-list-item-title>Quienes Somos</v-list-item-title>
+          <v-list-item>
+            <row class="d-flex justify-center">
+              <div class="imagen-wrapper">
+            <v-img src="./assets/logoRedondo-sinFondo.png"  aspect-ratio="1.5"></v-img>
+          </div>
+          </row>
           </v-list-item>
           <v-list-item
-            v-for="(item, index) in items"
+            v-for="(menu, index) in menus"
             :key="index"
-            @click="scrollToSection(item.path)"
+            @click="handleItemClick(menu.path)"
           >
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item @click="scrollToSection('preguntas')">
-            <v-list-item-title>Preguntas Frecuentes</v-list-item-title>
-          </v-list-item>
-          <v-list-item @click="scrollToSection('contactos')">
-            <v-list-item-title>Contactos</v-list-item-title>
+            <v-list-item-title>{{ menu.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
 
       <v-app-bar app color="black" dark>
         <v-container fluid>
-          <v-row justify="space-between">
-            <v-col cols="auto">
+          <v-row class="encabezado">
+            <v-col class="d-flex align-center justify-start" cols="4" md="4">
               <v-img
                 alt="Logo Seguridad Ya"
                 src="../src/assets/logo.jpg"
-                style="width: 300px"
+                style="width:70%"
                 @click="scrollToSection('cerco')"
               />
             </v-col>
-            <v-col>
-              <v-spacer></v-spacer>
+            <v-col class="d-flex align-center justify-end" cols="8" md="8">
               <v-app-bar-nav-icon
                 @click="drawer = !drawer"
                 v-if="mobileView"
@@ -46,7 +43,7 @@
                 >
                 <v-btn class="button">
                   Productos
-                  <v-menu activator="parent">
+                  <v-menu activator="parent" rigth>
                     <v-list>
                       <v-list-item
                         v-for="(item, index) in items"
@@ -160,6 +157,7 @@
 <script>
 export default {
   data: () => ({
+    drawer:false,
     items: [
       { title: "Alarmas", path: "alarmas" },
       { title: "Automatización de portones", path: "automatizados" },
@@ -186,6 +184,10 @@ export default {
         element.scrollIntoView({ behavior: "smooth" });
       }
     },
+    handleItemClick(path) {
+      this.scrollToSection(path);
+      this.drawer = false; // Cierra el drawer después de hacer clic
+    },
     handleView() {
       this.mobileView = window.innerWidth <= 1025;
     },
@@ -200,6 +202,17 @@ export default {
 </script>
 
 <style>
+
+.v-navigation-drawer--right {
+  right: 0;
+  left: auto;
+}
+.responsive-image{
+  width: 5%;
+}
+.imagen-wrapper{
+  width: 40%;
+}
 .app {
   position: relative;
   height: 100%;
@@ -213,7 +226,13 @@ export default {
   display: flex;
   flex-direction: column;
 }
-
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 .button-menu {
   color: #d7d7d7;
   font-weight: bold;
@@ -255,11 +274,7 @@ export default {
 #navigation-icon i {
   font-size: 2rem;
 }
-.header-content {
-  display: flex;
-  flex-direction: row;
-  width: 25rem;
-}
+
 main {
   margin: 0;
   padding: 0;
@@ -309,6 +324,21 @@ footer div {
 #navigation-icon {
   display: block; /* Ocultar por defecto */
 }
+main {
+  padding-top: 150px;
+  background-color: white;
+}
+.mt-10 {
+  padding-bottom: 7rem;
+}
+
+.icon-menu {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
 @media (max-width: 1024px) {
   .fixed-header {
     flex-direction: column;
@@ -332,11 +362,6 @@ footer div {
 }
 
 @media (max-width: 768px) {
-  .header-content {
-    display: flex;
-
-    width: 15rem;
-  }
   v-img {
     width: 100px;
   }
@@ -348,19 +373,4 @@ footer div {
   }
 }
 
-main {
-  padding-top: 130px;
-  background-color: white;
-}
-.mt-10 {
-  padding-bottom: 7rem;
-}
-
-.icon-menu {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 20px;
-  top: 16px;
-}
 </style>
