@@ -6,7 +6,11 @@
           <v-list-item @click="scrollToSection('quienesSomos')">
             <v-list-item-title>Quienes Somos</v-list-item-title>
           </v-list-item>
-          <v-list-item v-for="(item, index) in items" :key="index" @click="scrollToSection(item.path)">
+          <v-list-item
+            v-for="(item, index) in items"
+            :key="index"
+            @click="scrollToSection(item.path)"
+          >
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
           <v-list-item @click="scrollToSection('preguntas')">
@@ -18,33 +22,52 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-app-bar app color="black" dark class="d-flex justify-space-around">
-        <v-img
-          alt="Logo Seguridad Ya"
-          src="../src/assets/logo.jpg"
-          style="width: 400px"
-          @click="scrollToSection('cerco')"
-        />
+      <v-app-bar app color="black" dark>
+        <v-container fluid>
+          <v-row justify="space-between">
+            <v-col cols="auto">
+              <v-img
+                alt="Logo Seguridad Ya"
+                src="../src/assets/logo.jpg"
+                style="width: 300px"
+                @click="scrollToSection('cerco')"
+              />
+            </v-col>
+            <v-col>
+              <v-spacer></v-spacer>
+              <v-app-bar-nav-icon
+                @click="drawer = !drawer"
+                v-if="mobileView"
+              ></v-app-bar-nav-icon>
 
-        <v-spacer></v-spacer>
-
-        <v-app-bar-nav-icon @click="drawer = !drawer" v-if="mobileView"></v-app-bar-nav-icon>
-
-        <div v-if="!mobileView" class="menu-buttons d-flex justify-space-between">
-          <v-btn class="button" @click="scrollToSection('quienesSomos')">Quienes Somos</v-btn>
-          <v-btn class="button">
-            Productos
-            <v-menu activator="parent">
-              <v-list>
-                <v-list-item v-for="(item, index) in items" :key="index" @click="scrollToSection(item.path)">
-                  <v-list-item-title>{{ item.title }}</v-list-item-title>
-                </v-list-item>
-              </v-list>
-            </v-menu>
-          </v-btn>
-          <v-btn class="button" @click="scrollToSection('preguntas')">Preguntas Frecuentes</v-btn>
-          <v-btn class="button" @click="scrollToSection('contactos')">Contactos</v-btn>
-        </div>
+              <div v-if="!mobileView">
+                <v-btn class="button" @click="scrollToSection('quienesSomos')"
+                  >Quienes Somos</v-btn
+                >
+                <v-btn class="button">
+                  Productos
+                  <v-menu activator="parent">
+                    <v-list>
+                      <v-list-item
+                        v-for="(item, index) in items"
+                        :key="index"
+                        @click="scrollToSection(item.path)"
+                      >
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                      </v-list-item>
+                    </v-list>
+                  </v-menu>
+                </v-btn>
+                <v-btn class="button" @click="scrollToSection('preguntas')"
+                  >Preguntas Frecuentes</v-btn
+                >
+                <v-btn class="button" @click="scrollToSection('contactos')"
+                  >Contactos</v-btn
+                >
+              </div>
+            </v-col>
+          </v-row>
+        </v-container>
       </v-app-bar>
 
       <main>
@@ -59,25 +82,75 @@
           class="whatsapp-button"
           elevation="24"
         >
-          <a href="https://api.whatsapp.com/send?phone=5492616675624" target="_blank" class="RNpQXe" style="width: 40px">
-            <v-img src="../src/assets/whatsapp.png" alt="Enlace" class="xbGufb" style="width: 40px; height: 40px" width="48" height="48"/>
+          <a
+            href="https://api.whatsapp.com/send?phone=5492616675624"
+            target="_blank"
+            class="RNpQXe"
+            style="width: 40px"
+          >
+            <v-img
+              src="../src/assets/whatsapp.png"
+              alt="Enlace"
+              class="xbGufb"
+              style="width: 40px; height: 40px"
+              width="48"
+              height="48"
+            />
           </a>
         </v-btn>
       </v-fab-transition>
 
       <footer class="footer">
         <div>
-          <v-img alt="Logo" src="../src/assets/logoRedondo.png" style="width: 100px"/>
+          <v-img
+            alt="Logo"
+            src="../src/assets/logoRedondo.png"
+            style="width: 100px"
+          />
         </div>
         <div class="d-flex flex-row">
-          <a href="https://www.instagram.com/seguridadyaoficial/" target="_blank" class="RNpQXe" style="width: 40px">
-            <v-img src="../src/assets/instagram.png" alt="Instagram" class="xbGufb" style="width: 40px; height: 40px"/>
+          <a
+            href="https://www.instagram.com/seguridadyaoficial/"
+            target="_blank"
+            class="RNpQXe"
+            style="width: 40px"
+          >
+            <v-img
+              src="../src/assets/instagram.png"
+              alt="Instagram"
+              class="xbGufb"
+              style="width: 40px; height: 40px"
+            />
           </a>
-          <a href="https://www.facebook.com/Seguridadyaoficial-100856535495510" target="_blank" class="RNpQXe" style="width: 40px">
-            <v-img src="../src/assets/facebook.png" alt="Facebook" class="xbGufb" style="width: 40px; height: 40px" width="48" height="48"/>
+          <a
+            href="https://www.facebook.com/Seguridadyaoficial-100856535495510"
+            target="_blank"
+            class="RNpQXe"
+            style="width: 40px"
+          >
+            <v-img
+              src="../src/assets/facebook.png"
+              alt="Facebook"
+              class="xbGufb"
+              style="width: 40px; height: 40px"
+              width="48"
+              height="48"
+            />
           </a>
-          <a href="https://api.whatsapp.com/send?phone=5492616675624" target="_blank" class="RNpQXe" style="width: 40px">
-            <v-img src="../src/assets/whatsapp.png" alt="Enlace" class="xbGufb" style="width: 40px; height: 40px" width="48" height="48"/>
+          <a
+            href="https://api.whatsapp.com/send?phone=5492616675624"
+            target="_blank"
+            class="RNpQXe"
+            style="width: 40px"
+          >
+            <v-img
+              src="../src/assets/whatsapp.png"
+              alt="Enlace"
+              class="xbGufb"
+              style="width: 40px; height: 40px"
+              width="48"
+              height="48"
+            />
           </a>
         </div>
       </footer>
@@ -135,24 +208,18 @@ export default {
     "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: black;
   background-color: white;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
-.contenedor {
-  flex: 1;
-  padding-top: 130px;
-}
-.button {
-  color: black;
+.button-menu {
+  color: #d7d7d7;
   font-weight: bold;
-  border-radius: 40px;
+  border-radius: 60px;
   padding: 10px;
-  width: 150px;
+  width: 100px;
   height: 20px;
   margin-inline: 10px;
   font-size: 13px;
@@ -166,9 +233,9 @@ export default {
   font-size: 16px; /* Tamaño del texto */
   color: black; /* Color del texto */
 }
-.button:hover,
-.button:focus {
-  background-color: #848484; /* Color de fondo al pasar el mouse */
+.button-menu:hover,
+.button-menu:focus {
+  background-color: red; /* Color de fondo al pasar el mouse */
   color: white;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
