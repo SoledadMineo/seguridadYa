@@ -6,8 +6,8 @@
       <v-img
         src="../assets/ubicacion.png"
         class="imagen"
-        width="40"
-        height="40"
+        width="25"
+        height="25"
       ></v-img>
       <p>
         España 1340, Piso 14 Oficina 3<br />
@@ -19,8 +19,8 @@
       <v-img
         src="../assets/correo-electronico.png"
         class="imagen"
-        width="40"
-        height="40"
+        width="25"
+        height="25"
       ></v-img>
       <p>seguridadyamza@gmail.com</p>
     </div>
@@ -29,12 +29,12 @@
       <v-img
         src="../assets/boton-de-simbolo-de-telefono.png"
         class="imagen"
-        width="40"
-        height="40"
+        width="25"
+        height="25"
       ></v-img>
       <p>+54 9 2616 67-5624</p>
     </div>
-
+    <br />
     <a
       href="https://api.whatsapp.com/send?phone=5492616675624"
       target="_blank"

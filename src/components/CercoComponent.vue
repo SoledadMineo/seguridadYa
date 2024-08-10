@@ -1,35 +1,34 @@
 <template>
   <v-row id="cerco">
     <div>
-      <v-img src="../assets/logoRedondo-sinFondo.png" class="custom-img" />
+      <v-img src="../assets/logoRedondo-sinFondo.png" />
     </div>
     <div class="contenedor">
-      <v-col sm="12" xs="12" md="6">
-        <v-img class="responsive-img" src="../assets/cerco.png" alt="cercos" />
+      <v-col md="4" class="imagen">
+        <v-img src="../assets/cerco.png" alt="cercos" />
       </v-col>
 
-      <v-col sm="12" xs="12" md="6">
-        <div class="titulo">
+      <v-col md="8">
+        <div class="celda">
           <div class="subtitulo">
             <h1>cercos</h1>
             <h3>eléctricos</h3>
           </div>
-
-          <div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              veritatis numquam reiciendis blanditiis accusantium deserunt
-              fugiat. Eum natus labore delectus aperiam, expedita doloribus
-              voluptatibus harum! Nobis ipsa quibusdam quam? Ullam?
-            </p>
+          <p class="custom-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
+            Eum natus labore delectus aperiam, expedita doloribus voluptatibus
+            harum! Nobis ipsa quibusdam quam? Ullam?
+          </p>
+          <div class="whatsApp">
+            <a
+              href="https://api.whatsapp.com/send?phone=5492616675624"
+              target="_blank"
+              class="RNpQXe"
+            >
+              <v-btn class="custom-button"> PEDIR PRESUPUESTO </v-btn></a
+            >
           </div>
-          <a
-            href="https://api.whatsapp.com/send?phone=5492616675624"
-            target="_blank"
-            class="RNpQXe"
-          >
-            <v-btn class="custom-button"> PEDIR PRESUPUESTO </v-btn></a
-          >
         </div>
       </v-col>
     </div>
@@ -47,11 +46,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.custom-img {
-  width: 100px;
+.imagen {
+  width: 10px;
   height: auto;
-  display: flex;
-  align-content: center;
+  margin: 3rem;
+  padding: 2rem;
 }
 .custom-button {
   display: flex;
@@ -74,19 +73,28 @@ export default {
 .contenedor {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 25%;
+  background-size: 100% 8%;
+  background-position: 10% 45%;
 }
-.titulo {
+.celda {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin-left: 10%;
+  margin: 3rem 5rem 5rem 0rem;
+}
+.whatsApp {
+  display: flex;
+  justify-content: center; /* Centrando horizontalmente */
+  width: 100%;
 }
 .subtitulo {
   display: flex;
   flex-direction: column;
+}
+.custom-paragraph {
+  margin-right: 15%;
+  text-align: justify;
 }
 
 div {
@@ -95,10 +103,10 @@ div {
 }
 h1 {
   color: #ec0c05;
-  font-size: 80px;
+  font-size: 70px;
 }
 p {
-  font-size: 20px;
+  font-size: 17px;
 }
 h3 {
   color: black;
@@ -120,7 +128,7 @@ h3 {
     font-size: 20px; /* Reducir tamaño de fuente para h3 */
   }
   .responsive-img {
-    height: 500px;
+    height: 50%;
     width: auto;
   }
   .custom-button {

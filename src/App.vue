@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <v-app>
-      <v-navigation-drawer v-model="drawer" temporary right>
+      <v-navigation-drawer v-model="drawer" permanent>
         <v-list>
           <v-list-item>
             <row class="d-flex justify-center">
               <div class="imagen-wrapper">
-            <v-img src="./assets/logoRedondo-sinFondo.png"  aspect-ratio="1.5"></v-img>
-          </div>
-          </row>
+                <v-img
+                  src="./assets/logoRedondo-sinFondo.png"
+                  aspect-ratio="1.5"
+                ></v-img>
+              </div>
+            </row>
           </v-list-item>
           <v-list-item
             v-for="(menu, index) in menus"
@@ -27,8 +30,9 @@
               <v-img
                 alt="Logo Seguridad Ya"
                 src="../src/assets/logo.jpg"
-                style="width:70%"
+                style="width: 70%"
                 @click="scrollToSection('cerco')"
+                class="hover-cursor"
               />
             </v-col>
             <v-col class="d-flex align-center justify-end" cols="8" md="8">
@@ -38,9 +42,6 @@
               ></v-app-bar-nav-icon>
 
               <div v-if="!mobileView">
-                <v-btn class="button" @click="scrollToSection('quienesSomos')"
-                  >Quienes Somos</v-btn
-                >
                 <v-btn class="button">
                   Productos
                   <v-menu activator="parent" rigth>
@@ -55,6 +56,9 @@
                     </v-list>
                   </v-menu>
                 </v-btn>
+                <v-btn class="button" @click="scrollToSection('quienesSomos')"
+                  >Quienes Somos</v-btn
+                >
                 <v-btn class="button" @click="scrollToSection('preguntas')"
                   >Preguntas Frecuentes</v-btn
                 >
@@ -157,7 +161,7 @@
 <script>
 export default {
   data: () => ({
-    drawer:false,
+    drawer: false,
     items: [
       { title: "Alarmas", path: "alarmas" },
       { title: "Automatización de portones", path: "automatizados" },
@@ -202,21 +206,21 @@ export default {
 </script>
 
 <style>
-
 .v-navigation-drawer--right {
   right: 0;
   left: auto;
 }
-.responsive-image{
+.responsive-image {
   width: 5%;
 }
-.imagen-wrapper{
+.imagen-wrapper {
   width: 40%;
 }
 .app {
   position: relative;
   height: 100%;
   margin: 0;
+  padding: 0%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -232,6 +236,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+}
+.hover-cursor {
+  cursor: pointer;
 }
 .button-menu {
   color: #d7d7d7;
@@ -252,8 +259,8 @@ export default {
   font-size: 16px; /* Tamaño del texto */
   color: black; /* Color del texto */
 }
-.button-menu:hover,
-.button-menu:focus {
+.button:hover,
+.button:focus {
   background-color: red; /* Color de fondo al pasar el mouse */
   color: white;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
@@ -265,19 +272,22 @@ export default {
   background-color: #25d366 !important; /* Color verde de WhatsApp */
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
-#navigation-icon {
-  padding: 10px 10px 20px;
-  margin-right: 10px;
-  cursor: pointer;
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
-
-#navigation-icon i {
-  font-size: 2rem;
-}
-
 main {
   margin: 0;
   padding: 0;
+  padding-top: 100px;
+  background-color: white;
 }
 a {
   text-decoration: none;
@@ -309,24 +319,6 @@ header {
 footer div {
   flex: 1;
   text-align: center;
-}
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-  background-color: black;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-#navigation-icon {
-  display: block; /* Ocultar por defecto */
-}
-main {
-  padding-top: 150px;
-  background-color: white;
 }
 .mt-10 {
   padding-bottom: 7rem;
@@ -372,5 +364,4 @@ main {
     display: flex;
   }
 }
-
 </style>

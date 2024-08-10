@@ -11,7 +11,7 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda1 medium-celda" cols="12" md="6">
+          <td class="custom-celda1" cols="12" md="6">
             <h2>1. ¿ES LEGAL INSTALAR CERCOS ELÉCTRICOS?</h2>
             <br />
             <p>
@@ -75,45 +75,52 @@
 .caja {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 100% 5%;
   background-position: 25%;
-  overflow-x: auto;
+  margin-top: 5%;
 }
 
 .contenedor {
   display: flex;
   justify-content: center;
   background-color: #ec0c05;
-  
-  
-  box-sizing: border-box;
+  width: 60%;
 }
 .custom-table {
   width: 100%;
   max-width: 100%;
   font-size: 15px;
-  padding: 10px;
+  padding: 7px;
 }
 .custom-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #848484; /* Cambiar color de fondo de las cabeceras */
   height: auto;
+  padding: 5%;
 }
-.custom-celda .custom-celda1, .custom-celda2, .custom-celda3, .custom-celda4, .custom-celda5 {
+.custom-celda,
+.custom-celda1,
+.custom-celda2,
+.custom-celda3,
+.custom-celda4,
+.custom-celda5 {
   color: black;
-  border: 30px;
-  padding: 10px;
+  padding: 15px;
   vertical-align: top;
 }
 .custom-celda1 {
   background-color: #d7d7d7;
 }
-.custom-celda2  {
+.custom-celda2 {
   background-color: #848484; /* Cambiar color de fondo de las celdas */
 }
 .custom-celda4 {
   background-color: #d7d7d7;
 }
-.custom-celda3  {
+.custom-celda3 {
   background-color: #848484; /* Cambiar color de fondo de las celdas */
 }
 .custom-celda5 {
@@ -155,38 +162,37 @@ p {
     font-size: 18px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
     margin-left: 0; /* Elimina el margen izquierdo */
   }
-  .custom-celda{
+  .custom-celda {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .custom-celda1{
-  background-color: #d7d7d7;
-  color: black;
-}
-.custom-celda2 {
-  background-color: #848484;
-  color: black;
-}
- .custom-celda3{
-  background-color: #d7d7d7;
-  color: black;
- }
- .custom-celda4 {
-  background-color: #848484;
-  color: black;
-}
+  .custom-celda1 {
+    background-color: #d7d7d7;
+    color: black;
+  }
+  .custom-celda2 {
+    background-color: #848484;
+    color: black;
+  }
+  .custom-celda3 {
+    background-color: #d7d7d7;
+    color: black;
+  }
+  .custom-celda4 {
+    background-color: #848484;
+    color: black;
+  }
 
- .custom-celda5{
-  background-color: #d7d7d7;
-  color: black;
- }
+  .custom-celda5 {
+    background-color: #d7d7d7;
+    color: black;
+  }
 
-  tr{
+  tr {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
 }
-
 </style>

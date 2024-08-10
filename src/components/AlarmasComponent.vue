@@ -1,9 +1,9 @@
 <template>
   <v-row class="contenedor" id="alarmas">
-    <v-col sm="12" xs="12" md="6">
+    <v-col md="4">
       <v-img class="responsive-img" src="../assets/alarmas.png" alt="alarmas" />
     </v-col>
-    <v-col sm="12" xs="12" md="6">
+    <v-col md="8">
       <div class="titulo">
         <div class="subtitulo">
           <h1>alarmas</h1>
@@ -34,14 +34,14 @@ export default {
 .contenedor {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 25%;
+  background-size: 100% 8%;
+  background-position: 10% 50%;
 }
 .titulo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: 10%;
 }
 .subtitulo {
@@ -49,23 +49,25 @@ export default {
   flex-direction: column;
 }
 .responsive-img {
-  height: 700px;
+  height: 450px;
   width: auto;
+  margin: 0rem 0rem 0rem 5rem;
 }
+
 div {
   display: flex;
   justify-content: space-between;
 }
 h1 {
   color: #ec0c05;
-  font-size: 80px;
+  font-size: 70px;
 }
 h3 {
   color: black;
   font-size: 40px;
 }
 p {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 @media (max-width: 600px) {
@@ -76,7 +78,6 @@ p {
     padding: 5%;
   }
   .titulo {
-   
   }
   .subtitulo h1 {
     font-size: 25px;
@@ -85,8 +86,8 @@ p {
     font-size: 20px;
   }
   .responsive-img {
-   height: 300px;
-   width: auto;
+    height: 300px;
+    width: auto;
   }
   p {
     font-size: 16px;

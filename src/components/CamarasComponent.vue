@@ -1,22 +1,24 @@
 <template>
-  <v-row class="contenedor" id="camaras">
-    <v-col cols="12" sm="12" xs="12" md="6">
-      <div class="titulo">
-        <div class="subtitulo">
-          <h1>cámaras</h1>
-          <h3>de seguridad</h3>
+  <v-row id="camaras">
+    <div class="contenedor">
+      <v-col md="7">
+        <div class="celda">
+          <div class="subtitulo">
+            <h1>cámaras</h1>
+            <h3>de seguridad</h3>
+          </div>
+          <p class="custom-paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
+            Eum natus labore delectus aperiam, expedita doloribus voluptatibus
+            harum! Nobis ipsa quibusdam quam? Ullam?
+          </p>
         </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
-          Eum natus labore delectus aperiam, expedita doloribus voluptatibus
-          harum! Nobis ipsa quibusdam quam? Ullam?
-        </p>
-      </div>
-    </v-col>
-    <v-col cols="12" sm="12" xs="12" md="6">
-      <v-img class="responsive-img" src="../assets/camaras.png" alt="camaras" />
-    </v-col>
+      </v-col>
+      <v-col md="5" class="imagen">
+        <v-img src="../assets/camaras.png" alt="camaras" />
+      </v-col>
+    </div>
   </v-row>
 </template>
 
@@ -34,23 +36,27 @@ export default {
 .contenedor {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 25%;
+  background-size: 100% 8%;
+  background-position: 10% 50%;
 }
-.titulo {
+.celda {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  margin-left: 10%;
+  margin: 0rem 5rem 5rem 5rem;
+}
+.imagen {
+  height: 500px;
+  width: auto;
+}
+.custom-paragraph {
+  margin-right: 0%;
+  text-align: justify;
 }
 .subtitulo {
   display: flex;
   flex-direction: column;
-}
-.responsive-img {
-  height: 700px;
-  width: auto;
 }
 div {
   display: flex;
@@ -58,10 +64,10 @@ div {
 }
 h1 {
   color: #ec0c05;
-  font-size: 80px;
+  font-size: 70px;
 }
 p {
-  font-size: 20px;
+  font-size: 17px;
 }
 h3 {
   color: black;
