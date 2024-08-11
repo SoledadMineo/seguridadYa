@@ -10,10 +10,9 @@
           <h3>monitoreadas</h3>
         </div>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
-          Eum natus labore delectus aperiam, expedita doloribus voluptatibus
-          harum! Nobis ipsa quibusdam quam? Ullam?
+          Un sistema de videovigilancia, también conocido como CCTV (Circuito Cerrado de Televisión), 
+          es una solución de seguridad que utiliza cámaras de video para monitorear y grabar imágenes de un área específica.
+
         </p>
       </div>
     </v-col>

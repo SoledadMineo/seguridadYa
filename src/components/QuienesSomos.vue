@@ -11,11 +11,13 @@
           <v-card-text class="texto"
             ><strong
               >Somos una empresa mendocina con más de una década de trayectoria,
-              brindando siempre el mejor servicio de seguridad ..... Somos una
-              empresa mendocina con más de una década de trayectoria, brindando
-              siempre el mejor servicio de seguridad ..... Somos una empresa
-              mendocina con más de una década de trayectoria, brindando siempre
-              el mejor servicio de seguridad .....
+              brindando siempre el mejor servicio de seguridad debido a los equipos homologados 
+              con los que trabajamos.
+              Ofreciendo alarmas domiciliarias todas las marcas, sistemas de video de videovigilancia 
+              y circuito cerrado de televisión diseñados para supervisar y grabar imágenes
+              en áreas específicas.
+              
+  
             </strong></v-card-text
           >
         </v-card>
@@ -37,10 +39,13 @@
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
           <v-img src="../assets/pngegg.png" height="100px"></v-img>
-          <v-card-title>Garantía</v-card-title>
+          <v-card-title>Garantía oficial</v-card-title>
           <v-card-text
-            >Garantía extendida por 5 años en los trabajos de
-            infraestructura.</v-card-text
+            >Garantía oficial brindando a los consumidores seguridad y protección
+            al realizar la compra, asegurándoles que no tendrán que incurrir en costos
+            adicionales si el producro presenta fallas dentro de la garantía extendida 
+            por 5 años en los trabajos de infraestructura.
+            </v-card-text
           >
         </v-card>
       </v-col>
@@ -48,17 +53,24 @@
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
           <v-img src="../assets/pngegg(2).png" height="100px"></v-img>
-          <v-card-title>Financiación</v-card-title>
-          <v-card-text> Financiación propia y/o bancario. </v-card-text>
+          <v-card-title>Financiación propia</v-card-title>
+          <v-card-text>
+        Recibimos tarjetas de crédito, tarjetas de débito
+        y financiación propia o bancaria a convenir. 
+        </v-card-text>
         </v-card>
       </v-col>
 
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
           <v-img src="../assets/pngegg(3).png" height="100px"></v-img>
-          <v-card-title>Posventa</v-card-title>
+          <v-card-title>Servicio Posventa</v-card-title>
           <v-card-text>
-            Servicio posventa y comunicación inmediata con nuestros clientes.
+            Revisiones periódicas para asegurar que el cerco eléctrico está
+            en buen estado. Esto incluye la inspección de los componentes, el ajuste
+            de las tensiones, la verificación del correcto funcionamiento del sistema de alarma,
+            y la comprobación de la integridad del cableado y los aisladores.
+            <del></del>
           </v-card-text>
         </v-card>
       </v-col>
