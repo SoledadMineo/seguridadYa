@@ -7,19 +7,19 @@
             src="../assets/logoRedondo-sinFondo.png"
             height="150px"
           ></v-img>
-          <v-card-title>Quienes Somos</v-card-title>
+          <v-card-title>¿Quiénes Somos?</v-card-title>
           <v-card-text class="texto"
-            ><strong
-              >Somos una empresa mendocina con más de una década de trayectoria,
-              brindando siempre el mejor servicio de seguridad debido a los equipos homologados 
+            ><strong>
+              Somos una empresa mendocina con más de una década de trayectoria,
+              brindando siempre el mejor servicio de seguridad con equipos homologados 
               con los que trabajamos.
-              Ofreciendo alarmas domiciliarias todas las marcas, sistemas de video de videovigilancia 
-              y circuito cerrado de televisión diseñados para supervisar y grabar imágenes
-              en áreas específicas.
+              <br>
+              <br>
+              Contamos con años de experiencia en sistemas de antivandalismo. 
+              Las instalaciones se realizan en el día y se ofrece mantenimiento anual.
               
   
-            </strong></v-card-text
-          >
+            </strong></v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -27,12 +27,11 @@
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
           <v-img src="../assets/pngegg(1).png" height="100px"></v-img>
-          <v-card-title>Productos Homologados</v-card-title>
-          <v-card-text
-            >Trabajamos con productos homologados que cumplen con normativas y
-            regulaciones que garantizan su seguridad eléctrica y capacidad para
-            su uso previsto.</v-card-text
-          >
+          <v-card-title>Equipos Homologados</v-card-title>
+          <v-card-text>
+            Son productos de primera calidad que cumplen con normativas y
+            regulaciones que garantizan su seguridad eléctrica y su capacidad para
+            su uso previsto.</v-card-text>
         </v-card>
       </v-col>
 
@@ -40,13 +39,13 @@
         <v-card class="card1" elevation="20">
           <v-img src="../assets/pngegg.png" height="100px"></v-img>
           <v-card-title>Garantía oficial</v-card-title>
-          <v-card-text
-            >Garantía oficial brindando a los consumidores seguridad y protección
-            al realizar la compra, asegurándoles que no tendrán que incurrir en costos
-            adicionales si el producro presenta fallas dentro de la garantía extendida 
-            por 5 años en los trabajos de infraestructura.
-            </v-card-text
-          >
+          <v-card-text>
+            Es nuestro compromiso de ofrecer seguridad y protección al realizar la compra,
+            asegurando que no tendrán que incurrir en costos adicionales.
+            <br>
+            <br>
+            Garantía extendida de 5 años en trabajos de infraestructura.
+            </v-card-text>
         </v-card>
       </v-col>
 
@@ -70,7 +69,6 @@
             en buen estado. Esto incluye la inspección de los componentes, el ajuste
             de las tensiones, la verificación del correcto funcionamiento del sistema de alarma,
             y la comprobación de la integridad del cableado y los aisladores.
-            <del></del>
           </v-card-text>
         </v-card>
       </v-col>

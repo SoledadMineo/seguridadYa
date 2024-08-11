@@ -9,11 +9,11 @@
           <h1>alarmas</h1>
           <h3>monitoreadas</h3>
         </div>
-        <p>
-          Un sistema de videovigilancia, también conocido como CCTV (Circuito Cerrado de Televisión), 
+          Un sistema de videovigilancia, también conocido como CCTV (Circuito Cerrado de Televisión),
           es una solución de seguridad que utiliza cámaras de video para monitorear y grabar imágenes de un área específica.
-
-        </p>
+        <br>
+        
+        
       </div>
     </v-col>
   </v-row>

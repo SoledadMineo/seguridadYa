@@ -15,10 +15,7 @@
             <h3>eléctricos</h3>
           </div>
           <p class="custom-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
-            Eum natus labore delectus aperiam, expedita doloribus voluptatibus
-            harum! Nobis ipsa quibusdam quam? Ullam?
+            Su consumo de energía es mínimo.
           </p>
           <div class="whatsApp">
             <a
