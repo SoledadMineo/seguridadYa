@@ -55,24 +55,27 @@
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
-              Si, requiere un mínimo mantenimiento por parte de los <strong>usuarios</strong> en mantener una poda prolija.
+              Si, requiere un mínimo mantenimiento de poda por parte de los <strong>usuarios</strong>.
+              <br />
               La empresa ofrece un <strong>mantenimiento anual</strong> que consiste en:
-               cambio de batería, control de estructura y tensado, reemplazo de los LEDs y
-              Cambio de carteles reguladores preventivos.
+              <ul type="square">
+              <li>Cambio de batería,</li>
+              <li>Control de estructura y tensado,</li>
+              <li>Reemplazo de los LEDs y</li>
+              <li>Cambio de carteles reguladores preventivos.</li>       
+              </ul>   
+              
             </p>
           </td>
         </tr>
         <td class="custom-celda6 medium-celda" cols="12" md="6">
-            <h2>6. ¿REQUIERE UNA INVERSIÓN ALTA PARA TENER MI CERCO ELÉCTRICO?</h2>
+            <h2>6. ¿NECESITO UNA ALTA INVERSIÓN PARA TENER MI CERCO ELÉCTRICO?</h2>
             <br />
             <p>
-              No,  requiere un mínimo mantenimiento. Los
-              <strong>usuarios</strong> deben mantener una poda prolija.
-              Nosotros debemos realizar un
-              <strong>mantenimiento anual</strong> que consiste en cambio de
-              batería, control de estructura y tensado, reemplazo de los LEDs y
-              Cambio de carteles reguladores preventivos.
-            </p>
+              No, porque los equipos homologados se pagan 
+              <strong>por única vez</strong> y no necesito pagar un mantenimiento
+              <strong> mensual</strong> por el control de monitoreo.
+          </p>
           </td>
       </v-table>
     </v-container>
@@ -163,7 +166,9 @@ h2 {
 p {
   text-align: justify;
 }
-
+li {
+  text-align: justify;
+}
 @media (max-width: 600px) {
   .custom-header {
     width: 100%;

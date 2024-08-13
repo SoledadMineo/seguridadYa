@@ -5,7 +5,7 @@
         <div class="celda">
           <div class="subtitulo">
             <h1>cámaras</h1>
-            <h3>de seguridad</h3>
+            <h3>de Seguridad</h3>
           </div>
           <p class="custom-paragraph">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
