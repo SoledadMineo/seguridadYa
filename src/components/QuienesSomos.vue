@@ -11,11 +11,10 @@
           <v-card-text class="texto"
             ><strong>
               Somos una empresa mendocina con más de una década de trayectoria,
-              brindando siempre el mejor servicio de seguridad con equipos homologados 
-              con los que trabajamos.
+              brindando siempre el mejor servicio de seguridad con equipos homologados
+              y de gestión automonitoreo.
               <br>
-              <br>
-              Contamos con años de experiencia en sistemas de antivandalismo. 
+              <br>        
               Las instalaciones se realizan en el día y se ofrece mantenimiento anual.
               
   

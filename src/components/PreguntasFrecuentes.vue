@@ -32,13 +32,13 @@
         <tr>
           <td class="custom-celda3 medium-celda" cols="12" md="6">
             <h2>
-              3. ¿SE NECESITA INFORMACIÓN PARA INSTALAR MI CERCO ELÉCTRICO?
+              3. ¿TENGO QUE PAGAR UN ABONO MENSUAL POR EL SERVICIO DE MONITOREO?
             </h2>
             <br />
             <p>
-              Nuestros operarios están altamente capacitados y avalados por la
-              planta de elaboración del producto, para poder brindarte toda la
-              información que necesites.
+              NO, no se paga porque trabajamos con alarmas Automonitoreadas, es decir que permiten
+              a los usuarios controlar y gestionar su propio sistema de alarma
+              sin necesidad de conectarse a una central de monitoreo externo.
             </p>
           </td>
           <td class="custom-celda4 medium-celda" cols="12" md="6">
@@ -51,11 +51,22 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda5 medium-celda" colspan="2" cols="12" md="6">
-            <h2>5. ¿REQUIERE MANTENIMIENTO?</h2>
+          <td class="custom-celda5 medium-celda" cols="12" md="6">
+            <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
-              Si, requiere un mínimo mantenimiento. Los
+              Si, requiere un mínimo mantenimiento por parte de los <strong>usuarios</strong> en mantener una poda prolija.
+              La empresa ofrece un <strong>mantenimiento anual</strong> que consiste en:
+               cambio de batería, control de estructura y tensado, reemplazo de los LEDs y
+              Cambio de carteles reguladores preventivos.
+            </p>
+          </td>
+        </tr>
+        <td class="custom-celda6 medium-celda" cols="12" md="6">
+            <h2>6. ¿REQUIERE UNA INVERSIÓN ALTA PARA TENER MI CERCO ELÉCTRICO?</h2>
+            <br />
+            <p>
+              No,  requiere un mínimo mantenimiento. Los
               <strong>usuarios</strong> deben mantener una poda prolija.
               Nosotros debemos realizar un
               <strong>mantenimiento anual</strong> que consiste en cambio de
@@ -63,7 +74,6 @@
               Cambio de carteles reguladores preventivos.
             </p>
           </td>
-        </tr>
       </v-table>
     </v-container>
   </div>
@@ -106,7 +116,8 @@
 .custom-celda2,
 .custom-celda3,
 .custom-celda4,
-.custom-celda5 {
+.custom-celda5,
+.custom-celda6 {
   color: black;
   padding: 15px;
   vertical-align: top;
@@ -125,6 +136,9 @@
 }
 .custom-celda5 {
   background-color: #d7d7d7;
+}
+.custom-celda6 {
+  background-color: #848484; /* Cambiar color de fondo de las celdas */
 }
 
 .image {
@@ -186,6 +200,11 @@ p {
 
   .custom-celda5 {
     background-color: #d7d7d7;
+    color: black;
+  }
+
+  .custom-celda6 {
+    background-color: #848484;
     color: black;
   }
 

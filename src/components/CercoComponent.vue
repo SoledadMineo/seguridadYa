@@ -11,8 +11,8 @@
       <v-col md="8">
         <div class="celda">
           <div class="subtitulo">
-            <h1>cercos</h1>
-            <h3>eléctricos</h3>
+            <h1>Cercos</h1>
+            <h3>Eléctricos</h3>
           </div>
           <p class="custom-paragraph">
             Su consumo de energía es mínimo.

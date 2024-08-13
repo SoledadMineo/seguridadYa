@@ -4,8 +4,8 @@
       <v-col md="7">
         <div class="celda">
           <div class="subtitulo">
-            <h1>automatización</h1>
-            <h3>de portones</h3>
+            <h1>Automatización</h1>
+            <h3>de Portones</h3>
           </div>
 
           <p class="custom-paragraph">
