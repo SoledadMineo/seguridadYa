@@ -64,17 +64,18 @@
               <li>Reemplazo de los LEDs y</li>
               <li>Cambio de carteles reguladores preventivos.</li>       
               </ul>   
-              
+
             </p>
           </td>
         </tr>
         <td class="custom-celda6 medium-celda" cols="12" md="6">
-            <h2>6. ¿NECESITO UNA ALTA INVERSIÓN PARA TENER MI CERCO ELÉCTRICO?</h2>
+            <h2>6. ¿QUÉ VENTAJAS TENGO POR INSTALAR ALARMAS DOMÓTICAS?</h2>
             <br />
             <p>
-              No, porque los equipos homologados se pagan 
-              <strong>por única vez</strong> y no necesito pagar un mantenimiento
-              <strong> mensual</strong> por el control de monitoreo.
+              Les permite integrar el sistema de <strong>alarmas domóticas</strong> 
+              con la automatización del hogar, permitiendo conectar
+              a una amplia gama de dispositivos inteligentes como luces, persianas,
+              cámaras, termostatos, cerraduras y asistentes virtuales (Alexa).
           </p>
           </td>
       </v-table>

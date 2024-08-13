@@ -11,12 +11,11 @@
           <v-card-text class="texto"
             ><strong>
               Somos una empresa mendocina con más de una década de trayectoria,
-              brindando siempre el mejor servicio de seguridad con equipos homologados
-              y de gestión automonitoreo.
+              brindando siempre el mejor servicio de seguridad con equipos homologados y domóticas
               <br>
               <br>        
-              Las instalaciones se realizan en el día y se ofrece mantenimiento anual.
-              
+              Las instalaciones se realizan en el día y 
+              desde tu celular podes controlar el automonitoreo del sistema de alarmas.         
   
             </strong></v-card-text>
         </v-card>
@@ -29,7 +28,7 @@
           <v-card-title>Equipos Homologados</v-card-title>
           <v-card-text>
             Son productos de primera calidad que cumplen con normativas y
-            regulaciones que garantizan su seguridad eléctrica y su capacidad para
+            regulaciones que garantizan su seguridad eléctrica y capacidad para
             su uso previsto.</v-card-text>
         </v-card>
       </v-col>
@@ -53,7 +52,7 @@
           <v-img src="../assets/pngegg(2).png" height="100px"></v-img>
           <v-card-title>Financiación propia</v-card-title>
           <v-card-text>
-        Recibimos tarjetas de crédito, tarjetas de débito
+        Recibimos la forma de pago con tarjetas de débito, tarjetas de crédito
         y financiación propia o bancaria a convenir. 
         </v-card-text>
         </v-card>
