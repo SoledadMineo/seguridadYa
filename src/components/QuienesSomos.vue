@@ -14,8 +14,9 @@
               brindando siempre el mejor servicio de seguridad con equipos homologados y domóticas.
               <br>
               <br>        
-              Las instalaciones se realizan en el día y 
-              desde tu celular podes controlar el automonitoreo del sistema de alarmas.         
+              Las instalaciones se realizan en el día, no se paga ningún abono mensual
+              y desde tu celular podes controlar el automonitoreo del sistema de alarmas.
+                       
   
             </strong></v-card-text>
         </v-card>
@@ -63,9 +64,10 @@
           <v-img src="../assets/pngegg(3).png" height="100px"></v-img>
           <v-card-title>Servicio Posventa</v-card-title>
           <v-card-text>
-            Revisión periódica de las instalaciones del cerco eléctrico.
+            Revisión periódica de la instalación del cerco eléctrico.
             <br />
-            Se procede a: 
+            <br />
+            Las visitas consisten en: 
             <br />
             <ul class="custom-list">
               <li>Inspeccionar los componentes.</li>

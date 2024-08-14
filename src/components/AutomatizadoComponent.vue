@@ -9,10 +9,11 @@
           </div>
 
           <p class="custom-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
-            Eum natus labore delectus aperiam, expedita doloribus voluptatibus
-            harum! Nobis ipsa quibusdam quam? Ullam?
+            Es un sistema que permite abrir y cerrar portones de manera automática, 
+            mediante el uso de un motor eléctrico 
+            controlado por un mando a distancia, un sensor o una aplicación móvil. 
+            Este tipo de automatización 
+            ofrece comodidad, seguridad y control de acceso mejorado.
           </p>
         </div>
       </v-col>

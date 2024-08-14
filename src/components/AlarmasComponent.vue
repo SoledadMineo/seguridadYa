@@ -9,9 +9,9 @@
           <h1>Alarmas</h1>
           <h3>Monitoreadas</h3>
         </div>
-          Un sistema de videovigilancia, también conocido como CCTV (Circuito Cerrado de Televisión),
-          es una solución de seguridad que utiliza cámaras de video 
-          para monitorear y grabar imágenes de un área específica.
+        Alarmas domiciliarias todas las marcas. Sistema de wifi. Sistema de video vigilancia, 
+        conocido como CCTV (Circuito Cerrado de Televisión) que utiliza cámaras de video
+        para monitorear y grabar imágenes de un área específica.
         <br>
         
         
