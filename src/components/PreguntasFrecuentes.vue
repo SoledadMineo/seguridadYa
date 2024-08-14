@@ -59,19 +59,20 @@
               <br />
               La empresa ofrece un <strong>mantenimiento anual</strong> que consiste en:
               <ul class="custom-list">
-              <li>Cambio de batería,</li>
-              <li>Control de estructura y tensado,</li>
-              <li>Reemplazo de los LEDs y</li>
+              <li>Cambio de batería.</li>
+              <li>Control de estructura y tensado.</li>
+              <li>Reemplazo de los LEDs.</li>
               <li>Cambio de carteles reguladores preventivos.</li>       
               </ul>   
 
             </p>
           </td>
         <td class="custom-celda6 medium-celda" cols="12" md="6">
-            <h2>6. ¿QUÉ VENTAJAS TENGO POR INSTALAR ALARMAS DOMÓTICAS?</h2>
+            <h2>6. ¿QUÉ VENTAJAS TENGO AL INSTALAR ALARMAS DOMÓTICAS?</h2>
             <br />
             <p>
-              Les permite integrar el sistema de <strong>alarmas domóticas</strong> 
+              Accedes a la automatización y el control inteligente de tu vivienda.
+              Es decir, te permite integrar el sistema de <strong>alarmas domóticas</strong> 
               con la automatización del hogar, permitiendo conectar
               a una amplia gama de dispositivos inteligentes como luces, persianas,
               cámaras, termostatos, cerraduras y asistentes virtuales (Alexa).
