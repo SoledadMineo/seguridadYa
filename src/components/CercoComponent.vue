@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <v-row id="cerco">
     <div>
       <v-img src="../assets/logoRedondo-sinFondo.png" />
@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 .imagen {
   width: 10px;
@@ -136,5 +136,51 @@ h3 {
     text-align: justify;
     margin-right: 5%;
   }
+}
+</style>
+-->
+
+<template>
+  <v-app class="contenedor">
+    <v-container>
+      <v-row>
+        <v-col cols="12" sm="6" md="4" lg="4">
+          <v-card>
+            <v-img src="../assets/cerco.png"></v-img>
+          </v-card>
+        </v-col>
+
+        <v-col cols="12" sm="6" md="8" lg="8">
+          <v-card>
+            <v-card-title>cercos</v-card-title>
+            <v-card-title>electricos</v-card-title>
+            <v-card-text> Su consumo de energía es mínimo. </v-card-text>
+            <v-button>
+              <div class="whatsApp">
+                <a
+                  href="https://api.whatsapp.com/send?phone=5492616675624"
+                  target="_blank"
+                  class="RNpQXe"
+                >
+                  <v-btn class="custom-button"> PEDIR PRESUPUESTO </v-btn></a
+                >
+              </div>
+            </v-button>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app>
+</template>
+
+<script>
+export default {
+  name: "ResponsiveApp",
+};
+</script>
+
+<style scoped>
+.contenedor {
+  margin-top: 5%;
 }
 </style>

@@ -58,7 +58,7 @@
               Si, requiere un mínimo mantenimiento de poda por parte de los <strong>usuarios</strong>.
               <br />
               La empresa ofrece un <strong>mantenimiento anual</strong> que consiste en:
-              <ul type="square">
+              <ul class="custom-list">
               <li>Cambio de batería,</li>
               <li>Control de estructura y tensado,</li>
               <li>Reemplazo de los LEDs y</li>
@@ -67,7 +67,6 @@
 
             </p>
           </td>
-        </tr>
         <td class="custom-celda6 medium-celda" cols="12" md="6">
             <h2>6. ¿QUÉ VENTAJAS TENGO POR INSTALAR ALARMAS DOMÓTICAS?</h2>
             <br />
@@ -78,6 +77,7 @@
               cámaras, termostatos, cerraduras y asistentes virtuales (Alexa).
           </p>
           </td>
+        </tr>
       </v-table>
     </v-container>
   </div>
@@ -93,7 +93,11 @@
   background-position: 25%;
   margin-top: 5%;
 }
-
+.custom-list{
+  list-style-type: square; /* Tipo de viñeta */
+  padding-left: 30px; /* Ajusta el espacio desde el borde izquierdo */
+  margin: 20px 0; /* Ajusta los márgenes superior e inferior */
+}
 .contenedor {
   display: flex;
   justify-content: center;
@@ -106,7 +110,7 @@
   font-size: 15px;
   padding: 7px;
 }
-.custom-header {
+  .custom-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
