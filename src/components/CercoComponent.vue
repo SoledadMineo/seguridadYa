@@ -143,15 +143,15 @@ h3 {
 <template>
   <v-app class="contenedor">
     <v-container>
-      <v-row>
+      <v-row class="celda" align="strech">
         <v-col cols="12" sm="6" md="4" lg="4">
-          <v-card>
+          <v-card class="card">
             <v-img src="../assets/cerco.png"></v-img>
           </v-card>
         </v-col>
 
         <v-col cols="12" sm="6" md="8" lg="8">
-          <v-card>
+          <v-card class="card">
             <v-card-title>cercos</v-card-title>
             <v-card-title>electricos</v-card-title>
             <v-card-text> Su consumo de energía es mínimo. </v-card-text>
@@ -160,7 +160,7 @@ h3 {
                 <a
                   href="https://api.whatsapp.com/send?phone=5492616675624"
                   target="_blank"
-                  class="RNpQXe"
+                  class="botonWhat"
                 >
                   <v-btn class="custom-button"> PEDIR PRESUPUESTO </v-btn></a
                 >
@@ -182,5 +182,40 @@ export default {
 <style scoped>
 .contenedor {
   margin-top: 5%;
+}
+.botonWhat {
+  display: flex;
+  justify-content: center; /* Centrando horizontalmente */
+  width: 100%;
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: large;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #40c351;
+  color: black;
+  border-radius: 40px; /* Esquinas redondeadas */
+  transition: all 0.3s ease; /* Transición suave */
+}
+.custom-button:hover,
+.custom-button:focus {
+  background-color: #848484; /* Color de fondo al pasar el mouse */
+  color: #40c351;
+  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
+}
+.celda {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  height: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: none;
 }
 </style>
