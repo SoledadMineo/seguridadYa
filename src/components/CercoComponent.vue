@@ -144,17 +144,23 @@ h3 {
   <v-app class="contenedor">
     <v-container>
       <v-row class="celda" align="strech">
-        <v-col cols="12" sm="6" md="4" lg="4">
-          <v-card class="card">
+        <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
+          <v-card class="cardImagen">
             <v-img src="../assets/cerco.png"></v-img>
           </v-card>
         </v-col>
 
-        <v-col cols="12" sm="6" md="8" lg="8">
-          <v-card class="card">
-            <v-card-title>cercos</v-card-title>
-            <v-card-title>electricos</v-card-title>
-            <v-card-text> Su consumo de energía es mínimo. </v-card-text>
+        <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
+          <v-card class="cardTitulo">
+            <v-card-title>
+              <div class="titulo">cercos</div>
+              <div class="subtitulo">electricos</div>
+            </v-card-title>
+            <v-spacer></v-spacer>
+            <v-card-text class="texto">
+              Su consumo de energía es mínimo.<br>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero commodi ullam minus, quasi omnis beatae. Itaque repellat nihil ab eaque, magni omnis, officiis consequuntur qui minima a, error possimus id.
+            </v-card-text>
             <v-button>
               <div class="whatsApp">
                 <a
@@ -181,7 +187,11 @@ export default {
 
 <style scoped>
 .contenedor {
-  margin-top: 5%;
+  margin-top: 3%;
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 4%;
+  background-position: 10% 16%;
 }
 .botonWhat {
   display: flex;
@@ -210,12 +220,106 @@ export default {
   display: flex;
   justify-content: space-around;
 }
-.card {
+.cardTitulo,
+.cardImagen {
   height: 100%;
   border: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   box-shadow: none;
+  background-color: transparent;  
 }
+.cardImagen{
+  padding: 2rem
+}
+.titulos{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.titulo {
+  color: #ec0c05;
+  font-size: 70px;
+}
+.subtitulo {
+  color: black;
+  font-size: 40px;
+}
+.texto {
+  font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
+  text-align: justify;
+  margin-right: 5%;
+}
+
+@media (max-width: 2560px) {
+.contenedor {
+  background-size: 100% 5%;
+  background-position: 10% 25%;
+}
+}
+
+@media (max-width: 1920px) {
+.titulo {
+  font-size: 60px;
+}
+.subtitulo {
+  font-size: 30px;
+}
+.contenedor {
+  background-size: 100% 5%;
+  background-position: 10% 23%;
+}
+}
+
+@media (max-width: 1280px) {
+.titulo {
+  font-size: 60px;
+}
+.subtitulo {
+  font-size: 30px;
+}
+.contenedor {
+  background-size: 100% 4%;
+  background-position: 10% 21%;
+}
+
+@media (max-width: 960px) {
+.titulo {
+  font-size: 50px;
+}
+.subtitulo {
+  font-size: 30px;
+}
+.texto {
+  font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
+  margin-right: 5%;
+}
+.contenedor {
+  background-size: 100% 2%;
+  background-position: 10% 18%;
+}
+
+}
+@media (max-width: 600px) {
+.titulo {
+  font-size: 50px;
+}
+.subtitulo {
+  font-size: 30px;
+}
+.contenedor {
+  background-size: 100% 2%;
+  background-position: 10% 54%;
+}
+.cardImagen{
+  padding: 2%;
+}
+.texto{
+  margin: 0%;
+}
+}
+
+}
+
 </style>
