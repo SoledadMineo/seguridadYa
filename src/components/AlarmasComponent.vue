@@ -1,119 +1,169 @@
 <template>
-  <v-row class="contenedor" id="alarmas">
-    <v-col md="4">
-      <v-img class="responsive-img" src="../assets/alarmas.png" alt="alarmas" />
-    </v-col>
-    <v-col md="8">
-      <div class="titulo">
-        <div class="subtitulo">
-          <h1>Alarmas</h1>
-          <h3>Monitoreadas</h3>
-        </div>
-        Alarmas domiciliarias todas las marcas. Sistema de wifi. Sistema de video vigilancia, 
-        conocido como CCTV (Circuito Cerrado de Televisión) que utiliza cámaras de video
-        para monitorear y grabar imágenes de un área específica.
-        <br>
-        
-        
-      </div>
-    </v-col>
-  </v-row>
+  <v-app class="contenedor">
+    <v-container>
+      <v-row class="celda" align="strech">
+        <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
+          <v-card class="cardImagen">
+            <v-img src="../assets/alarmas.png"></v-img>
+          </v-card>
+        </v-col>
+        <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
+          <v-card class="cardTitulo">
+            <v-card-title>
+              <div class="titulo"><strong>alarmas</strong></div>
+              <div class="subtitulo"><strong>monitoreadas</strong></div>
+            </v-card-title>
+            <v-spacer></v-spacer>
+            <v-card-text class="texto">
+              Alarmas domiciliarias todas las marcas. Sistema de wifi. Sistema
+              de video vigilancia, conocido como CCTV (Circuito Cerrado de
+              Televisión) que utiliza cámaras de video para monitorear y grabar
+              imágenes de un área específica.
+              <br />
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: "AlarmasComponent",
-  props: {
-    msg: String,
-  },
+  name: "ResponsiveApp",
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .contenedor {
+  margin-top: 3%;
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100% 8%;
-  background-position: 10% 50%;
+  background-size: 100% 4%;
+  background-position: 10% 16%;
+}
+.botonWhat {
+  display: flex;
+  justify-content: center; /* Centrando horizontalmente */
+  width: 100%;
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: large;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #40c351;
+  color: black;
+  border-radius: 40px; /* Esquinas redondeadas */
+  transition: all 0.3s ease; /* Transición suave */
+}
+.custom-button:hover,
+.custom-button:focus {
+  background-color: #848484; /* Color de fondo al pasar el mouse */
+  color: #40c351;
+  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
+}
+.celda {
+  display: flex;
+  justify-content: space-around;
+}
+.cardTitulo,
+.cardImagen {
+  height: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 2rem;
+}
+.titulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 .titulo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  margin-left: 10%;
-}
-.subtitulo {
-  display: flex;
-  flex-direction: column;
-}
-.responsive-img {
-  height: 450px;
-  width: auto;
-  margin: 0rem 0rem 0rem 5rem;
-}
-
-div {
-  display: flex;
-  justify-content: space-between;
-}
-h1 {
   color: #ec0c05;
   font-size: 70px;
 }
-h3 {
+.subtitulo {
   color: black;
   font-size: 40px;
 }
-p {
-  font-size: 17px;
+.texto {
+  font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
+  text-align: justify;
+  margin-right: 5%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 2560px) {
   .contenedor {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 5%;
-  }
-  .titulo {
-  }
-  .subtitulo h1 {
-    font-size: 25px;
-  }
-  .subtitulo h3 {
-    font-size: 20px;
-  }
-  .responsive-img {
-    height: 300px;
-    width: auto;
-  }
-  p {
-    font-size: 16px;
-    text-align: justify;
-    margin-right: 5%;
+    background-size: 100% 5%;
+    background-position: 10% 25%;
   }
 }
-@media (max-width: 1136px) {
-  .responsive-img {
-    height: 500px;
-    width: auto;
-  }
-  .subtitulo h1 {
-    font-size: 40px;
-  }
-  .subtitulo h3 {
-    font-size: 30px; /* Reducir tamaño de fuente para h3 */
-  }
+
+@media (max-width: 1920px) {
   .titulo {
-    margin: 0;
-    padding: 5%;
-    align-items: left; /* Centrar contenido horizontalmente */
+    font-size: 60px;
   }
-  p {
-    font-size: 15px; /* Reducir tamaño de fuente para el párrafo */
+  .subtitulo {
+    font-size: 30px;
+  }
+  .contenedor {
+    background-size: 100% 5%;
+    background-position: 10% 35%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .titulo {
+    font-size: 60px;
+  }
+  .subtitulo {
+    font-size: 30px;
+  }
+  .contenedor {
+    background-size: 100% 4%;
+    background-position: 10% 21%;
+  }
+
+  @media (max-width: 960px) {
+    .titulo {
+      font-size: 50px;
+    }
+    .subtitulo {
+      font-size: 30px;
+    }
+    .texto {
+      font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
+      margin-right: 5%;
+    }
+    .contenedor {
+      background-size: 100% 2%;
+      background-position: 10% 18%;
+    }
+  }
+  @media (max-width: 600px) {
+    .titulo {
+      font-size: 50px;
+    }
+    .subtitulo {
+      font-size: 30px;
+    }
+    .contenedor {
+      background-size: 100% 2%;
+      background-position: 10% 54%;
+    }
+    .cardImagen {
+      padding: 2%;
+    }
+    .texto {
+      margin: 0%;
+    }
   }
 }
 </style>
-./QuienesSomos.vue./QuienesSomos.vue

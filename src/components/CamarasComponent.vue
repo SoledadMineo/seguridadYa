@@ -1,121 +1,170 @@
 <template>
-  <v-row id="camaras">
-    <div class="contenedor">
-      <v-col md="7">
-        <div class="celda">
-          <div class="subtitulo">
-            <h1>cámaras</h1>
-            <h3>de Seguridad</h3>
-          </div>
-          <p class="custom-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            veritatis numquam reiciendis blanditiis accusantium deserunt fugiat.
-            Eum natus labore delectus aperiam, expedita doloribus voluptatibus
-            harum! Nobis ipsa quibusdam quam? Ullam?
-          </p>
-        </div>
-      </v-col>
-      <v-col md="5" class="imagen">
-        <v-img src="../assets/camaras.png" alt="camaras" />
-      </v-col>
-    </div>
-  </v-row>
+  <v-app class="contenedor">
+    <v-container>
+      <v-row class="celda" align="strech">
+        <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
+          <v-card class="cardTitulo">
+            <v-card-title>
+              <div class="titulo"><strong>cámaras</strong></div>
+              <div class="subtitulo"><strong>de seguridad</strong></div>
+            </v-card-title>
+            <v-spacer></v-spacer>
+            <v-card-text class="texto">
+              Su consumo de energía es mínimo.<br />
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+              commodi ullam minus, quasi omnis beatae. Itaque repellat nihil ab
+              eaque, magni omnis, officiis consequuntur qui minima a, error
+              possimus id.
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
+          <v-card class="cardImagen">
+            <v-img src="../assets/camaras.png"></v-img>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: "CamarasComponent",
-  props: {
-    msg: String,
-  },
+  name: "ResponsiveApp",
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .contenedor {
+  margin-top: 3%;
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100% 8%;
-  background-position: 10% 50%;
+  background-size: 100% 4%;
+  background-position: 10% 16%;
+}
+.botonWhat {
+  display: flex;
+  justify-content: center; /* Centrando horizontalmente */
+  width: 100%;
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: large;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #40c351;
+  color: black;
+  border-radius: 40px; /* Esquinas redondeadas */
+  transition: all 0.3s ease; /* Transición suave */
+}
+.custom-button:hover,
+.custom-button:focus {
+  background-color: #848484; /* Color de fondo al pasar el mouse */
+  color: #40c351;
+  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
 .celda {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 0rem 5rem 5rem 5rem;
+  justify-content: space-around;
 }
-.imagen {
-  height: 500px;
-  width: auto;
-}
-.custom-paragraph {
-  margin-right: 0%;
-  text-align: justify;
-}
-.subtitulo {
+.cardTitulo,
+.cardImagen {
+  height: 100%;
+  border: none;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 2rem;
 }
-div {
+.titulos {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: start;
 }
-h1 {
+.titulo {
   color: #ec0c05;
   font-size: 70px;
 }
-p {
-  font-size: 17px;
-}
-h3 {
+.subtitulo {
   color: black;
   font-size: 40px;
 }
+.texto {
+  font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
+  text-align: justify;
+  margin-right: 5%;
+}
 
-/* Media Queries para dispositivos más grandes */
-@media (max-width: 600px) {
+@media (max-width: 2560px) {
   .contenedor {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 5%;
-  }
-  .subtitulo h1 {
-    font-size: 25px;
-  }
-  .subtitulo h3 {
-    font-size: 20px; /* Reducir tamaño de fuente para h3 */
-  }
-  .responsive-img {
-    height: 500px;
-    width: auto;
-  }
-  p {
-    font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
-    text-align: justify;
-    margin-right: 5%;
+    background-size: 100% 5%;
+    background-position: 10% 25%;
   }
 }
-@media (max-width: 1136px) {
-  .responsive-img {
-    height: 500px;
-    width: auto;
-  }
-  .subtitulo h1 {
-    font-size: 40px;
-  }
-  .subtitulo h3 {
-    font-size: 30px; /* Reducir tamaño de fuente para h3 */
-  }
+
+@media (max-width: 1920px) {
   .titulo {
-    margin: 0;
-    padding: 5%;
-    align-items: left; /* Centrar contenido horizontalmente */
+    font-size: 60px;
   }
-  p {
-    font-size: 15px; /* Reducir tamaño de fuente para el párrafo */
+  .subtitulo {
+    font-size: 30px;
+  }
+  .contenedor {
+    background-size: 100% 5%;
+    background-position: 10% 35%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .titulo {
+    font-size: 60px;
+  }
+  .subtitulo {
+    font-size: 30px;
+  }
+  .contenedor {
+    background-size: 100% 4%;
+    background-position: 10% 21%;
+  }
+
+  @media (max-width: 960px) {
+    .titulo {
+      font-size: 50px;
+    }
+    .subtitulo {
+      font-size: 30px;
+    }
+    .texto {
+      font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
+      margin-right: 5%;
+    }
+    .contenedor {
+      background-size: 100% 2%;
+      background-position: 10% 18%;
+    }
+  }
+  @media (max-width: 600px) {
+    .titulo {
+      font-size: 50px;
+    }
+    .subtitulo {
+      font-size: 30px;
+    }
+    .contenedor {
+      background-size: 100% 2%;
+      background-position: 10% 54%;
+    }
+    .cardImagen {
+      padding: 2%;
+    }
+    .texto {
+      margin: 0%;
+    }
   }
 }
 </style>
