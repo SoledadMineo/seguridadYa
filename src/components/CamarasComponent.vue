@@ -1,5 +1,5 @@
 <template>
-  <v-app class="contenedor">
+  <v-app class="contenedor" id="camaras">
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
@@ -10,11 +10,13 @@
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
-              Las cámaras de seguridad son herramientas vitales para proteger propiedades y personas, 
-              proporcionando tranquilidad y una respuesta rápida ante cualquier incidente.
+              Las cámaras de seguridad son herramientas vitales para proteger
+              propiedades y personas, proporcionando tranquilidad y una
+              respuesta rápida ante cualquier incidente.
               <br />
               <br />
-              Su consumo de energía es mínimo y ofrecemos todo tipo de cámaras de seguridad.
+              Su consumo de energía es mínimo y ofrecemos todo tipo de cámaras
+              de seguridad.
             </v-card-text>
           </v-card>
         </v-col>

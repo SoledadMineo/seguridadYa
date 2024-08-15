@@ -1,5 +1,5 @@
 <template>
-  <v-app class="contenedor">
+  <v-app class="contenedor" id="cerco">
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
@@ -16,15 +16,15 @@
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
-              
-              Son sistemas de seguridad perimetral que utilizan una serie de hilos 
-              o alambres electrificados para disuadir y prevenir intrusiones en propiedades residenciales, 
-              comerciales o industriales. 
+              Son sistemas de seguridad perimetral que utilizan una serie de
+              hilos o alambres electrificados para disuadir y prevenir
+              intrusiones en propiedades residenciales, comerciales o
+              industriales.
               <br />
               <br />
-              Estos sistemas son muy efectivos como una primera línea de defensa y 
-              pueden integrarse con otros sistemas de seguridad, como cámaras de vigilancia y alarmas.
-              Su consumo de energía es mínimo.
+              Estos sistemas son muy efectivos como una primera línea de defensa
+              y pueden integrarse con otros sistemas de seguridad, como cámaras
+              de vigilancia y alarmas. Su consumo de energía es mínimo.
             </v-card-text>
             <v-button>
               <div class="whatsApp">
@@ -156,11 +156,13 @@ export default {
     }
     .texto {
       font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
-      margin-right: 5%;
     }
     .contenedor {
       background-size: 100% 2%;
       background-position: 10% 18%;
+    }
+    .cardImagen {
+      padding: 2rem;
     }
   }
   @media (max-width: 600px) {
@@ -175,10 +177,10 @@ export default {
       background-position: 10% 54%;
     }
     .cardImagen {
-      padding: 2%;
+      padding: 2rem;
     }
     .texto {
-      margin: 0%;
+      font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
     }
   }
 }

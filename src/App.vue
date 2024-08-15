@@ -107,6 +107,8 @@
             alt="Logo"
             src="../src/assets/logoRedondo.png"
             style="width: 100px"
+            @click="scrollToSection('cerco')"
+            class="hover-cursor"
           />
         </div>
         <div class="d-flex flex-row">
@@ -315,6 +317,7 @@ header {
   align-items: center;
   width: 100%;
   height: 7rem;
+  z-index: 1000;
 }
 footer div {
   flex: 1;

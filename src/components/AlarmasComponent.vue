@@ -1,5 +1,5 @@
 <template>
-  <v-app class="contenedor">
+  <v-app class="contenedor" id="alarmas">
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
@@ -21,9 +21,9 @@
               imágenes de un área específica.
               <br />
               <br />
-              Desde tu celular bajas una aplicación gratuita y podes automonitorear 
-              de manera inmediata y efectiva de control,
-              que movimiento fue lo que activo la alarma de seguridad.
+              Desde tu celular bajas una aplicación gratuita y podes
+              automonitorear de manera inmediata y efectiva de control, que
+              movimiento fue lo que activo la alarma de seguridad.
               <br />
             </v-card-text>
           </v-card>

@@ -1,5 +1,5 @@
 <template>
-  <v-app class="contenedor">
+  <v-app class="contenedor" id="automatizados">
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
@@ -12,10 +12,11 @@
             <v-card-text class="texto">
               Es un sistema que permite abrir y cerrar portones de manera
               automática, mediante el uso de un motor eléctrico controlado por
-              un mando a distancia, un sensor o una aplicación móvil. 
+              un mando a distancia, un sensor o una aplicación móvil.
               <br />
               <br />
-              Este tipo de automatización ofrece comodidad, seguridad y control de acceso mejorado.
+              Este tipo de automatización ofrece comodidad, seguridad y control
+              de acceso mejorado.
             </v-card-text>
           </v-card>
         </v-col>
