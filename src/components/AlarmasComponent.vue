@@ -10,8 +10,8 @@
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
             <v-card-title>
-              <div class="titulo"><strong>alarmas</strong></div>
-              <div class="subtitulo"><strong>monitoreadas</strong></div>
+              <div class="titulo"><strong>Alarmas</strong></div>
+              <div class="subtitulo"><strong>Monitoreadas</strong></div>
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
@@ -19,6 +19,11 @@
               de video vigilancia, conocido como CCTV (Circuito Cerrado de
               Televisión) que utiliza cámaras de video para monitorear y grabar
               imágenes de un área específica.
+              <br />
+              <br />
+              Desde tu celular bajas una aplicación gratuita y podes automonitorear 
+              de manera inmediata y efectiva de control,
+              que movimiento fue lo que activo la alarma de seguridad.
               <br />
             </v-card-text>
           </v-card>

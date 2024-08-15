@@ -6,15 +6,15 @@
           <v-card class="cardTitulo">
             <v-card-title>
               <div class="titulo"><strong>cámaras</strong></div>
-              <div class="subtitulo"><strong>de seguridad</strong></div>
+              <div class="subtitulo"><strong>de Seguridad</strong></div>
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
-              Su consumo de energía es mínimo.<br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-              commodi ullam minus, quasi omnis beatae. Itaque repellat nihil ab
-              eaque, magni omnis, officiis consequuntur qui minima a, error
-              possimus id.
+              Las cámaras de seguridad son herramientas vitales para proteger propiedades y personas, 
+              proporcionando tranquilidad y una respuesta rápida ante cualquier incidente.
+              <br />
+              <br />
+              Su consumo de energía es mínimo y ofrecemos todo tipo de cámaras de seguridad.
             </v-card-text>
           </v-card>
         </v-col>
