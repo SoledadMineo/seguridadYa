@@ -1,112 +1,121 @@
 <template>
   <div id="app">
     <v-app>
-      <v-navigation-drawer v-model="drawer" permanent>
-        <v-list>
-          <v-list-item>
-            <row class="d-flex justify-center">
-              <div class="imagen-wrapper">
+      <div class="header">
+        <v-navigation-drawer v-model="drawer" permanent>
+          <v-list>
+            <v-list-item>
+              <row class="d-flex justify-center">
+                <div class="imagen-wrapper">
+                  <v-img
+                    src="./assets/logoRedondo-sinFondo.png"
+                    aspect-ratio="1.5"
+                  ></v-img>
+                </div>
+              </row>
+            </v-list-item>
+            <v-list-item
+              v-for="(menu, index) in menus"
+              :key="index"
+              @click="handleItemClick(menu.path)"
+            >
+              <v-list-item-title>{{ menu.title }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-navigation-drawer>
+
+        <v-app-bar app color="black" dark>
+          <v-container fluid>
+            <v-row class="encabezado">
+              <v-col
+                class="d-flex align-center justify-start"
+                cols="4"
+                xs="4"
+               
+                lg="3"
+               
+              >
                 <v-img
-                  src="./assets/logoRedondo-sinFondo.png"
-                  aspect-ratio="1.5"
-                ></v-img>
-              </div>
-            </row>
-          </v-list-item>
-          <v-list-item
-            v-for="(menu, index) in menus"
-            :key="index"
-            @click="handleItemClick(menu.path)"
-          >
-            <v-list-item-title>{{ menu.title }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-navigation-drawer>
+                  alt="Logo Seguridad Ya"
+                  src="../src/assets/logo.jpg"
+                  style="width: 70%"
+                  @click="scrollToSection('cerco')"
+                  class="hover-cursor"
+                />
+              </v-col>
+              <v-col class="d-flex align-center justify-end" cols="8" md="8">
+                <v-app-bar-nav-icon
+                  @click="drawer = !drawer"
+                  v-if="mobileView"
+                ></v-app-bar-nav-icon>
 
-      <v-app-bar app color="black" dark>
-        <v-container fluid>
-          <v-row class="encabezado">
-            <v-col class="d-flex align-center justify-start" cols="4" md="4">
-              <v-img
-                alt="Logo Seguridad Ya"
-                src="../src/assets/logo.jpg"
-                style="width: 70%"
-                @click="scrollToSection('cerco')"
-                class="hover-cursor"
-              />
-            </v-col>
-            <v-col class="d-flex align-center justify-end" cols="8" md="8">
-              <v-app-bar-nav-icon
-                @click="drawer = !drawer"
-                v-if="mobileView"
-              ></v-app-bar-nav-icon>
-
-              <div v-if="!mobileView">
-                <v-btn class="button">
-                  Productos
-                  <v-menu activator="parent" rigth>
-                    <v-list>
-                      <v-list-item
-                        v-for="(item, index) in items"
-                        :key="index"
-                        @click="scrollToSection(item.path)"
-                      >
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
-                      </v-list-item>
-                    </v-list>
-                  </v-menu>
-                </v-btn>
-                <v-btn class="button" @click="scrollToSection('quienesSomos')"
-                  >Quienes Somos</v-btn
-                >
-                <v-btn class="button" @click="scrollToSection('preguntas')"
-                  >Preguntas Frecuentes</v-btn
-                >
-                <v-btn class="button" @click="scrollToSection('contactos')"
-                  >Contactos</v-btn
-                >
-              </div>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-app-bar>
-
+                <div v-if="!mobileView">
+                  <v-btn class="button">
+                    Productos
+                    <v-menu activator="parent" rigth>
+                      <v-list>
+                        <v-list-item
+                          v-for="(item, index) in items"
+                          :key="index"
+                          @click="scrollToSection(item.path)"
+                        >
+                          <v-list-item-title>{{
+                            item.title
+                          }}</v-list-item-title>
+                        </v-list-item>
+                      </v-list>
+                    </v-menu>
+                  </v-btn>
+                  <v-btn class="button" @click="scrollToSection('quienesSomos')"
+                    >Quienes Somos</v-btn
+                  >
+                  <v-btn class="button" @click="scrollToSection('preguntas')"
+                    >Preguntas Frecuentes</v-btn
+                  >
+                  <v-btn class="button" @click="scrollToSection('contactos')"
+                    >Contactos</v-btn
+                  >
+                </div>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-app-bar>
+      </div>
       <main>
         <router-view />
-      </main>
 
-      <v-fab-transition>
-        <v-btn
-          icon
-          large
-          @click="handleClick"
-          class="whatsapp-button"
-          elevation="24"
-        >
-          <a
-            href="https://api.whatsapp.com/send?phone=5492616675624"
-            target="_blank"
-            class="RNpQXe"
-            style="width: 40px"
+        <v-fab-transition>
+          <v-btn
+            icon
+            large
+            @click="handleClick"
+            class="whatsapp-button"
+            elevation="24"
           >
-            <v-img
-              src="../src/assets/whatsapp.png"
-              alt="Enlace"
-              class="xbGufb"
-              style="width: 40px; height: 40px"
-              width="48"
-              height="48"
-            />
-          </a>
-        </v-btn>
-      </v-fab-transition>
-
+            <a
+              href="https://api.whatsapp.com/send?phone=5492616675624"
+              target="_blank"
+              class="RNpQXe"
+              style="width: 40px"
+            >
+              <v-img
+                src="../src/assets/whatsapp.png"
+                alt="Enlace"
+                class="xbGufb"
+                style="width: 40px; height: 40px"
+                width="48"
+                height="48"
+              />
+            </a>
+          </v-btn>
+        </v-fab-transition>
+      </main>
       <footer class="footer">
         <div>
           <v-img
             alt="Logo"
             src="../src/assets/logoRedondo.png"
-            style="width: 100px"
+            style="max-width: 5rem; height: auto; display: block; margin-left: 10%;"
           />
         </div>
         <div class="d-flex flex-row">
@@ -228,14 +237,7 @@ export default {
   color: black;
   background-color: white;
   display: flex;
-  flex-direction: column;
-}
-.encabezado {
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
 }
 .hover-cursor {
   cursor: pointer;
@@ -269,25 +271,16 @@ export default {
   position: fixed;
   bottom: 40px;
   right: 40px;
+  z-index: 1000;
   background-color: #25d366 !important; /* Color verde de WhatsApp */
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
-}
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-  background-color: black;
-  display: flex;
-  align-items: center;
-  padding: 10px;
 }
 main {
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 50px;
   background-color: white;
+ 
 }
 a {
   text-decoration: none;
@@ -301,13 +294,17 @@ div[id] {
   scroll-margin-top: 100px;
 }
 
-header {
-  background-color: black; /* Cambia este valor al color de fondo deseado */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3%;
-  margin: 0;
 }
 .footer {
   background-color: black; /* Cambia este valor al color de fondo deseado */
@@ -315,6 +312,7 @@ header {
   align-items: center;
   width: 100%;
   height: 7rem;
+  z-index: 1000;
 }
 footer div {
   flex: 1;

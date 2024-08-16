@@ -11,7 +11,7 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda1" cols="12" md="6">
+          <td class="custom-celda1" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
             <h2>1. ¿ES LEGAL INSTALAR CERCOS ELÉCTRICOS?</h2>
             <br />
             <p>
@@ -20,7 +20,7 @@
               perfectamente definido en lo que se denomina legítima defensa.
             </p>
           </td>
-          <td class="custom-celda2 medium-celda" cols="12" md="6">
+          <td class="custom-celda2 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
             <h2>2. ¿ES LETAL?</h2>
             <br />
             <p>
@@ -30,7 +30,7 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda3 medium-celda" cols="12" md="6">
+          <td class="custom-celda3 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
             <h2>
               3. ¿TENGO QUE PAGAR UN ABONO MENSUAL POR EL SERVICIO DE MONITOREO?
             </h2>
@@ -41,7 +41,7 @@
               sin necesidad de conectarse a una central de monitoreo externo.
             </p>
           </td>
-          <td class="custom-celda4 medium-celda" cols="12" md="6">
+          <td class="custom-celda4 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
             <h2>4. ¿EL CONSUMO ELÉCTRICO ES MUY ALTO?</h2>
             <br />
             <p>
@@ -51,7 +51,7 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda5 medium-celda" cols="12" md="6">
+          <td class="custom-celda5 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
@@ -67,7 +67,7 @@
 
             </p>
           </td>
-        <td class="custom-celda6 medium-celda" cols="12" md="6">
+        <td class="custom-celda6 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
             <h2>6. ¿QUÉ VENTAJAS TENGO AL INSTALAR ALARMAS DOMÓTICAS?</h2>
             <br />
             <p>
@@ -103,7 +103,6 @@
   display: flex;
   justify-content: center;
   background-color: #ec0c05;
-  width: 60%;
 }
 .custom-table {
   width: 100%;

@@ -1,5 +1,5 @@
 <template>
-  <v-app class="contenedor">
+  <v-app class="contenedor" id="cerco">
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
@@ -13,6 +13,7 @@
             <v-card-title>
               <div class="titulo"><strong>cercos</strong></div>
               <div class="subtitulo"><strong>eléctricos</strong></div>
+              <v-img src="../assets/cinta2.png" class="card-img"></v-img>
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
@@ -47,13 +48,6 @@ export default {
 </script>
 
 <style scoped>
-.contenedor {
-  margin-top: 3%;
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 4%;
-  background-position: 10% 16%;
-}
 .botonWhat {
   display: flex;
   justify-content: center; /* Centrando horizontalmente */
@@ -81,8 +75,7 @@ export default {
   display: flex;
   justify-content: space-around;
 }
-.cardTitulo,
-.cardImagen {
+.cardTitulo {
   height: 100%;
   border: none;
   display: flex;
@@ -90,8 +83,12 @@ export default {
   justify-content: space-around;
   box-shadow: none;
   background-color: transparent;
-  padding: 2rem;
+  overflow: hidden;
 }
+.cardImagen{
+  margin: 2rem;
+}
+
 .titulos {
   display: flex;
   flex-direction: column;
@@ -169,9 +166,6 @@ export default {
     .contenedor {
       background-size: 100% 2%;
       background-position: 10% 54%;
-    }
-    .cardImagen {
-      padding: 2%;
     }
     .texto {
       margin: 0%;

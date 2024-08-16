@@ -1,5 +1,5 @@
 <template>
-  <v-app class="contenedor">
+  <v-app class="contenedor" id="alarmas">
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
@@ -36,7 +36,6 @@ export default {
 
 <style scoped>
 .contenedor {
-  margin-top: 3%;
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
   background-size: 100% 4%;
@@ -69,8 +68,7 @@ export default {
   display: flex;
   justify-content: space-around;
 }
-.cardTitulo,
-.cardImagen {
+.cardTitulo {
   height: 100%;
   border: none;
   display: flex;
@@ -78,7 +76,9 @@ export default {
   justify-content: space-around;
   box-shadow: none;
   background-color: transparent;
-  padding: 2rem;
+}
+.cardImagen{
+  margin: 2rem;
 }
 .titulos {
   display: flex;
