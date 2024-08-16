@@ -14,14 +14,19 @@
               <div class="titulo"><strong>cercos</strong></div>
               <div class="subtitulo"><strong>eléctricos</strong></div>
               <v-img src="../assets/cinta2.png" class="card-img"></v-img>
+              
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
-              Su consumo de energía es mínimo.<br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-              commodi ullam minus, quasi omnis beatae. Itaque repellat nihil ab
-              eaque, magni omnis, officiis consequuntur qui minima a, error
-              possimus id.
+              Son sistemas de seguridad perimetral que utilizan una serie de
+              hilos o alambres electrificados para disuadir y prevenir
+              intrusiones en propiedades residenciales, comerciales o
+              industriales.
+              <br />
+              <br />
+              Estos sistemas son muy efectivos como una primera línea de defensa
+              y pueden integrarse con otros sistemas de seguridad, como cámaras
+              de vigilancia y alarmas. Su consumo de energía es mínimo.
             </v-card-text>
             <v-button>
               <div class="whatsApp">
@@ -150,6 +155,7 @@ export default {
     .texto {
       font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
       margin-right: 5%;
+
     }
     .contenedor {
       background-size: 100% 2%;
@@ -168,7 +174,7 @@ export default {
       background-position: 10% 54%;
     }
     .texto {
-      margin: 0%;
+      margin: 0%; /* Reducir tamaño de fuente para el párrafo */
     }
   }
 }

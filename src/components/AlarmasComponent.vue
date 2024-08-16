@@ -1,5 +1,6 @@
 <template>
   <v-app class="contenedor" id="alarmas">
+    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
@@ -10,8 +11,8 @@
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
             <v-card-title>
-              <div class="titulo"><strong>alarmas</strong></div>
-              <div class="subtitulo"><strong>monitoreadas</strong></div>
+              <div class="titulo"><strong>Alarmas</strong></div>
+              <div class="subtitulo"><strong>Monitoreadas</strong></div>
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
@@ -19,6 +20,11 @@
               de video vigilancia, conocido como CCTV (Circuito Cerrado de
               Televisión) que utiliza cámaras de video para monitorear y grabar
               imágenes de un área específica.
+              <br />
+              <br />
+              Desde tu celular bajas una aplicación gratuita y podes
+              automonitorear de manera inmediata y efectiva de control, que
+              movimiento fue lo que activo la alarma de seguridad.
               <br />
             </v-card-text>
           </v-card>
@@ -35,11 +41,15 @@ export default {
 </script>
 
 <style scoped>
-.contenedor {
+/* .contenedor {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
   background-size: 100% 4%;
   background-position: 10% 16%;
+} */
+.card-img{
+  width: 100%;
+  
 }
 .botonWhat {
   display: flex;

@@ -1,20 +1,23 @@
 <template>
   <v-app class="contenedor" id="camaras">
     <v-container>
+      <v-img src="../assets/cinta2.png" class="card-img"></v-img>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
             <v-card-title>
               <div class="titulo"><strong>cámaras</strong></div>
-              <div class="subtitulo"><strong>de seguridad</strong></div>
+              <div class="subtitulo"><strong>de Seguridad</strong></div>
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
-              Su consumo de energía es mínimo.<br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-              commodi ullam minus, quasi omnis beatae. Itaque repellat nihil ab
-              eaque, magni omnis, officiis consequuntur qui minima a, error
-              possimus id.
+              Las cámaras de seguridad son herramientas vitales para proteger
+              propiedades y personas, proporcionando tranquilidad y una
+              respuesta rápida ante cualquier incidente.
+              <br />
+              <br />
+              Su consumo de energía es mínimo y ofrecemos todo tipo de cámaras
+              de seguridad.
             </v-card-text>
           </v-card>
         </v-col>
@@ -36,12 +39,12 @@ export default {
 </script>
 
 <style scoped>
-.contenedor {
+/* .contenedor {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
   background-size: 100% 4%;
   background-position: 10% 16%;
-}
+} */
 .botonWhat {
   display: flex;
   justify-content: center; /* Centrando horizontalmente */

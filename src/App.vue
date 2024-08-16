@@ -26,14 +26,12 @@
 
         <v-app-bar app color="black" dark>
           <v-container fluid>
-            <v-row class="encabezado">
+            <v-row>
               <v-col
-                class="d-flex align-center justify-start"
+                class="d-flex flex-column align-center justify-start"
                 cols="4"
                 xs="4"
-               
                 lg="3"
-               
               >
                 <v-img
                   alt="Logo Seguridad Ya"
@@ -43,13 +41,13 @@
                   class="hover-cursor"
                 />
               </v-col>
-              <v-col class="d-flex align-center justify-end" cols="8" md="8">
+              <v-col class="d-flex flex-column align-center justify-end" cols="8" md="8">
                 <v-app-bar-nav-icon
                   @click="drawer = !drawer"
                   v-if="mobileView"
                 ></v-app-bar-nav-icon>
 
-                <div v-if="!mobileView">
+                <div v-if="!mobileView" >
                   <v-btn class="button">
                     Productos
                     <v-menu activator="parent" rigth>
@@ -215,6 +213,7 @@ export default {
 </script>
 
 <style>
+
 .v-navigation-drawer--right {
   right: 0;
   left: auto;

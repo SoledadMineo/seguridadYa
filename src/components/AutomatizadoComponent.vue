@@ -5,16 +5,18 @@
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
             <v-card-title>
-              <div class="titulo"><strong>automatización</strong></div>
-              <div class="subtitulo"><strong>de portones</strong></div>
+              <div class="titulo"><strong>Automatización</strong></div>
+              <div class="subtitulo"><strong>de Portones</strong></div>
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
               Es un sistema que permite abrir y cerrar portones de manera
               automática, mediante el uso de un motor eléctrico controlado por
-              un mando a distancia, un sensor o una aplicación móvil. Este tipo
-              de automatización ofrece comodidad, seguridad y control de acceso
-              mejorado.
+              un mando a distancia, un sensor o una aplicación móvil.
+              <br />
+              <br />
+              Este tipo de automatización ofrece comodidad, seguridad y control
+              de acceso mejorado.
             </v-card-text>
           </v-card>
         </v-col>

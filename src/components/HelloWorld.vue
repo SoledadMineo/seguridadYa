@@ -12,6 +12,9 @@
     <section id="Automatizados">
       <AutomatizadoComponent />
     </section>
+    <section id="Cierre">
+      <CierreComponent />
+    </section>
     <section id="QuienesSomos">
       <QuienesSomos />
     </section>
@@ -33,6 +36,7 @@ import AlarmasComponent from "../components/AlarmasComponent.vue";
 import AutomatizadoComponent from "@/components/AutomatizadoComponent.vue";
 import ContactoComponent from "@/components/ContactoComponent.vue";
 import PreguntasFrecuentes from "@/components/PreguntasFrecuentes.vue";
+import CierreComponent from "./CierreComponent.vue";
 export default {
   name: "HomeView",
   components: {
@@ -41,6 +45,7 @@ export default {
     CamarasComponent,
     AlarmasComponent,
     AutomatizadoComponent,
+    CierreComponent,
     PreguntasFrecuentes,
     ContactoComponent,
   },
