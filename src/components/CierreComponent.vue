@@ -4,7 +4,7 @@
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
           <v-card class="cardImagen">
-            <v-img src="../assets/alarmas.png"></v-img>
+            <v-img src="../assets/cierre.png"></v-img>
           </v-card>
         </v-col>
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
@@ -84,7 +84,7 @@ export default {
   background-color: transparent;
   padding: 2rem;
 }
-.cardImagen{
+.cardImagen {
   margin: 2rem;
 }
 .titulos {

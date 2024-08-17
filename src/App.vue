@@ -2,7 +2,7 @@
   <div id="app">
     <v-app>
       <div class="header">
-        <!-- <v-navigation-drawer v-model="drawer" permanent>
+        <v-navigation-drawer v-model="drawer" permanent>
           <v-list>
             <v-list-item>
               <row class="d-flex justify-center">
@@ -23,7 +23,7 @@
               <v-list-item-title>{{ menu.title }}</v-list-item-title>
             </v-list-item>
           </v-list>
-        </v-navigation-drawer> -->
+        </v-navigation-drawer>
 
         <v-app-bar app color="black" dark>
           <v-container fluid>
@@ -312,7 +312,7 @@ div[id] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 15%;
+  height: 17%;
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
   background-color: black;
   display: flex;

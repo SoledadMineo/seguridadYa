@@ -5,7 +5,7 @@
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
           <v-card class="cardImagen">
-            <v-img src="../assets/cerco.png"></v-img>
+            <v-img src="../assets/cerco1.jpg"></v-img>
           </v-card>
         </v-col>
 
@@ -14,9 +14,8 @@
             <v-card-title>
               <div class="titulo"><strong>cercos</strong></div>
               <div class="subtitulo"><strong>eléctricos</strong></div>
-              <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
-            <v-spacer></v-spacer>
+            <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             <v-card-text class="texto">
               Son sistemas de seguridad perimetral que utilizan una serie de
               hilos o alambres electrificados para disuadir y prevenir

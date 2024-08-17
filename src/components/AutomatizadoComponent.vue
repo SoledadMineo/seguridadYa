@@ -29,7 +29,6 @@
     </v-container>
   </v-app>
 </template>
-
 <script>
 export default {
   name: "ResponsiveApp",
@@ -79,7 +78,7 @@ export default {
   box-shadow: none;
   background-color: transparent;
 }
-.cardImagen{
+.cardImagen {
   margin: 2rem;
 }
 
