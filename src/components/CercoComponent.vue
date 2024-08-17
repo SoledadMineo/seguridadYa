@@ -1,5 +1,6 @@
 <template>
   <v-app class="contenedor" id="cerco">
+    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
@@ -13,8 +14,7 @@
             <v-card-title>
               <div class="titulo"><strong>cercos</strong></div>
               <div class="subtitulo"><strong>eléctricos</strong></div>
-              <v-img src="../assets/cinta2.png" class="card-img"></v-img>
-              
+              <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
@@ -80,6 +80,12 @@ export default {
   display: flex;
   justify-content: space-around;
 }
+.card-img {
+  width: 100%;
+}
+.card-img1 {
+  width: 100%;
+}
 .cardTitulo {
   height: 100%;
   border: none;
@@ -90,7 +96,7 @@ export default {
   background-color: transparent;
   overflow: hidden;
 }
-.cardImagen{
+.cardImagen {
   margin: 2rem;
 }
 
@@ -155,7 +161,6 @@ export default {
     .texto {
       font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
       margin-right: 5%;
-
     }
     .contenedor {
       background-size: 100% 2%;

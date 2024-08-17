@@ -2,7 +2,7 @@
   <div id="app">
     <v-app>
       <div class="header">
-        <v-navigation-drawer v-model="drawer" permanent>
+        <!-- <v-navigation-drawer v-model="drawer" permanent>
           <v-list>
             <v-list-item>
               <row class="d-flex justify-center">
@@ -13,6 +13,7 @@
                   ></v-img>
                 </div>
               </row>
+              <v-divider class="linea"></v-divider>
             </v-list-item>
             <v-list-item
               v-for="(menu, index) in menus"
@@ -22,11 +23,11 @@
               <v-list-item-title>{{ menu.title }}</v-list-item-title>
             </v-list-item>
           </v-list>
-        </v-navigation-drawer>
+        </v-navigation-drawer> -->
 
         <v-app-bar app color="black" dark>
           <v-container fluid>
-            <v-row>
+            <v-row class="menu">
               <v-col
                 class="d-flex flex-column align-center justify-start"
                 cols="4"
@@ -41,13 +42,17 @@
                   class="hover-cursor"
                 />
               </v-col>
-              <v-col class="d-flex flex-column align-center justify-end" cols="8" md="8">
+              <v-col
+                class="d-flex flex-column align-center justify-end"
+                cols="8"
+                md="8"
+              >
                 <v-app-bar-nav-icon
                   @click="drawer = !drawer"
                   v-if="mobileView"
                 ></v-app-bar-nav-icon>
 
-                <div v-if="!mobileView" >
+                <div v-if="!mobileView">
                   <v-btn class="button">
                     Productos
                     <v-menu activator="parent" rigth>
@@ -113,7 +118,12 @@
           <v-img
             alt="Logo"
             src="../src/assets/logoRedondo.png"
-            style="max-width: 5rem; height: auto; display: block; margin-left: 10%;"
+            style="
+              max-width: 5rem;
+              height: auto;
+              display: block;
+              margin-left: 10%;
+            "
           />
         </div>
         <div class="d-flex flex-row">
@@ -213,7 +223,6 @@ export default {
 </script>
 
 <style>
-
 .v-navigation-drawer--right {
   right: 0;
   left: auto;
@@ -223,6 +232,11 @@ export default {
 }
 .imagen-wrapper {
   width: 40%;
+}
+.linea {
+  color: black;
+  opacity: 50%;
+  margin: 8px;
 }
 .app {
   position: relative;
@@ -240,6 +254,7 @@ export default {
 }
 .hover-cursor {
   cursor: pointer;
+  margin-top: 8%;
 }
 .button-menu {
   color: #d7d7d7;
@@ -279,7 +294,6 @@ main {
   padding: 0;
   padding-top: 50px;
   background-color: white;
- 
 }
 a {
   text-decoration: none;
@@ -298,12 +312,12 @@ div[id] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 7rem;
+  height: 15%;
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .footer {
   background-color: black; /* Cambia este valor al color de fondo deseado */
