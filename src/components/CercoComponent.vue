@@ -12,8 +12,8 @@
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
             <v-card-title>
-              <div class="titulo"><strong>cercos</strong></div>
-              <div class="subtitulo"><strong>eléctricos</strong></div>
+              <div class="titulo"><strong>Cercos</strong></div>
+              <div class="subtitulo"><strong>Eléctricos</strong></div>
             </v-card-title>
             <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             <v-card-text class="texto">

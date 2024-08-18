@@ -10,21 +10,26 @@
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
             <v-card-title>
-              <div class="titulo"><strong>cierre</strong></div>
-              <div class="subtitulo"><strong>perimetral</strong></div>
+              <div class="titulo"><strong>Cierre</strong></div>
+              <div class="subtitulo"><strong>Perimetral</strong></div>
             </v-card-title>
             <v-spacer></v-spacer>
             <v-card-text class="texto">
-              Alarmas domiciliarias todas las marcas. Sistema de wifi. Sistema
-              de video vigilancia, conocido como CCTV (Circuito Cerrado de
-              Televisión) que utiliza cámaras de video para monitorear y grabar
-              imágenes de un área específica.
+              Brindamos cierre perimetral y romboidal para delimitar y proteger propiedades.
+              Puede estar compuesto de diversos tipos de materiales 
+              y estilos según las necesidades de seguridad, estética y presupuesto.
               <br />
               <br />
-              Desde tu celular bajas una aplicación gratuita y podes
-              automonitorear de manera inmediata y efectiva de control, que
-              movimiento fue lo que activo la alarma de seguridad.
+              Se caracteriza el cerco perimetral por ser:  
               <br />
+              <br />
+              <ul class="custom-list">
+              <li>Versátil.</li>
+              <li>Duradero.</li>
+              <li>Seguro.</li>
+              <li>Económico.</li>
+              <li>Fácil de instalar.</li>       
+              </ul> 
             </v-card-text>
           </v-card>
         </v-col>
