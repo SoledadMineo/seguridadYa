@@ -1,5 +1,6 @@
 <template>
   <div class="caja">
+    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container class="contenedor" id="preguntas">
       <v-table class="custom-table">
         <tr class="custom-celda">

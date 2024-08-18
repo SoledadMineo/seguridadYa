@@ -14,8 +14,8 @@
             <v-card-title>
               <div class="titulo"><strong>Cercos</strong></div>
               <div class="subtitulo"><strong>Eléctricos</strong></div>
+              <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
-            <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             <v-card-text class="texto">
               Son sistemas de seguridad perimetral que utilizan una serie de
               hilos o alambres electrificados para disuadir y prevenir
@@ -27,6 +27,7 @@
               y pueden integrarse con otros sistemas de seguridad, como cámaras
               de vigilancia y alarmas. Su consumo de energía es mínimo.
             </v-card-text>
+            <br /><br />
             <v-button>
               <div class="whatsApp">
                 <a
@@ -75,10 +76,7 @@ export default {
   color: #40c351;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
-.celda {
-  display: flex;
-  justify-content: space-around;
-}
+
 .card-img {
   width: 100%;
 }
@@ -88,12 +86,10 @@ export default {
 .cardTitulo {
   height: 100%;
   border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   box-shadow: none;
   background-color: transparent;
   overflow: hidden;
+  margin: 2rem;
 }
 .cardImagen {
   margin: 2rem;

@@ -1,6 +1,5 @@
 <template>
   <v-app class="contenedor" id="alarmas">
-    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
@@ -13,8 +12,9 @@
             <v-card-title>
               <div class="titulo"><strong>Alarmas</strong></div>
               <div class="subtitulo"><strong>Monitoreadas</strong></div>
+              <v-img src="../assets/cinta2.png" class="card-img"></v-img>
             </v-card-title>
-            <v-spacer></v-spacer>
+
             <v-card-text class="texto">
               Alarmas domiciliarias todas las marcas. Sistema de wifi. Sistema
               de video vigilancia, conocido como CCTV (Circuito Cerrado de
@@ -47,9 +47,8 @@ export default {
   background-size: 100% 4%;
   background-position: 10% 16%;
 } */
-.card-img{
+.card-img {
   width: 100%;
-  
 }
 .botonWhat {
   display: flex;
@@ -87,7 +86,7 @@ export default {
   box-shadow: none;
   background-color: transparent;
 }
-.cardImagen{
+.cardImagen {
   margin: 2rem;
 }
 .titulos {

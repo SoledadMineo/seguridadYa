@@ -1,5 +1,6 @@
 <template>
   <div class="contenedor">
+    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-row justify="center" id="quienesSomos"
       ><v-col cols="12" md="6">
         <v-card class="card" elevation="20">
@@ -11,14 +12,15 @@
           <v-card-text class="texto"
             ><strong>
               Somos una empresa mendocina con más de una década de trayectoria,
-              brindando siempre el mejor servicio de seguridad con equipos homologados y domóticas.
-              <br>
-              <br>        
-              Las instalaciones se realizan en el día, no se paga ningún abono mensual
-              y desde tu celular podes controlar el automonitoreo del sistema de alarmas.
-                       
-  
-            </strong></v-card-text>
+              brindando siempre el mejor servicio de seguridad con equipos
+              homologados y domóticas.
+              <br />
+              <br />
+              Las instalaciones se realizan en el día, no se paga ningún abono
+              mensual y desde tu celular podes controlar el automonitoreo del
+              sistema de alarmas.
+            </strong></v-card-text
+          >
         </v-card>
       </v-col>
     </v-row>
@@ -30,7 +32,8 @@
           <v-card-text>
             Son productos de primera calidad que cumplen con normativas y
             regulaciones que garantizan su seguridad eléctrica y capacidad para
-            su uso previsto.</v-card-text>
+            su uso previsto.</v-card-text
+          >
         </v-card>
       </v-col>
 
@@ -39,12 +42,12 @@
           <v-img src="../assets/pngegg.png" height="100px"></v-img>
           <v-card-title>Garantía Oficial</v-card-title>
           <v-card-text>
-            Es nuestro compromiso de ofrecer seguridad y protección al realizar la compra,
-            sin incurrir en costos adicionales.
-            <br>
-            <br>
+            Es nuestro compromiso de ofrecer seguridad y protección al realizar
+            la compra, sin incurrir en costos adicionales.
+            <br />
+            <br />
             Garantía extendida por 5 años en trabajos de infraestructura.
-            </v-card-text>
+          </v-card-text>
         </v-card>
       </v-col>
 
@@ -53,9 +56,9 @@
           <v-img src="../assets/pngegg(2).png" height="100px"></v-img>
           <v-card-title>Financiación Propia</v-card-title>
           <v-card-text>
-        Recibimos la forma de pago con tarjetas de débito, tarjetas de crédito
-        y financiación propia o bancaria a convenir. 
-        </v-card-text>
+            Recibimos la forma de pago con tarjetas de débito, tarjetas de
+            crédito y financiación propia o bancaria a convenir.
+          </v-card-text>
         </v-card>
       </v-col>
 
@@ -67,15 +70,16 @@
             Revisión periódica de la instalación del cerco eléctrico.
             <br />
             <br />
-            Las visitas consisten en: 
+            Las visitas consisten en:
             <br />
             <ul class="custom-list">
               <li>Inspeccionar los componentes.</li>
               <li>Ajustar las tensiones.</li>
-              <li>Verificar el funcionamiento correcto del sistema de alarma.</li>
-              <li>Comprobar la integridad del cableado y los aisladores.</li>       
-              </ul>   
-            
+              <li>
+                Verificar el funcionamiento correcto del sistema de alarma.
+              </li>
+              <li>Comprobar la integridad del cableado y los aisladores.</li>
+            </ul>
           </v-card-text>
         </v-card>
       </v-col>
@@ -84,13 +88,6 @@
 </template>
 
 <style scoped>
-.contenedor {
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 8%;
-  background-position: 10% 50%;
-  margin-top: 5%;
-}
 .card {
   background-color: #d7d7d7;
   height: 100%;

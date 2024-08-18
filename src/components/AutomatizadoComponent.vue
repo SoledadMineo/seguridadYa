@@ -7,8 +7,8 @@
             <v-card-title>
               <div class="titulo"><strong>Automatización</strong></div>
               <div class="subtitulo"><strong>de Portones</strong></div>
+              <v-img src="../assets/cinta2.png" class="card-img"></v-img>
             </v-card-title>
-            <v-spacer></v-spacer>
             <v-card-text class="texto">
               Es un sistema que permite abrir y cerrar portones de manera
               automática, mediante el uso de un motor eléctrico controlado por
@@ -36,12 +36,6 @@ export default {
 </script>
 
 <style scoped>
-.contenedor {
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 4%;
-  background-position: 10% 16%;
-}
 .botonWhat {
   display: flex;
   justify-content: center; /* Centrando horizontalmente */

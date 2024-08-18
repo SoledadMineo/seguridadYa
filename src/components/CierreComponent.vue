@@ -12,24 +12,25 @@
             <v-card-title>
               <div class="titulo"><strong>Cierre</strong></div>
               <div class="subtitulo"><strong>Perimetral</strong></div>
+              <v-img src="../assets/cinta2.png" class="card-img"></v-img>
             </v-card-title>
-            <v-spacer></v-spacer>
             <v-card-text class="texto">
-              Brindamos cierre perimetral y romboidal para delimitar y proteger propiedades.
-              Puede estar compuesto de diversos tipos de materiales 
-              y estilos según las necesidades de seguridad, estética y presupuesto.
+              Brindamos cierre perimetral y romboidal para delimitar y proteger
+              propiedades. Puede estar compuesto de diversos tipos de materiales
+              y estilos según las necesidades de seguridad, estética y
+              presupuesto.
               <br />
               <br />
-              Se caracteriza el cerco perimetral por ser:  
+              Se caracteriza el cerco perimetral por ser:
               <br />
               <br />
               <ul class="custom-list">
-              <li>Versátil.</li>
-              <li>Duradero.</li>
-              <li>Seguro.</li>
-              <li>Económico.</li>
-              <li>Fácil de instalar.</li>       
-              </ul> 
+                <li>Versátil.</li>
+                <li>Duradero.</li>
+                <li>Seguro.</li>
+                <li>Económico.</li>
+                <li>Fácil de instalar.</li>
+              </ul>
             </v-card-text>
           </v-card>
         </v-col>
@@ -45,13 +46,6 @@ export default {
 </script>
 
 <style scoped>
-.contenedor {
-  margin-top: 3%;
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 4%;
-  background-position: 10% 16%;
-}
 .botonWhat {
   display: flex;
   justify-content: center; /* Centrando horizontalmente */
@@ -68,6 +62,9 @@ export default {
   color: black;
   border-radius: 40px; /* Esquinas redondeadas */
   transition: all 0.3s ease; /* Transición suave */
+}
+.custom-list {
+  margin-left: 2%;
 }
 .custom-button:hover,
 .custom-button:focus {

@@ -1,31 +1,36 @@
 <template>
   <v-app class="contenedor" id="camaras">
+    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container>
-      <v-img src="../assets/cinta2.png" class="card-img"></v-img>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
             <v-card-title>
               <div class="titulo"><strong>Cámaras</strong></div>
               <div class="subtitulo"><strong>de Seguridad</strong></div>
+              <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
-            <v-spacer></v-spacer>
             <v-card-text class="texto">
-              Protegen lo que más valoras que son tus seres queridos, tu hogar y tu negocio.
-              Desde tu teléfono móvil podes verificar que todo está en orden.              
+              Protegen lo que más valoras que son tus seres queridos, tu hogar y
+              tu negocio. Desde tu teléfono móvil podes verificar que todo está
+              en orden.
               <br />
               <br />
               Ofrecemos todo tipo de cámaras con las siguientes características:
               <br />
               <br />
               <ul class="custom-list">
-              <li>Alta resolución (HD/4K).</li>
-              <li>Visión nocturna, brindando seguridad las 24 horas del día.</li>
-              <li>Acceso remoto a la app móvil en tiempo real.</li>
-              <li>Detección de movimiento inteligente.</li>  
-              <li>Soluciones personalizadas que se adaptan a cualquier tipo de propiedad.</li>     
-              </ul> 
-              
+                <li>Alta resolución (HD/4K).</li>
+                <li>
+                  Visión nocturna, brindando seguridad las 24 horas del día.
+                </li>
+                <li>Acceso remoto a la app móvil en tiempo real.</li>
+                <li>Detección de movimiento inteligente.</li>
+                <li>
+                  Soluciones personalizadas que se adaptan a cualquier tipo de
+                  propiedad.
+                </li>
+              </ul>
             </v-card-text>
           </v-card>
         </v-col>
@@ -58,6 +63,9 @@ export default {
   justify-content: center; /* Centrando horizontalmente */
   width: 100%;
 }
+.custom-list {
+  margin-left: 2%;
+}
 .custom-button {
   display: flex;
   align-items: center;
@@ -78,18 +86,16 @@ export default {
 }
 .celda {
   display: flex;
-  justify-content: space-around;
 }
 .cardTitulo {
   height: 100%;
   border: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   box-shadow: none;
   background-color: transparent;
 }
-.cardImagen{
+.cardImagen {
   margin: 2rem;
 }
 
