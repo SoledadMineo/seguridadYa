@@ -276,6 +276,7 @@ main {
   margin: 0;
   padding: 0;
   background-color: white;
+  margin-top: 2rem;
 }
 a {
   text-decoration: none;
@@ -297,6 +298,17 @@ footer div {
   flex: 1;
   text-align: center;
 }
+@media (max-width: 1920px) {
+  main {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  main {
+    margin-top: 4rem;
+  }  
+}
 @media (max-width: 1024px) {
   .logo-img {
     width: 10rem;
@@ -313,5 +325,8 @@ footer div {
   v-img {
     width: 100px;
   }
+  main {
+    margin-top: 2rem;
+  }  
 }
 </style>
