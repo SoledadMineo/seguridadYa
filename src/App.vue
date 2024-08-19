@@ -189,7 +189,10 @@ export default {
     scrollToSection(path) {
       const element = document.getElementById(path);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const yOffset = -100;
+        const y =
+          element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
     },
     handleItemClick(path) {
@@ -210,10 +213,6 @@ export default {
 </script>
 
 <style>
-.v-navigation-drawer--right {
-  right: 0;
-  left: auto;
-}
 .responsive-image {
   width: 5%;
 }
@@ -229,7 +228,6 @@ export default {
   width: 20rem;
 }
 .app {
-  position: relative;
   height: 100%;
   margin: 0;
   padding: 0%;
@@ -241,16 +239,16 @@ export default {
   background-color: white;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .hover-cursor {
   cursor: pointer;
 }
 .menu {
-  background-color: black;
-  padding: 2%;
-  display: flex;
   position: fixed;
+  background-color: black;
   z-index: 1000;
+  padding: 1rem;
 }
 .custom-title {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -273,7 +271,6 @@ export default {
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
 .v-main {
-  position: relative;
   margin: 0;
   padding: 0;
   background-color: white;
