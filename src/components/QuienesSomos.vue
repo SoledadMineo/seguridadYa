@@ -1,6 +1,5 @@
 <template>
   <div class="contenedor">
-    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-row justify="center" id="quienesSomos"
       ><v-col cols="12" md="6">
         <v-card class="card" elevation="20">
@@ -24,6 +23,7 @@
         </v-card>
       </v-col>
     </v-row>
+
     <v-row class="panel">
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
@@ -88,6 +88,12 @@
 </template>
 
 <style scoped>
+.contenedor {
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 10%;
+  background-position: center;
+}
 .card {
   background-color: #d7d7d7;
   height: 100%;
@@ -109,6 +115,17 @@
 .card:hover {
   border: 2px solid black;
 }
-.panel {
+.card-img {
+  width: 100%;
+  height: auto;
+}
+.contenedor {
+  background-size: 100% 10%;
+  background-position: center;
+}
+@media (max-width: 1024px) {
+  .contenedor {
+    background-size: 100% 3%;
+  }
 }
 </style>

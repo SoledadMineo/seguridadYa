@@ -1,6 +1,5 @@
 <template>
   <div class="caja">
-    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container class="contenedor" id="preguntas">
       <v-table class="custom-table">
         <tr class="custom-celda">
@@ -91,10 +90,10 @@
 .caja {
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100% 5%;
-  background-position: 25%;
-  margin-top: 5%;
-}
+  background-size: 100% 10%;
+  background-position: center;
+  margin-top: 3%;
+} 
 .custom-list{
   list-style-type: square; /* Tipo de viñeta */
   padding-left: 30px; /* Ajusta el espacio desde el borde izquierdo */
@@ -104,6 +103,7 @@
   display: flex;
   justify-content: center;
   background-color: #ec0c05;
+  width: 70%;
 }
 .custom-table {
   width: 100%;
@@ -118,7 +118,7 @@
   align-items: center;
   background-color: #848484; /* Cambiar color de fondo de las cabeceras */
   height: auto;
-  padding: 5%;
+  padding: 2%;
 }
 .custom-celda,
 .custom-celda1,
@@ -175,7 +175,7 @@ p {
 li {
   text-align: justify;
 }
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .custom-header {
     width: 100%;
   }
@@ -218,7 +218,9 @@ li {
     background-color: #848484;
     color: black;
   }
-
+  .contenedor {
+  width: 100%;
+  }
   tr {
     display: flex;
     flex-wrap: wrap;

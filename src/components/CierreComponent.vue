@@ -14,6 +14,7 @@
               <div class="subtitulo"><strong>Perimetral</strong></div>
               <v-img src="../assets/cinta2.png" class="card-img"></v-img>
             </v-card-title>
+            <br />
             <v-card-text class="texto">
               Brindamos cierre perimetral y romboidal para delimitar y proteger
               propiedades. Puede estar compuesto de diversos tipos de materiales
@@ -79,20 +80,11 @@ export default {
 .cardTitulo {
   height: 100%;
   border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   box-shadow: none;
-  background-color: transparent;
-  padding: 2rem;
 }
 .cardImagen {
   margin: 2rem;
-}
-.titulos {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+  padding: 1rem;
 }
 .titulo {
   color: #ec0c05;
@@ -105,7 +97,6 @@ export default {
 .texto {
   font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
   text-align: justify;
-  margin-right: 5%;
 }
 
 @media (max-width: 2560px) {
@@ -158,10 +149,10 @@ export default {
   }
   @media (max-width: 600px) {
     .titulo {
-      font-size: 50px;
+      font-size: 40px;
     }
     .subtitulo {
-      font-size: 30px;
+      font-size: 25px;
     }
     .contenedor {
       background-size: 100% 2%;
@@ -172,6 +163,9 @@ export default {
     }
     .texto {
       margin: 0%;
+    }
+    .custom-list {
+      margin-left: 4%;
     }
   }
 }

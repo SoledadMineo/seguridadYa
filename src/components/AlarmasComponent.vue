@@ -1,7 +1,7 @@
 <template>
   <v-app class="contenedor" id="alarmas">
     <v-container>
-      <v-row class="celda" align="strech">
+      <v-row class="celda">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
           <v-card class="cardImagen">
             <v-img src="../assets/alarmas.png"></v-img>
@@ -9,12 +9,12 @@
         </v-col>
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
-            <v-card-title>
+            <v-card-title class="titulos">
               <div class="titulo"><strong>Alarmas</strong></div>
               <div class="subtitulo"><strong>Monitoreadas</strong></div>
               <v-img src="../assets/cinta2.png" class="card-img"></v-img>
             </v-card-title>
-
+            <br />
             <v-card-text class="texto">
               Alarmas domiciliarias todas las marcas. Sistema de wifi. Sistema
               de video vigilancia, conocido como CCTV (Circuito Cerrado de
@@ -41,12 +41,6 @@ export default {
 </script>
 
 <style scoped>
-/* .contenedor {
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 4%;
-  background-position: 10% 16%;
-} */
 .card-img {
   width: 100%;
 }
@@ -73,26 +67,15 @@ export default {
   color: #40c351;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
-.celda {
-  display: flex;
-  justify-content: space-around;
-}
 .cardTitulo {
   height: 100%;
   border: none;
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
   box-shadow: none;
-  background-color: transparent;
 }
 .cardImagen {
   margin: 2rem;
-}
-.titulos {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+  padding: 1rem;
 }
 .titulo {
   color: #ec0c05;
@@ -105,7 +88,6 @@ export default {
 .texto {
   font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
   text-align: justify;
-  margin-right: 5%;
 }
 
 @media (max-width: 2560px) {
@@ -158,10 +140,10 @@ export default {
   }
   @media (max-width: 600px) {
     .titulo {
-      font-size: 50px;
+      font-size: 40px;
     }
     .subtitulo {
-      font-size: 30px;
+      font-size: 25px;
     }
     .contenedor {
       background-size: 100% 2%;

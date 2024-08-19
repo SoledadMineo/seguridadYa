@@ -1,6 +1,5 @@
 <template>
   <v-app class="contenedor" id="camaras">
-    <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container>
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="7" xl="7">
@@ -10,6 +9,7 @@
               <div class="subtitulo"><strong>de Seguridad</strong></div>
               <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
+            <br />
             <v-card-text class="texto">
               Protegen lo que más valoras que son tus seres queridos, tu hogar y
               tu negocio. Desde tu teléfono móvil podes verificar que todo está
@@ -52,19 +52,10 @@ export default {
 </script>
 
 <style scoped>
-/* .contenedor {
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 4%;
-  background-position: 10% 16%;
-} */
 .botonWhat {
   display: flex;
   justify-content: center; /* Centrando horizontalmente */
   width: 100%;
-}
-.custom-list {
-  margin-left: 2%;
 }
 .custom-button {
   display: flex;
@@ -84,21 +75,16 @@ export default {
   color: #40c351;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
-.celda {
-  display: flex;
-}
 .cardTitulo {
   height: 100%;
   border: none;
-  display: flex;
   flex-direction: column;
   box-shadow: none;
-  background-color: transparent;
 }
 .cardImagen {
   margin: 2rem;
+  padding: 1rem;
 }
-
 .titulos {
   display: flex;
   flex-direction: column;
@@ -115,7 +101,6 @@ export default {
 .texto {
   font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
   text-align: justify;
-  margin-right: 5%;
 }
 
 @media (max-width: 2560px) {
@@ -168,10 +153,10 @@ export default {
   }
   @media (max-width: 600px) {
     .titulo {
-      font-size: 50px;
+      font-size: 40px;
     }
     .subtitulo {
-      font-size: 30px;
+      font-size: 25px;
     }
     .contenedor {
       background-size: 100% 2%;
@@ -182,6 +167,9 @@ export default {
     }
     .texto {
       margin: 0%;
+    }
+    .custom-list {
+      margin-left: 4%;
     }
   }
 }

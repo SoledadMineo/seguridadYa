@@ -2,7 +2,7 @@
   <v-app class="contenedor" id="cerco">
     <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container>
-      <v-row class="celda" align="strech">
+      <v-row class="celda">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
           <v-card class="cardImagen">
             <v-img src="../assets/cerco1.jpg"></v-img>
@@ -76,7 +76,6 @@ export default {
   color: #40c351;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
-
 .card-img {
   width: 100%;
 }
@@ -87,18 +86,11 @@ export default {
   height: 100%;
   border: none;
   box-shadow: none;
-  background-color: transparent;
   overflow: hidden;
-  margin: 2rem;
 }
 .cardImagen {
   margin: 2rem;
-}
-
-.titulos {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+  padding: 1rem;
 }
 .titulo {
   color: #ec0c05;
@@ -111,7 +103,6 @@ export default {
 .texto {
   font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
   text-align: justify;
-  margin-right: 5%;
 }
 
 @media (max-width: 2560px) {
@@ -164,10 +155,10 @@ export default {
   }
   @media (max-width: 600px) {
     .titulo {
-      font-size: 50px;
+      font-size: 40px;
     }
     .subtitulo {
-      font-size: 30px;
+      font-size: 25px;
     }
     .contenedor {
       background-size: 100% 2%;

@@ -1,7 +1,73 @@
 <template>
   <div id="app">
     <v-app>
-      <div class="header">
+      <v-toolbar class="menu" color="black">
+        <v-toolbar-title>
+          <v-img
+            src="./assets/logo.jpg"
+            alt="Logo Seguridad Ya"
+            @click="scrollToSection('cerco')"
+            class="hover-cursor logo-img"
+          ></v-img>
+        </v-toolbar-title>
+        <v-space></v-space>
+        <v-toolbar-item v-if="mobileView">
+          <v-app-bar-nav-icon
+            variant="text"
+            @click.stop="drawer = !drawer"
+          ></v-app-bar-nav-icon>
+
+          <v-navigation-drawer v-model="drawer" permanent>
+            <v-list>
+              <v-list-item>
+                <row class="d-flex justify-center">
+                  <div class="imagen-wrapper">
+                    <v-img
+                      src="./assets/logoRedondo-sinFondo.png"
+                      aspect-ratio="1.5"
+                    ></v-img>
+                  </div>
+                </row>
+                <v-divider class="linea"></v-divider>
+              </v-list-item>
+              <v-list-item
+                v-for="(menu, index) in menus"
+                :key="index"
+                @click="handleItemClick(menu.path)"
+              >
+                <v-list-item-title>{{ menu.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-navigation-drawer>
+        </v-toolbar-item>
+
+        <v-toolbar-item v-if="!mobileView">
+          <v-btn class="button">
+            Productos
+            <v-menu activator="parent" rigth>
+              <v-list>
+                <v-list-item
+                  v-for="(item, index) in items"
+                  :key="index"
+                  @click="scrollToSection(item.path)"
+                >
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+          </v-btn>
+          <v-btn class="button" @click="scrollToSection('quienesSomos')">
+            Quienes Somos
+          </v-btn>
+          <v-btn class="button" @click="scrollToSection('preguntas')">
+            Preguntas Frecuentes
+          </v-btn>
+          <v-btn class="button" @click="scrollToSection('contactos')">
+            Contactos
+          </v-btn>
+        </v-toolbar-item>
+      </v-toolbar>
+      <!-- <div class="header">
         <v-navigation-drawer v-model="drawer" permanent>
           <v-list>
             <v-list-item>
@@ -14,7 +80,7 @@
                 </div>
               </row>
               <v-divider class="linea"></v-divider>
-            </v-list-item>
+              </v-list-item>
             <v-list-item
               v-for="(menu, index) in menus"
               :key="index"
@@ -82,8 +148,8 @@
               </v-col>
             </v-row>
           </v-container>
-        </v-app-bar>
-      </div>
+        </v-app-bar> 
+      </div> -->
       <main>
         <router-view />
 
@@ -118,11 +184,14 @@
           <v-img
             alt="Logo"
             src="../src/assets/logoRedondo.png"
+            @click="scrollToSection('cerco')"
+            class="hover-cursor"
             style="
-              max-width: 5rem;
+              max-width: 4rem;
               height: auto;
               display: block;
               margin-left: 10%;
+              margin-bottom: 0%;
             "
           />
         </div>
@@ -238,6 +307,9 @@ export default {
   opacity: 50%;
   margin: 8px;
 }
+.logo-img {
+  width: 20rem;
+}
 .app {
   position: relative;
   height: 100%;
@@ -254,7 +326,13 @@ export default {
 }
 .hover-cursor {
   cursor: pointer;
-  margin-top: 8%;
+}
+.menu {
+  background-color: black;
+  padding: 2%;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
 }
 .button-menu {
   color: #d7d7d7;
@@ -277,7 +355,7 @@ export default {
 }
 .button:hover,
 .button:focus {
-  background-color: red; /* Color de fondo al pasar el mouse */
+  background-color: #ec0c05; /* Color de fondo al pasar el mouse */
   color: white;
   transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
@@ -292,7 +370,7 @@ export default {
 main {
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 65px;
   background-color: white;
 }
 a {
@@ -305,19 +383,6 @@ html {
 
 div[id] {
   scroll-margin-top: 100px;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 17%;
-  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .footer {
   background-color: black; /* Cambia este valor al color de fondo deseado */
@@ -343,11 +408,9 @@ footer div {
   top: 16px;
 }
 @media (max-width: 1024px) {
-  .fixed-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .logo-img {
+    width: 10rem;
   }
-
   #navigation-icon {
     display: block; /* Mostrar icono de menú en móviles */
   }
@@ -370,9 +433,6 @@ footer div {
   }
   #icon-menu {
     display: block; /* Mostrar icono de menú en pantallas más pequeñas */
-  }
-  .fixed-header {
-    display: flex;
   }
 }
 </style>
