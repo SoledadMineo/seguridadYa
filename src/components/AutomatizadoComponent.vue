@@ -1,6 +1,6 @@
 <template>
-  <v-app class="contenedor" id="automatizados">
-    <v-container>
+  <div class="contenedor">
+    <v-container  id="automatizados">
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="8" sm="6" md="6" lg="7" xl="7">
           <v-card class="cardTitulo">
@@ -28,7 +28,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-app>
+  </div>
 </template>
 <script>
 export default {
@@ -37,29 +37,6 @@ export default {
 </script>
 
 <style scoped>
-.botonWhat {
-  display: flex;
-  justify-content: center; /* Centrando horizontalmente */
-  width: 100%;
-}
-.custom-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  size: large;
-  font-weight: bold;
-  padding: 20px;
-  background-color: #40c351;
-  color: black;
-  border-radius: 40px; /* Esquinas redondeadas */
-  transition: all 0.3s ease; /* Transición suave */
-}
-.custom-button:hover,
-.custom-button:focus {
-  background-color: #848484; /* Color de fondo al pasar el mouse */
-  color: #40c351;
-  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
-}
 .cardTitulo {
   height: 100%;
   border: none;
@@ -83,13 +60,6 @@ export default {
   text-align: justify;
 }
 
-@media (max-width: 2560px) {
-  .contenedor {
-    background-size: 100% 5%;
-    background-position: 10% 25%;
-  }
-}
-
 @media (max-width: 1920px) {
   .titulo {
     font-size: 60px;
@@ -97,24 +67,19 @@ export default {
   .subtitulo {
     font-size: 30px;
   }
-  .contenedor {
-    background-size: 100% 5%;
-    background-position: 10% 35%;
-  }
+  .cardImagen {
+    width: 75%;
+}
 }
 
 @media (max-width: 1280px) {
   .titulo {
-    font-size: 60px;
+    font-size: 55px;
   }
   .subtitulo {
     font-size: 30px;
   }
-  .contenedor {
-    background-size: 100% 4%;
-    background-position: 10% 21%;
-  }
-
+}
   @media (max-width: 960px) {
     .titulo {
       font-size: 50px;
@@ -126,10 +91,6 @@ export default {
       font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
       margin-right: 5%;
     }
-    .contenedor {
-      background-size: 100% 2%;
-      background-position: 10% 18%;
-    }
   }
   @media (max-width: 600px) {
     .titulo {
@@ -138,10 +99,6 @@ export default {
     .subtitulo {
       font-size: 25px;
     }
-    .contenedor {
-      background-size: 100% 2%;
-      background-position: 10% 54%;
-    }
     .cardImagen {
       padding: 2%;
     }
@@ -149,5 +106,5 @@ export default {
       margin: 0%;
     }
   }
-}
+
 </style>

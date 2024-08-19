@@ -123,9 +123,8 @@
   background-size: 100% 10%;
   background-position: center;
 }
-@media (max-width: 1024px) {
-  .contenedor {
-    background-size: 100% 3%;
-  }
+.custom-list{
+  margin-left: 1rem;
 }
+
 </style>
