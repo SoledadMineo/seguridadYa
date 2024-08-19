@@ -1,6 +1,6 @@
 <template>
-  <div class="contenedor">
-    <v-row justify="center" id="quienesSomos"
+  <div class="contenedor" id="quienesSomos">
+    <v-row justify="center" 
       ><v-col cols="12" md="6">
         <v-card class="card" elevation="20">
           <v-img

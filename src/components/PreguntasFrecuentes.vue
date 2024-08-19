@@ -1,6 +1,6 @@
 <template>
-  <div class="caja">
-    <v-container class="contenedor" id="preguntas">
+  <div class="caja" id="preguntas">
+    <v-container class="contenedor" >
       <v-table class="custom-table">
         <tr class="custom-celda">
           <td colspan="2">
