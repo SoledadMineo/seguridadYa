@@ -69,10 +69,6 @@
       </v-toolbar>
 
       <v-main>
-
-     
-      </v-main>
-
         <router-view />
 
         <v-fab-transition>
@@ -281,7 +277,6 @@ export default {
   margin: 0;
   padding: 0;
   background-color: white;
-  margin-top: 2rem;
 }
 a {
   text-decoration: none;
@@ -312,7 +307,7 @@ footer div {
 @media (max-width: 1280px) {
   .v-main {
     margin-top: 4rem;
-  }  
+  }
 }
 @media (max-width: 1024px) {
   .logo-img {
@@ -332,6 +327,6 @@ footer div {
   }
   .v-main {
     margin-top: 2rem;
-  }  
+  }
 }
 </style>
