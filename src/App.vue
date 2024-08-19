@@ -67,90 +67,7 @@
           </v-btn>
         </v-toolbar-item>
       </v-toolbar>
-      <!-- <div class="header">
-        <v-navigation-drawer v-model="drawer" permanent>
-          <v-list>
-            <v-list-item>
-              <row class="d-flex justify-center">
-                <div class="imagen-wrapper">
-                  <v-img
-                    src="./assets/logoRedondo-sinFondo.png"
-                    aspect-ratio="1.5"
-                  ></v-img>
-                </div>
-              </row>
-              <v-divider class="linea"></v-divider>
-              </v-list-item>
-            <v-list-item
-              v-for="(menu, index) in menus"
-              :key="index"
-              @click="handleItemClick(menu.path)"
-            >
-              <v-list-item-title>{{ menu.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-navigation-drawer>
-
-        <v-app-bar app color="black" dark>
-          <v-container fluid>
-            <v-row class="menu">
-              <v-col
-                class="d-flex flex-column align-center justify-start"
-                cols="4"
-                xs="4"
-                lg="3"
-              >
-                <v-img
-                  alt="Logo Seguridad Ya"
-                  src="../src/assets/logo.jpg"
-                  style="width: 70%"
-                  @click="scrollToSection('cerco')"
-                  class="hover-cursor"
-                />
-              </v-col>
-              <v-col
-                class="d-flex flex-column align-center justify-end"
-                cols="8"
-                md="8"
-              >
-                <v-app-bar-nav-icon
-                  @click="drawer = !drawer"
-                  v-if="mobileView"
-                ></v-app-bar-nav-icon>
-
-                <div v-if="!mobileView">
-                  <v-btn class="button">
-                    Productos
-                    <v-menu activator="parent" rigth>
-                      <v-list>
-                        <v-list-item
-                          v-for="(item, index) in items"
-                          :key="index"
-                          @click="scrollToSection(item.path)"
-                        >
-                          <v-list-item-title>{{
-                            item.title
-                          }}</v-list-item-title>
-                        </v-list-item>
-                      </v-list>
-                    </v-menu>
-                  </v-btn>
-                  <v-btn class="button" @click="scrollToSection('quienesSomos')"
-                    >Quienes Somos</v-btn
-                  >
-                  <v-btn class="button" @click="scrollToSection('preguntas')"
-                    >Preguntas Frecuentes</v-btn
-                  >
-                  <v-btn class="button" @click="scrollToSection('contactos')"
-                    >Contactos</v-btn
-                  >
-                </div>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-app-bar> 
-      </div> -->
-      <main>
+      <v-main>
         <router-view />
 
         <v-fab-transition>
@@ -178,7 +95,7 @@
             </a>
           </v-btn>
         </v-fab-transition>
-      </main>
+      </v-main>
       <footer class="footer">
         <div>
           <v-img
@@ -367,7 +284,8 @@ export default {
   background-color: #25d366 !important; /* Color verde de WhatsApp */
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
-main {
+.v-main {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-top: 65px;
