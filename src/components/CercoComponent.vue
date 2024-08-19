@@ -1,5 +1,5 @@
-<template>
-  <v-app class="contenedor" id="cerco">
+<template >
+  <div class="contenedor" id="cerco">
     <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container>
       <v-row class="celda">
@@ -43,7 +43,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-app>
+  </div>
 </template>
 
 <script>
@@ -53,6 +53,10 @@ export default {
 </script>
 
 <style scoped>
+.contenedor {
+  margin: 0%;
+  padding: 0%;
+}
 .botonWhat {
   display: flex;
   justify-content: center; /* Centrando horizontalmente */
@@ -105,13 +109,6 @@ export default {
   text-align: justify;
 }
 
-@media (max-width: 2560px) {
-  .contenedor {
-    background-size: 100% 5%;
-    background-position: 10% 25%;
-  }
-}
-
 @media (max-width: 1920px) {
   .titulo {
     font-size: 60px;
@@ -119,25 +116,22 @@ export default {
   .subtitulo {
     font-size: 30px;
   }
-  .contenedor {
-    background-size: 100% 5%;
-    background-position: 10% 35%;
+  .cardImagen {
+    width: 75%;
   }
 }
 
 @media (max-width: 1280px) {
   .titulo {
-    font-size: 60px;
+    font-size: 55px;
   }
   .subtitulo {
     font-size: 30px;
   }
-  .contenedor {
-    background-size: 100% 4%;
-    background-position: 10% 21%;
-  }
-
   @media (max-width: 960px) {
+    .contenedor{
+      margin-top: 2rem;
+    }
     .titulo {
       font-size: 50px;
     }
@@ -148,10 +142,6 @@ export default {
       font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
       margin-right: 5%;
     }
-    .contenedor {
-      background-size: 100% 2%;
-      background-position: 10% 18%;
-    }
   }
   @media (max-width: 600px) {
     .titulo {
@@ -159,10 +149,6 @@ export default {
     }
     .subtitulo {
       font-size: 25px;
-    }
-    .contenedor {
-      background-size: 100% 2%;
-      background-position: 10% 54%;
     }
     .texto {
       margin: 0%; /* Reducir tamaño de fuente para el párrafo */

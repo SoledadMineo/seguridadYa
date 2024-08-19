@@ -1,6 +1,6 @@
 <template>
-  <div class="caja">
-    <v-container class="contenedor" id="preguntas">
+  <div class="caja" id="preguntas">
+    <v-container class="contenedor" >
       <v-table class="custom-table">
         <tr class="custom-celda">
           <td colspan="2">
@@ -131,25 +131,12 @@
   padding: 15px;
   vertical-align: top;
 }
-.custom-celda1 {
+.custom-celda1, .custom-celda4, .custom-celda5{
   background-color: #d7d7d7;
 }
-.custom-celda2 {
+.custom-celda2, .custom-celda3, .custom-celda6 {
   background-color: #848484; /* Cambiar color de fondo de las celdas */
 }
-.custom-celda4 {
-  background-color: #d7d7d7;
-}
-.custom-celda3 {
-  background-color: #848484; /* Cambiar color de fondo de las celdas */
-}
-.custom-celda5 {
-  background-color: #d7d7d7;
-}
-.custom-celda6 {
-  background-color: #848484; /* Cambiar color de fondo de las celdas */
-}
-
 .image {
   width: 100px;
   height: auto;
@@ -192,29 +179,11 @@ li {
     flex-direction: column;
     width: 100%;
   }
-  .custom-celda1 {
+  .custom-celda1, .custom-celda3, .custom-celda5 {
     background-color: #d7d7d7;
     color: black;
   }
-  .custom-celda2 {
-    background-color: #848484;
-    color: black;
-  }
-  .custom-celda3 {
-    background-color: #d7d7d7;
-    color: black;
-  }
-  .custom-celda4 {
-    background-color: #848484;
-    color: black;
-  }
-
-  .custom-celda5 {
-    background-color: #d7d7d7;
-    color: black;
-  }
-
-  .custom-celda6 {
+  .custom-celda2, .custom-celda4, .custom-celda6 {
     background-color: #848484;
     color: black;
   }

@@ -1,6 +1,6 @@
 <template>
-  <div class="contenedor">
-    <v-row justify="center" id="quienesSomos"
+  <div class="contenedor" id="quienesSomos">
+    <v-row justify="center" 
       ><v-col cols="12" md="6">
         <v-card class="card" elevation="20">
           <v-img
@@ -123,9 +123,8 @@
   background-size: 100% 10%;
   background-position: center;
 }
-@media (max-width: 1024px) {
-  .contenedor {
-    background-size: 100% 3%;
-  }
+.custom-list{
+  margin-left: 1rem;
 }
+
 </style>

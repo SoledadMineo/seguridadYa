@@ -67,7 +67,12 @@
           </v-btn>
         </v-toolbar-item>
       </v-toolbar>
+
       <v-main>
+
+     
+      </v-main>
+
         <router-view />
 
         <v-fab-transition>
@@ -251,19 +256,6 @@ export default {
   position: fixed;
   z-index: 1000;
 }
-.button-menu {
-  color: #d7d7d7;
-  font-weight: bold;
-  border-radius: 60px;
-  padding: 10px;
-  width: 100px;
-  height: 20px;
-  margin-inline: 10px;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  background-color: white;
-}
 .custom-title {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -288,8 +280,8 @@ export default {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 65px;
   background-color: white;
+  margin-top: 2rem;
 }
 a {
   text-decoration: none;
@@ -299,9 +291,6 @@ html {
   scroll-behavior: smooth;
 }
 
-div[id] {
-  scroll-margin-top: 100px;
-}
 .footer {
   background-color: black; /* Cambia este valor al color de fondo deseado */
   display: flex;
@@ -314,34 +303,26 @@ footer div {
   flex: 1;
   text-align: center;
 }
-.mt-10 {
-  padding-bottom: 7rem;
+@media (max-width: 1920px) {
+  .v-main {
+    margin-top: 4rem;
+  }
 }
 
-.icon-menu {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  right: 20px;
-  top: 16px;
+@media (max-width: 1280px) {
+  .v-main {
+    margin-top: 4rem;
+  }  
 }
 @media (max-width: 1024px) {
   .logo-img {
     width: 10rem;
   }
-  #navigation-icon {
-    display: block; /* Mostrar icono de menú en móviles */
-  }
-
   .d-flex {
     display: none; /* Ocultar elementos de navegación en móviles */
   }
-
   .mobile-view {
     display: block; /* Mostrar vista móvil */
-  }
-  #icon-menu {
-    display: none; /* Ocultar por defecto */
   }
 }
 
@@ -349,8 +330,8 @@ footer div {
   v-img {
     width: 100px;
   }
-  #icon-menu {
-    display: block; /* Mostrar icono de menú en pantallas más pequeñas */
-  }
+  .v-main {
+    margin-top: 2rem;
+  }  
 }
 </style>
