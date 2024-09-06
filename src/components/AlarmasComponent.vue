@@ -16,15 +16,14 @@
             </v-card-title>
             <br />
             <v-card-text class="texto">
-              Alarmas domiciliarias todas las marcas. Sistema de wifi. Sistema
-              de video vigilancia, conocido como CCTV (Circuito Cerrado de
-              Televisión) que utiliza cámaras de video para monitorear y grabar
-              imágenes de un área específica.
+              Alarmas domiciliarias todas las marcas. Sistema de wifi.
+              Dentro y fuera de la propiedad con sensores de captación de movimiento,
+              como así también en apertura de puertas y ventanas y roturas de vidrios.
               <br />
               <br />
-              Desde tu celular bajas una aplicación gratuita y podes
-              automonitorear de manera inmediata y efectiva de control, que
-              movimiento fue lo que activo la alarma de seguridad.
+              La alarma comprende una solución efectiva.
+              Es automonitoreable desde tu celular móvil con sistema WIFI/4G/GSM (mensaje de texto). 
+              Es una manera inmediata y efectiva de control, solo tenes que descargar la aplicación oficial de la marca. 
               <br />
             </v-card-text>
           </v-card>

@@ -11,16 +11,16 @@
             </v-card-title>
             <br />
             <v-card-text class="texto">
-              Protegen lo que más valoras que son tus seres queridos, tu hogar y
-              tu negocio. Desde tu teléfono móvil podes verificar que todo está
-              en orden.
+              Sistema de video vigilancia conocido como CCTV (Circuito Cerrado de
+              Televisión), que utiliza cámaras de video para monitorear y grabar
+              imágenes de un área específica.
               <br />
               <br />
               Ofrecemos todo tipo de cámaras con las siguientes características:
               <br />
               <br />
               <ul class="custom-list">
-                <li>Alta resolución (HD/4K).</li>
+                <li>Alta resolución Full(HD/4K).</li>
                 <li>
                   Visión nocturna, brindando seguridad las 24 horas del día.
                 </li>

@@ -17,13 +17,13 @@
               <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
             <v-card-text class="texto">
-              Son sistemas de seguridad perimetral que utilizan una serie de
-              hilos o alambres electrificados para disuadir y prevenir
+              Es un sistema de seguridad perimetral que utiliza 
+              cable de acero electrificados y puede disuadir y prevenir
               intrusiones en propiedades residenciales, comerciales o
               industriales.
               <br />
               <br />
-              Estos sistemas son muy efectivos como una primera línea de defensa
+              Este sistema es muy efectivo como una primera línea de defensa
               y pueden integrarse con otros sistemas de seguridad, como cámaras
               de vigilancia y alarmas. Su consumo de energía es mínimo.
             </v-card-text>
