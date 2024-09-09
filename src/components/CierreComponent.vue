@@ -22,7 +22,7 @@
               presupuesto.
               <br />
               <br />
-              Se caracteriza el cerco perimetral por ser:
+              Se caracteriza el cierre perimetral por ser:
               <br />
               <br />
               <ul class="custom-list">
@@ -30,7 +30,7 @@
                 <li>Duradero.</li>
                 <li>Seguro.</li>
                 <li>Económico.</li>
-                <li>Fácil de instalar.</li>
+                <li>De fácil instalación.</li>
               </ul>
             </v-card-text>
           </v-card>

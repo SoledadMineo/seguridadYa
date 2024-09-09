@@ -18,7 +18,7 @@
             </v-card-title>
             <v-card-text class="texto">
               Es un sistema de seguridad perimetral que utiliza 
-              cable de acero electrificados y puede disuadir y prevenir
+              cable de acero electrificado; puede disuadir y prevenir
               intrusiones en propiedades residenciales, comerciales o
               industriales.
               <br />
