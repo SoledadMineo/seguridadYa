@@ -62,12 +62,13 @@ export default {
   align-items: baseline; /* Centra horizontalmente */
   justify-content: center; /* Centra verticalmente */
   text-align: center; /* Opcional: Centra el texto dentro de los elementos */
-  background-color: #848484;
+  background-color: white;
   padding: 50px;
   margin: auto;
   height: 100%;
   margin-bottom: 0%;
   margin-top: 3%;
+  border: 10px solid #ec0c05; /* Agrega un borde de 2px con color verde */
 }
 
 .custom-button {

@@ -23,7 +23,7 @@
                 <row class="d-flex justify-center">
                   <div class="imagen-wrapper">
                     <v-img
-                      src="./assets/logoRedondo-sinFondo.png"
+                      src="./assets/logoNuevo.png"
                       aspect-ratio="1.5"
                     ></v-img>
                   </div>
@@ -101,14 +101,14 @@
         <div>
           <v-img
             alt="Logo"
-            src="../src/assets/logoRedondo.png"
+            src="../src/assets/logoNuevo.png"
             @click="scrollToSection('cerco')"
             class="hover-cursor"
             style="
-              max-width: 4rem;
+              max-width: 18rem;
               height: auto;
               display: block;
-              margin-left: 10%;
+              margin-left: 0%;
               margin-bottom: 0%;
             "
           />

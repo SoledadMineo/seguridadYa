@@ -51,7 +51,8 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda5 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
+          <td colspan="2">
+            <div class="custom-header">
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
@@ -64,19 +65,8 @@
               <li>Reemplazo de los LEDs.</li>
               <li>Cambio de carteles reguladores preventivos.</li>       
               </ul>   
-
             </p>
-          </td>
-        <td class="custom-celda6 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
-            <h2>6. ¿QUÉ VENTAJAS TENGO AL INSTALAR ALARMAS DOMÓTICAS?</h2>
-            <br />
-            <p>
-              Accedes a la automatización y el control inteligente de tu vivienda.
-              Es decir, te permite integrar el sistema de <strong>alarmas domóticas</strong> 
-              con la automatización del hogar, permitiendo conectar
-              a una amplia gama de dispositivos inteligentes como luces, persianas,
-              cámaras, termostatos, cerraduras y asistentes virtuales (Alexa).
-          </p>
+          </div>
           </td>
         </tr>
       </v-table>
@@ -112,11 +102,12 @@
   padding: 7px;
 }
   .custom-header {
+    
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #848484; /* Cambiar color de fondo de las cabeceras */
+  background-color: white; /* Cambiar color de fondo de las cabeceras */
   height: auto;
   padding: 2%;
 }
@@ -131,11 +122,15 @@
   padding: 15px;
   vertical-align: top;
 }
-.custom-celda1, .custom-celda4, .custom-celda5{
-  background-color: #d7d7d7;
+.custom-celda1, .custom-celda4 {
+  background-color: white;
+}
+.custom-celda5{
+  background-color: white;
 }
 .custom-celda2, .custom-celda3, .custom-celda6 {
-  background-color: #848484; /* Cambiar color de fondo de las celdas */
+  background-color: black; /* Cambiar color de fondo de las celdas */
+  color: white;
 }
 .image {
   width: 100px;
