@@ -90,6 +90,7 @@
   background-repeat: no-repeat;
   background-size: 100% 10%;
   background-position: center;
+  margin-top: 5%;
 }
 .card {
   background-color: black;

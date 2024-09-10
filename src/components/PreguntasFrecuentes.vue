@@ -52,7 +52,7 @@
         </tr>
         <tr>
           <td colspan="2">
-            <div class="custom-header">
+            <div class="custom-celda5">
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
@@ -78,11 +78,7 @@
 
 <style scoped>
 .caja {
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 10%;
-  background-position: center;
-  margin-top: 3%;
+  margin-top: 5%;
 } 
 .custom-list{
   list-style-type: square; /* Tipo de viñeta */
@@ -175,11 +171,11 @@ li {
     width: 100%;
   }
   .custom-celda1, .custom-celda3, .custom-celda5 {
-    background-color: #d7d7d7;
-    color: black;
+    background-color: black;
+    color: white;
   }
   .custom-celda2, .custom-celda4, .custom-celda6 {
-    background-color: #848484;
+    background-color: white;
     color: black;
   }
   .contenedor {
