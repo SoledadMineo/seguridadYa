@@ -17,18 +17,10 @@
             @click.stop="drawer = !drawer"
           ></v-app-bar-nav-icon>
 
-          <v-navigation-drawer v-model="drawer" permanent>
+          <v-navigation-drawer v-model="drawer" temporary app>
             <v-list>
               <v-list-item>
-                <row class="d-flex justify-center">
-                  <div class="imagen-wrapper">
-                    <v-img
-                      src="./assets/logoRedondo-sinFondo.png"
-                      aspect-ratio="1.5"
-                    ></v-img>
-                  </div>
-                </row>
-                <v-divider class="linea"></v-divider>
+                <v-row class="d-flex justify-center"> </v-row>
               </v-list-item>
               <v-list-item
                 v-for="(menu, index) in menus"
@@ -68,7 +60,7 @@
         </v-toolbar-item>
       </v-toolbar>
 
-      <v-main>
+      <v-main class="main-content">
         <router-view />
 
         <v-fab-transition>
@@ -100,19 +92,13 @@
       <footer class="footer">
         <div>
           <v-img
-            alt="Logo"
-            src="../src/assets/logoRedondo.png"
+            src="./assets/logo.jpg"
+            alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
-            class="hover-cursor"
-            style="
-              max-width: 4rem;
-              height: auto;
-              display: block;
-              margin-left: 10%;
-              margin-bottom: 0%;
-            "
-          />
+            class="hover-cursor logo-img-footer"
+          ></v-img>
         </div>
+
         <div class="d-flex flex-row">
           <a
             href="https://www.instagram.com/seguridadyaoficial/"
@@ -213,43 +199,54 @@ export default {
 </script>
 
 <style>
-.responsive-image {
-  width: 5%;
-}
-.imagen-wrapper {
-  width: 40%;
-}
-.linea {
-  color: black;
-  opacity: 50%;
-  margin: 8px;
-}
-.logo-img {
-  width: 20rem;
-}
-.app {
-  height: 100%;
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 0%;
+  padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
   background-color: white;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-.hover-cursor {
-  cursor: pointer;
 }
 .menu {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: black;
   z-index: 1000;
   padding: 1rem;
 }
+.main-content {
+  flex: 1;
+}
+.footer {
+  background-color: black; /* Cambia este valor al color de fondo deseado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7rem;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.footer > div {
+  flex: 1;
+}
+.logo-img {
+  width: 20rem;
+}
+.logo-img-footer {
+  width: 10rem;
+}
+.hover-cursor {
+  cursor: pointer;
+}
+
 .custom-title {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -270,39 +267,16 @@ export default {
   background-color: #25d366 !important; /* Color verde de WhatsApp */
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
-.v-main {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
 a {
   text-decoration: none;
   color: black;
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
-
-.footer {
-  background-color: black; /* Cambia este valor al color de fondo deseado */
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 7rem;
-  z-index: 1000;
-}
-footer div {
-  flex: 1;
-  text-align: center;
-}
-@media (max-width: 1920px) {
-  .v-main {
-    margin-top: 4rem;
-  }
-}
+} */
 
 @media (max-width: 1280px) {
-  .v-main {
+  .main-content {
     margin-top: 4rem;
   }
 }
@@ -319,10 +293,7 @@ footer div {
 }
 
 @media (max-width: 768px) {
-  v-img {
-    width: 100px;
-  }
-  .v-main {
+  .main-content {
     margin-top: 2rem;
   }
 }

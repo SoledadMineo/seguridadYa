@@ -51,7 +51,8 @@
           </td>
         </tr>
         <tr>
-          <td class="custom-celda5 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
+          <div class="custom-celda5">
+          <td colspan="2">
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
@@ -64,20 +65,9 @@
               <li>Reemplazo de los LEDs.</li>
               <li>Cambio de carteles reguladores preventivos.</li>       
               </ul>   
-
             </p>
           </td>
-        <td class="custom-celda6 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
-            <h2>6. ¿QUÉ VENTAJAS TENGO AL INSTALAR ALARMAS DOMÓTICAS?</h2>
-            <br />
-            <p>
-              Accedes a la automatización y el control inteligente de tu vivienda.
-              Es decir, te permite integrar el sistema de <strong>alarmas domóticas</strong> 
-              con la automatización del hogar, permitiendo conectar
-              a una amplia gama de dispositivos inteligentes como luces, persianas,
-              cámaras, termostatos, cerraduras y asistentes virtuales (Alexa).
-          </p>
-          </td>
+        </div>
         </tr>
       </v-table>
     </v-container>
@@ -88,11 +78,7 @@
 
 <style scoped>
 .caja {
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 10%;
-  background-position: center;
-  margin-top: 3%;
+  margin-top: 5%;
 } 
 .custom-list{
   list-style-type: square; /* Tipo de viñeta */
@@ -102,21 +88,24 @@
 .contenedor {
   display: flex;
   justify-content: center;
-  background-color: #ec0c05;
-  width: 70%;
+ 
 }
 .custom-table {
   width: 100%;
   max-width: 100%;
   font-size: 15px;
-  padding: 7px;
+  border: 0.8vw solid #ec0c05;
 }
   .custom-header {
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 15%;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #848484; /* Cambiar color de fondo de las cabeceras */
+  background-color: white; /* Cambiar color de fondo de las cabeceras */
   height: auto;
   padding: 2%;
 }
@@ -125,17 +114,17 @@
 .custom-celda2,
 .custom-celda3,
 .custom-celda4,
-.custom-celda5,
-.custom-celda6 {
+.custom-celda5{
   color: black;
   padding: 15px;
   vertical-align: top;
 }
-.custom-celda1, .custom-celda4, .custom-celda5{
-  background-color: #d7d7d7;
+.custom-celda1, .custom-celda4 {
+  background-color: white;
 }
-.custom-celda2, .custom-celda3, .custom-celda6 {
-  background-color: #848484; /* Cambiar color de fondo de las celdas */
+.custom-celda2, .custom-celda3, .custom-celda5 {
+  background-color: black; /* Cambiar color de fondo de las celdas */
+  color: white;
 }
 .image {
   width: 100px;
@@ -151,7 +140,7 @@
 }
 .medium-celda {
   width: 50%;
-  height: 250px;
+  height: auto;
 }
 h2 {
   text-align: center;
@@ -165,7 +154,9 @@ li {
 @media (max-width: 1024px) {
   .custom-header {
     width: 100%;
+    background-size: 100% 8%;
   }
+  .custom-celda5,
   .medium-celda {
     width: 100%; /* Ocupa todo el ancho disponible */
     height: auto; /* Ajusta la altura según el contenido */
@@ -180,11 +171,11 @@ li {
     width: 100%;
   }
   .custom-celda1, .custom-celda3, .custom-celda5 {
-    background-color: #d7d7d7;
-    color: black;
+    background-color: black;
+    color: white;
   }
-  .custom-celda2, .custom-celda4, .custom-celda6 {
-    background-color: #848484;
+  .custom-celda2, .custom-celda4  {
+    background-color: white;
     color: black;
   }
   .contenedor {
