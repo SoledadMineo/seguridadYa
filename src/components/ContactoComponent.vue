@@ -45,7 +45,7 @@
             <v-btn class="custom-button"> ENVIAR WHATSAPP </v-btn></a
           >
         </v-col>
-        <v-col id="mapa" cols="12" md="6"></v-col>
+        <v-col id="mapa" class="mapa" cols="12" md="6"></v-col>
       </v-row>
     </v-container>
   </div>
@@ -112,8 +112,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .centered-column {
-  display: flex;
-  flex-direction: column;
+ 
   align-items: center; /* Centra horizontalmente */
   text-align: center; /* Opcional: Centra el texto dentro de los elementos */
   background-color: white;
@@ -124,9 +123,8 @@ export default {
   margin-top: 3%;
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100% 10%;
+  background-size: 100% 5%;
 }
-
 .custom-button {
   display: flex;
   align-items: center;
@@ -162,16 +160,16 @@ p {
 a {
   text-decoration: none;
 }
-#mapa {
-  width: 600px;
-  max-width: 100%;
-  height: 500px;
-  max-height: 100vh;
+.mapa {
+  width: 400px;
+  height: 400px;
   border: 0.3vw solid #ddd;
   margin-bottom: 1%;
+  padding: 15px;
 }
 .imagen {
   margin-right: 15px;
+  padding: 15px;
 }
 
 .informacion {
@@ -182,8 +180,7 @@ a {
   display: flex;
   flex-direction: column; 
   align-items: flex-start;
-  margin: 0 10px;
-  text-align: left; 
+  padding: 10px;
   width: 100%; 
 }
 
@@ -191,9 +188,10 @@ a {
   .centered-column {
     flex-direction: column; /* Asegura que los elementos se coloquen uno debajo del otro en pantallas pequeñas */
     align-items: center; /* Mantén todo centrado horizontalmente en pantallas pequeñas */
-    background-size: 100% 5%;
+    background-size: 100% 1%;
     margin: 0%;
     padding: 0%;
+    margin-top: 2%;
   }
 
   .informacion {

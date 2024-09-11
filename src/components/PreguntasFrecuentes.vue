@@ -51,8 +51,8 @@
           </td>
         </tr>
         <tr>
+          <div class="custom-celda5">
           <td colspan="2">
-            <div class="custom-celda5">
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
@@ -66,8 +66,8 @@
               <li>Cambio de carteles reguladores preventivos.</li>       
               </ul>   
             </p>
-          </div>
           </td>
+        </div>
         </tr>
       </v-table>
     </v-container>
@@ -140,7 +140,7 @@
 }
 .medium-celda {
   width: 50%;
-  height: 250px;
+  height: auto;
 }
 h2 {
   text-align: center;
@@ -174,7 +174,7 @@ li {
     background-color: black;
     color: white;
   }
-  .custom-celda2, .custom-celda4, .custom-celda6 {
+  .custom-celda2, .custom-celda4  {
     background-color: white;
     color: black;
   }

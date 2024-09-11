@@ -1,4 +1,4 @@
-<template >
+<template>
   <div class="contenedor" id="cerco">
     <v-img src="../assets/cinta2.png" class="card-img"></v-img>
     <v-container>
@@ -17,15 +17,14 @@
               <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
             <v-card-text class="texto">
-              Es un sistema de seguridad perimetral que utiliza 
-              cable de acero electrificados y puede disuadir y prevenir
-              intrusiones en propiedades residenciales, comerciales o
-              industriales.
+              Es un sistema de seguridad perimetral que utiliza cable de acero
+              electrificados y puede disuadir y prevenir intrusiones en
+              propiedades residenciales, comerciales o industriales.
               <br />
               <br />
-              Este sistema es muy efectivo como una primera línea de defensa
-              y pueden integrarse con otros sistemas de seguridad, como cámaras
-              de vigilancia y alarmas. Su consumo de energía es mínimo.
+              Este sistema es muy efectivo como una primera línea de defensa y
+              pueden integrarse con otros sistemas de seguridad, como cámaras de
+              vigilancia y alarmas. Su consumo de energía es mínimo.
             </v-card-text>
             <br /><br />
             <v-button>
@@ -129,7 +128,7 @@ export default {
     font-size: 30px;
   }
   @media (max-width: 960px) {
-    .contenedor{
+    .contenedor {
       margin-top: 2rem;
     }
     .titulo {
