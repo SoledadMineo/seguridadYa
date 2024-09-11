@@ -62,10 +62,10 @@ export default {
   },
   methods: {
     loadMapScript() {
+      //const apikey = process.env.API_KEY;
       if (!window.google) {
         const script = document.createElement("script");
-        script.src =
-          "https://maps.googleapis.com/maps/api/js?key=AIzaSyA3FPCg2e3Q6-oX4rZHw_xJQSTXOfWJzhI";
+        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAlsj1q42ZoD2qRxtzXKrmP0_9KGeqPnzc`;
         script.async = true;
         script.defer = true;
         script.onload = () => this.initMap(); // Llamar a la función para inicializar el mapa una vez que el script ha cargado
@@ -124,7 +124,7 @@ export default {
   margin-top: 3%;
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100% 12%;
+  background-size: 100% 10%;
 }
 
 .custom-button {
@@ -163,9 +163,10 @@ a {
   text-decoration: none;
 }
 #mapa {
-  width: 100%;
+  width: 600px;
   max-width: 100%;
-  height: 15vw;
+  height: 500px;
+  max-height: 100vh;
   border: 0.3vw solid #ddd;
   margin-bottom: 1%;
 }
