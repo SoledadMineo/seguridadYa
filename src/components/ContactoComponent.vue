@@ -123,7 +123,7 @@ export default {
   margin-top: 3%;
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100% 5%;
+  background-size: 100% 7%;
 }
 .custom-button {
   display: flex;

@@ -21,9 +21,7 @@
             <v-list>
               <v-list-item>
                 <v-row class="d-flex justify-center">
-                  <div class="imagen-wrapper">
-                    <v-img src="./assets/logoNuevo.png"></v-img>
-                  </div>
+                 
                 </v-row>
               </v-list-item>
               <v-list-item
@@ -64,7 +62,7 @@
         </v-toolbar-item>
       </v-toolbar>
 
-      <v-main>
+      <v-main class="main-content">
         <router-view />
 
         <v-fab-transition>
@@ -96,18 +94,11 @@
       <footer class="footer">
         <div>
           <v-img
-            alt="Logo"
-            :src="require('@/assets/logoNuevo.png')"
+            src="./assets/logo.jpg"
+            alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
-            class="hover-cursor"
-            style="
-              max-width: 18rem;
-              height: auto;
-              display: block;
-              margin-left: 0%;
-              margin-bottom: 0%;
-            "
-          />
+            class="hover-cursor logo-img"
+          ></v-img>
         </div>
 
         <div class="d-flex flex-row">
@@ -210,38 +201,51 @@ export default {
 </script>
 
 <style>
-.responsive-image {
-  width: 5%;
-}
-
-.imagen-wrapper {
-  width: 100%;
-}
+  #app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+    background-color: white;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1000;
+    padding: 1rem;
+  }
+  .main-content{
+    flex: 1;
+  }
+  .footer {
+    background-color: black; /* Cambia este valor al color de fondo deseado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 7rem;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+  .footer > div {
+    flex: 1;
+  }
 .logo-img {
   width: 20rem;
-}
-#app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: black;
-  background-color: white;
-}
+} 
 .hover-cursor {
   cursor: pointer;
 }
-.menu {
-  position: fixed;
-  background-color: black;
-  z-index: 1000;
-  padding: 1rem;
-}
+
 .custom-title {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -266,30 +270,12 @@ a {
   text-decoration: none;
   color: black;
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
-.footer {
-  background-color: black; /* Cambia este valor al color de fondo deseado */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 7rem;
-  box-sizing: border-box;
-  z-index: 1000;
-}
-.footer > div {
-  flex: 1;
-}
-@media (max-width: 1920px) {
-  .v-main {
-    margin-top: 4rem;
-  }
-}
+} */
 
 @media (max-width: 1280px) {
-  .v-main {
+  .main-content {
     margin-top: 4rem;
   }
 }
@@ -306,10 +292,7 @@ html {
 }
 
 @media (max-width: 768px) {
-  v-img {
-    width: 100px;
-  }
-  .v-main {
+  .main-content {
     margin-top: 2rem;
   }
 }
