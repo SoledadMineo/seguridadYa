@@ -112,7 +112,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .centered-column {
- 
   align-items: center; /* Centra horizontalmente */
   text-align: center; /* Opcional: Centra el texto dentro de los elementos */
   background-color: white;
@@ -162,7 +161,7 @@ a {
 }
 .mapa {
   width: 400px;
-  height: 400px;
+  height: 300px;
   border: 0.3vw solid #ddd;
   margin-bottom: 1%;
   padding: 15px;
@@ -178,10 +177,10 @@ a {
   align-items: last baseline;
   margin-right: 40%; */
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   padding: 10px;
-  width: 100%; 
+  width: 100%;
 }
 
 @media (max-width: 768px) {

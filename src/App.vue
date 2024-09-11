@@ -20,9 +20,7 @@
           <v-navigation-drawer v-model="drawer" temporary app>
             <v-list>
               <v-list-item>
-                <v-row class="d-flex justify-center">
-                 
-                </v-row>
+                <v-row class="d-flex justify-center"> </v-row>
               </v-list-item>
               <v-list-item
                 v-for="(menu, index) in menus"
@@ -97,7 +95,7 @@
             src="./assets/logo.jpg"
             alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
-            class="hover-cursor logo-img"
+            class="hover-cursor logo-img-footer"
           ></v-img>
         </div>
 
@@ -201,47 +199,50 @@ export default {
 </script>
 
 <style>
-  #app {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: black;
-    background-color: white;
-  }
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    z-index: 1000;
-    padding: 1rem;
-  }
-  .main-content{
-    flex: 1;
-  }
-  .footer {
-    background-color: black; /* Cambia este valor al color de fondo deseado */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 7rem;
-    box-sizing: border-box;
-    z-index: 1000;
-  }
-  .footer > div {
-    flex: 1;
-  }
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  background-color: white;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 1000;
+  padding: 1rem;
+}
+.main-content {
+  flex: 1;
+}
+.footer {
+  background-color: black; /* Cambia este valor al color de fondo deseado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7rem;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.footer > div {
+  flex: 1;
+}
 .logo-img {
   width: 20rem;
-} 
+}
+.logo-img-footer {
+  width: 10rem;
+}
 .hover-cursor {
   cursor: pointer;
 }
