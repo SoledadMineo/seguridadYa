@@ -62,10 +62,10 @@ export default {
   },
   methods: {
     loadMapScript() {
-      //const apikey = process.env.API_KEY;
+      let apikey = process.env.VUE_APP_API_KEY;
       if (!window.google) {
         const script = document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAlsj1q42ZoD2qRxtzXKrmP0_9KGeqPnzc`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=${apikey}`;
         script.async = true;
         script.defer = true;
         script.onload = () => this.initMap(); // Llamar a la función para inicializar el mapa una vez que el script ha cargado
