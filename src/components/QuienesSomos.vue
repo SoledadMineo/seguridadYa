@@ -90,11 +90,7 @@
   background-repeat: no-repeat;
   background-size: 100% 10%;
   background-position: center;
-<<<<<<< HEAD
   margin-top: 5%;
-=======
-  margin-top: 3%;
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
 }
 .card {
   background-color: black;

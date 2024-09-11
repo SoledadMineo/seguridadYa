@@ -51,13 +51,8 @@
           </td>
         </tr>
         <tr>
-<<<<<<< HEAD
           <td colspan="2">
             <div class="custom-celda5">
-=======
-          <td class="custom-celda5" colspan="2">
-            <div>
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
@@ -83,11 +78,7 @@
 
 <style scoped>
 .caja {
-<<<<<<< HEAD
   margin-top: 5%;
-=======
-  margin-top: 3%;
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
 } 
 .custom-list{
   list-style-type: square; /* Tipo de viñeta */
@@ -183,11 +174,7 @@ li {
     background-color: black;
     color: white;
   }
-<<<<<<< HEAD
   .custom-celda2, .custom-celda4, .custom-celda6 {
-=======
-  .custom-celda2, .custom-celda4 {
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
     background-color: white;
     color: black;
   }

@@ -100,12 +100,7 @@ export default {
         // Agregar un evento click al marcador
         marker.addListener("click", function () {
           // Construir la URL de Google Maps con la ubicación del marcador
-<<<<<<< HEAD
           const googleMapsUrl = `https://www.google.com/maps?q=${this.getPosition().lat()},${this.getPosition().lng()}`;
-=======
-          const googleMapsUrl =
-            "https://www.google.com/maps?q=${this.getPosition().lat()},${this.getPosition().lng()}";
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
           // Redirigir al usuario a la URL de Google Maps
           window.open(googleMapsUrl, "_blank");
         });
@@ -124,19 +119,12 @@ export default {
   background-color: white;
   padding: 3%;
   margin: auto;
-<<<<<<< HEAD
   height: auto;
-=======
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
   margin-bottom: 0%;
   margin-top: 3%;
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-<<<<<<< HEAD
   background-size: 100% 12%;
-=======
-  background-size: 100% 8%;
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
 }
 
 .custom-button {
@@ -177,11 +165,7 @@ a {
 #mapa {
   width: 100%;
   max-width: 100%;
-<<<<<<< HEAD
   height: 15vw;
-=======
-  height: 20vw;
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
   border: 0.3vw solid #ddd;
   margin-bottom: 1%;
 }
@@ -190,7 +174,6 @@ a {
 }
 
 .informacion {
-<<<<<<< HEAD
   /* display: flex;
   flex-direction: column; 
   align-items: last baseline;
@@ -201,13 +184,6 @@ a {
   margin: 0 10px;
   text-align: left; 
   width: 100%; 
-=======
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  width: 100%;
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
 }
 
 @media (max-width: 768px) {
@@ -217,29 +193,16 @@ a {
     background-size: 100% 5%;
     margin: 0%;
     padding: 0%;
-<<<<<<< HEAD
   }
 
-=======
-    background-size: 100% 3%;
-  }
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
   .informacion {
     text-align: left;
     margin-bottom: 20px;
   }
-<<<<<<< HEAD
 
   #mapa {
     width: 100%;
     margin-top: 2%;
-=======
-  #mapa {
-    width: 100%;
-    height: 50vw;
-    border: 0.3vw solid #ddd;
-    margin-bottom: 1%;
->>>>>>> fd56bf531c9b4b77f71b32efd835a945d639aa4a
   }
 }
 </style>
