@@ -17,18 +17,14 @@
             @click.stop="drawer = !drawer"
           ></v-app-bar-nav-icon>
 
-          <v-navigation-drawer v-model="drawer" permanent>
+          <v-navigation-drawer v-model="drawer" temporary app>
             <v-list>
               <v-list-item>
-                <row class="d-flex justify-center">
+                <v-row class="d-flex justify-center">
                   <div class="imagen-wrapper">
-                    <v-img
-                      src="./assets/logoNuevo.png"
-                      aspect-ratio="1.5"
-                    ></v-img>
+                    <v-img src="./assets/logoNuevo.png"></v-img>
                   </div>
-                </row>
-                <v-divider class="linea"></v-divider>
+                </v-row>
               </v-list-item>
               <v-list-item
                 v-for="(menu, index) in menus"
@@ -101,7 +97,7 @@
         <div>
           <v-img
             alt="Logo"
-            src="../src/assets/logoNuevo.png"
+            :src="require('@/assets/logoNuevo.png')"
             @click="scrollToSection('cerco')"
             class="hover-cursor"
             style="
@@ -113,6 +109,7 @@
             "
           />
         </div>
+
         <div class="d-flex flex-row">
           <a
             href="https://www.instagram.com/seguridadyaoficial/"
@@ -216,30 +213,25 @@ export default {
 .responsive-image {
   width: 5%;
 }
+
 .imagen-wrapper {
-  width: 40%;
-}
-.linea {
-  color: black;
-  opacity: 50%;
-  margin: 8px;
+  width: 100%;
 }
 .logo-img {
   width: 20rem;
 }
-.app {
-  height: 100%;
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 0%;
+  padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
   background-color: white;
-  display: flex;
-  flex-direction: row;
-  position: relative;
 }
 .hover-cursor {
   cursor: pointer;
@@ -270,11 +262,6 @@ export default {
   background-color: #25d366 !important; /* Color verde de WhatsApp */
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
-.v-main {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
 a {
   text-decoration: none;
   color: black;
@@ -282,18 +269,18 @@ a {
 html {
   scroll-behavior: smooth;
 }
-
 .footer {
   background-color: black; /* Cambia este valor al color de fondo deseado */
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 7rem;
+  box-sizing: border-box;
   z-index: 1000;
 }
-footer div {
+.footer > div {
   flex: 1;
-  text-align: center;
 }
 @media (max-width: 1920px) {
   .v-main {

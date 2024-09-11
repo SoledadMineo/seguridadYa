@@ -51,8 +51,8 @@
           </td>
         </tr>
         <tr>
-          <td colspan="2">
-            <div class="custom-header">
+          <td class="custom-celda5" colspan="2">
+            <div>
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
             <p>
@@ -78,10 +78,6 @@
 
 <style scoped>
 .caja {
-  background-image: url("../assets/cinta2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 10%;
-  background-position: center;
   margin-top: 3%;
 } 
 .custom-list{
@@ -92,17 +88,19 @@
 .contenedor {
   display: flex;
   justify-content: center;
-  background-color: #ec0c05;
-  width: 70%;
+ 
 }
 .custom-table {
   width: 100%;
   max-width: 100%;
   font-size: 15px;
-  padding: 7px;
+  border: 0.8vw solid #ec0c05;
 }
   .custom-header {
-    
+  background-image: url("../assets/cinta2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 15%;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,8 +114,7 @@
 .custom-celda2,
 .custom-celda3,
 .custom-celda4,
-.custom-celda5,
-.custom-celda6 {
+.custom-celda5{
   color: black;
   padding: 15px;
   vertical-align: top;
@@ -125,10 +122,7 @@
 .custom-celda1, .custom-celda4 {
   background-color: white;
 }
-.custom-celda5{
-  background-color: white;
-}
-.custom-celda2, .custom-celda3, .custom-celda6 {
+.custom-celda2, .custom-celda3, .custom-celda5 {
   background-color: black; /* Cambiar color de fondo de las celdas */
   color: white;
 }
@@ -160,7 +154,9 @@ li {
 @media (max-width: 1024px) {
   .custom-header {
     width: 100%;
+    background-size: 100% 8%;
   }
+  .custom-celda5,
   .medium-celda {
     width: 100%; /* Ocupa todo el ancho disponible */
     height: auto; /* Ajusta la altura según el contenido */
@@ -175,11 +171,11 @@ li {
     width: 100%;
   }
   .custom-celda1, .custom-celda3, .custom-celda5 {
-    background-color: #d7d7d7;
-    color: black;
+    background-color: black;
+    color: white;
   }
-  .custom-celda2, .custom-celda4, .custom-celda6 {
-    background-color: #848484;
+  .custom-celda2, .custom-celda4 {
+    background-color: white;
     color: black;
   }
   .contenedor {
