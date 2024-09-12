@@ -17,16 +17,10 @@
               <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
             <v-card-text class="texto">
-<<<<<<< HEAD
               Es un sistema de seguridad perimetral que utiliza 
               cable de acero electrificado; puede disuadir y prevenir
               intrusiones en propiedades residenciales, comerciales o
               industriales.
-=======
-              Es un sistema de seguridad perimetral que utiliza cable de acero
-              electrificados y puede disuadir y prevenir intrusiones en
-              propiedades residenciales, comerciales o industriales.
->>>>>>> 61a74eafe72b9e94fc1ceb182c3d0cd6cb2372fe
               <br />
               <br />
               Este sistema es muy efectivo como una primera línea de defensa y
