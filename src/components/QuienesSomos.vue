@@ -9,11 +9,11 @@
             ><strong>
               Somos una empresa mendocina con más de una década de trayectoria,
               brindando siempre el mejor servicio de seguridad con equipos
-              homologados y domóticas.
+              homologados.
               <br />
               <br />
               Las instalaciones se realizan en el día, no se paga ningún abono
-              mensual y desde tu celular podes controlar el automonitoreo del
+              mensual y desde tu celular podes automonitorar para controlar el
               sistema de alarmas.
             </strong></v-card-text
           >
@@ -25,7 +25,7 @@
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
           <v-img src="../assets/pngegg(1).png" height="100px"></v-img>
-          <v-card-title class="titulo">Equipos Homologados</v-card-title>
+          <v-card-title>Equipos Homologados</v-card-title>
           <v-card-text>
             Son productos de primera calidad que cumplen con normativas y
             regulaciones que garantizan su seguridad eléctrica y capacidad para
@@ -39,11 +39,13 @@
           <v-img src="../assets/pngegg.png" height="100px"></v-img>
           <v-card-title class="titulo">Garantía Oficial</v-card-title>
           <v-card-text>
-            Es nuestro compromiso de ofrecer seguridad y protección al realizar
-            la compra, sin incurrir en costos adicionales.
-            <br />
-            <br />
-            Garantía extendida por 5 años en trabajos de infraestructura.
+            <ul class="custom-list">
+              <li>Ofrecemos garantía extendida por 5 años en trabajos de infraestructura.</li> 
+              <li>Estructura robusta de solución de problemas.</li>
+              <li>Actualización permanente de homologaciones nacionales e internacionales de los productos.</li>
+              <li>Capacitación permanente del personal técnico.</li>
+              <li>Brindamos soporte técnico 24/7.</li>
+            </ul>            
           </v-card-text>
         </v-card>
       </v-col>
@@ -53,8 +55,17 @@
           <v-img src="../assets/pngegg(2).png" height="100px"></v-img>
           <v-card-title class="titulo">Financiación Propia</v-card-title>
           <v-card-text>
-            Recibimos la forma de pago con tarjetas de débito, tarjetas de
-            crédito y financiación propia o bancaria a convenir.
+            Ofrecemos financiación propia acorde a su presupuesto. Todos nuestros productos y/o trabajos son facturados.
+            <br />
+            <br />
+            Recibimos los siguientes medios de pago:
+            <br />
+            <ul class="custom-list">
+            <li>Efectivo.</li>
+            <li>Tarjeta de débito.</li>
+            <li>Tarjeta de crédito.</li>
+            <li>Transferencia.</li>
+            </ul> 
           </v-card-text>
         </v-card>
       </v-col>
@@ -62,21 +73,15 @@
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
           <v-img src="../assets/pngegg(3).png" height="100px"></v-img>
-          <v-card-title class="titulo">Servicio Posventa</v-card-title>
+          <v-card-title>Servicio Posventa</v-card-title>
           <v-card-text>
-            Revisión periódica de la instalación del cerco eléctrico.
-            <br />
-            <br />
-            Las visitas consisten en:
-            <br />
             <ul class="custom-list">
-              <li>Inspeccionar los componentes.</li>
-              <li>Ajustar las tensiones.</li>
-              <li>
-                Verificar el funcionamiento correcto del sistema de alarma.
-              </li>
-              <li>Comprobar la integridad del cableado y los aisladores.</li>
-            </ul>
+            <li>Control y verificación periódica del sistema.</li>
+            <li>Revisión anual del cerco eléctrico.</li>
+            <li>Cada producto tiene garantía propia.</li>
+            <li>Contamos con un sistema de resolución de conflictos no mayor a 48 horas hábiles por contrato.</li>
+            <li>Atención permanente.</li>
+          </ul>                               
           </v-card-text>
         </v-card>
       </v-col>

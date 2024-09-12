@@ -16,11 +16,11 @@
               imágenes de un área específica.
               <br />
               <br />
-              Ofrecemos todo tipo de cámaras con las siguientes características:
+              Ofrecemos todo tipo de cámaras, con las siguientes características:
               <br />
               <br />
               <ul class="custom-list">
-                <li>Alta resolución Full(HD/4K).</li>
+                <li>Alta resolución Full HD/4K.</li>
                 <li>
                   Visión nocturna, brindando seguridad las 24 horas del día.
                 </li>

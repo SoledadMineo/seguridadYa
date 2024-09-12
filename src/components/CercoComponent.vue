@@ -17,9 +17,10 @@
               <v-img src="../assets/cinta2.png" class="card-img1"></v-img>
             </v-card-title>
             <v-card-text class="texto">
-              Es un sistema de seguridad perimetral que utiliza cable de acero
-              electrificados y puede disuadir y prevenir intrusiones en
-              propiedades residenciales, comerciales o industriales.
+              Es un sistema de seguridad perimetral que utiliza 
+              cable de acero electrificado; puede disuadir y prevenir
+              intrusiones en propiedades residenciales, comerciales o
+              industriales.
               <br />
               <br />
               Este sistema es muy efectivo como una primera línea de defensa y

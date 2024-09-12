@@ -21,7 +21,7 @@
               como así también en apertura de puertas y ventanas y roturas de vidrios.
               <br />
               <br />
-              La alarma comprende una solución efectiva.
+              Las alarmas comprenden una solución efectiva.
               Es automonitoreable desde tu celular móvil con sistema WIFI/4G/GSM (mensaje de texto). 
               Es una manera inmediata y efectiva de control, solo tenes que descargar la aplicación oficial de la marca. 
               <br />

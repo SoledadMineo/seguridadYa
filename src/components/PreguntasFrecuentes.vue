@@ -16,8 +16,8 @@
             <br />
             <p>
               Si, además de ser una empresa homologada por el organismo Lenor
-              Group, dentro de las leyes de Argentina, éste sistema queda
-              perfectamente definido en lo que se denomina legítima defensa.
+              Group. Este sistema tiene un encuadre legal dentro del artículo 25° del C.P.N.
+              que establece la obligación de señalizar peligros para la seguridad de las personas.
             </p>
           </td>
           <td class="custom-celda2 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
