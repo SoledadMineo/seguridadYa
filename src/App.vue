@@ -4,7 +4,8 @@
       <v-toolbar class="menu" color="black">
         <v-toolbar-title>
           <v-img
-            src="./assets/logo.jpg"
+            src="./assets/logoweb.jpg"
+            width="180px"
             alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
             class="hover-cursor logo-img"

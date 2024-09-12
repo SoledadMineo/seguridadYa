@@ -24,7 +24,10 @@
               width="25"
               height="25"
             ></v-img>
-            <p>seguridadyamza@gmail.com</p>
+            <p>
+              seguridadyamza@gmail.com<br />
+              contacto@seguridadya.site
+            </p>
           </div>
 
           <div class="clase">

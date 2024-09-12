@@ -50,8 +50,8 @@
             </p>
           </td>
         </tr>
-        <tr>
-          <div class="custom-celda5">
+        <tr class="custom-celda5">
+          
           <td colspan="2">
             <h2>5. ¿REQUIERE MANTENIMIENTO EL CERCO ELÉCTRICO?</h2>
             <br />
@@ -67,7 +67,7 @@
               </ul>   
             </p>
           </td>
-        </div>
+        
         </tr>
       </v-table>
     </v-container>
