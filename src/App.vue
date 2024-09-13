@@ -4,7 +4,7 @@
       <v-toolbar class="menu" color="black">
         <v-toolbar-title>
           <v-img
-            src="./img/logoweb.jpg"
+            src="./assets/logoweb.jpg"
             width="180px"
             alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
@@ -93,7 +93,7 @@
       <footer class="footer">
         <div>
           <v-img
-            src="./assets/logoweb.jpg"
+            src="./assets/logo.jpg"
             alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
             class="hover-cursor logo-img-footer"
