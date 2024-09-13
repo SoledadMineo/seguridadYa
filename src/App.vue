@@ -268,6 +268,10 @@ export default {
   background-color: #25d366 !important; /* Color verde de WhatsApp */
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
+.whatsapp-button:hover,
+.whatsapp-button:focus {
+  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
+}
 a {
   text-decoration: none;
   color: black;
