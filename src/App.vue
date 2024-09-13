@@ -93,7 +93,7 @@
       <footer class="footer">
         <div>
           <v-img
-            src="./assets/logo.jpg"
+            src="./assets/logoweb.jpg"
             alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
             class="hover-cursor logo-img-footer"
