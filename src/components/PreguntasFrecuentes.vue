@@ -15,7 +15,7 @@
             <h2>1. ¿ES LEGAL INSTALAR CERCOS ELÉCTRICOS?</h2>
             <br />
             <p>
-              Si, además de ser una empresa homologada por el organismo Lenor
+              Sí, es legal. Y además de ser una empresa homologada por el organismo Lenor
               Group. Este sistema tiene un encuadre legal dentro del artículo 25° del C.P.N.
               que establece la obligación de señalizar peligros para la seguridad de las personas.
             </p>
@@ -24,7 +24,7 @@
             <h2>2. ¿ES LETAL?</h2>
             <br />
             <p>
-              Nuestos equipos no son letales. La descarga no genera quemaduras
+              No, nuestos equipos no son letales. La descarga no genera quemaduras
               ni daños permanentes.
             </p>
           </td>
