@@ -58,7 +58,7 @@
 
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
-          <v-img src="../assets/pngegg(2).png" height="100px"></v-img>
+          <v-img src="../assets/alarmas.png" height="100px"></v-img>
           <v-card-title class="titulo">Financiación Propia</v-card-title>
           <v-card-text>
             Ofrecemos financiación propia acorde a su presupuesto. Todos
