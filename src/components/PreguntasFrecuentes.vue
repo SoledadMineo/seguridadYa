@@ -15,7 +15,7 @@
             <h2>1. ¿ES LEGAL INSTALAR CERCOS ELÉCTRICOS?</h2>
             <br />
             <p>
-              Si, además de ser una empresa homologada por el organismo Lenor
+              Sí, es legal. Y además de ser una empresa homologada por el organismo Lenor
               Group. Este sistema tiene un encuadre legal dentro del artículo 25° del C.P.N.
               que establece la obligación de señalizar peligros para la seguridad de las personas.
             </p>
@@ -24,7 +24,7 @@
             <h2>2. ¿ES LETAL?</h2>
             <br />
             <p>
-              Nuestos equipos no son letales. La descarga no genera quemaduras
+              No, nuestos equipos no son letales. La descarga no genera quemaduras
               ni daños permanentes.
             </p>
           </td>
@@ -36,9 +36,10 @@
             </h2>
             <br />
             <p>
-              NO, no se paga porque trabajamos con alarmas Automonitoreadas, es decir que permiten
+              No, no se paga una tarifa mensual porque trabajamos con alarmas Automonitoreadas, es decir que permiten
               a los usuarios controlar y gestionar su propio sistema de alarma
               sin necesidad de conectarse a una central de monitoreo externo.
+              
             </p>
           </td>
           <td class="custom-celda4 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
