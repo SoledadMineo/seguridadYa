@@ -1,11 +1,12 @@
 <template>
-  <div id="app">
+  <div class="app">
     <v-app>
       <v-toolbar class="menu" color="black">
         <v-toolbar-title>
           <v-img
-            src="./assets/logoweb.jpg"
-            width="180px"
+            src="./assets/ultimo.png"
+            height="94px"
+            display="block"
             alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
             class="hover-cursor logo-img"
@@ -93,7 +94,7 @@
       <footer class="footer">
         <div>
           <v-img
-            src="./assets/logo.jpg"
+            src="./assets/ultimo.png"
             alt="Logo Seguridad Ya"
             @click="scrollToSection('cerco')"
             class="hover-cursor logo-img-footer"
@@ -200,7 +201,7 @@ export default {
 </script>
 
 <style>
-#app {
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -218,6 +219,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
+  height: 7rem;
   background-color: black;
   z-index: 1000;
   padding: 1rem;
@@ -267,6 +269,10 @@ export default {
   z-index: 1000;
   background-color: #25d366 !important; /* Color verde de WhatsApp */
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.whatsapp-button:hover,
+.whatsapp-button:focus {
+  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
 }
 a {
   text-decoration: none;
