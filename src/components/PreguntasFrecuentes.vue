@@ -36,9 +36,10 @@
             </h2>
             <br />
             <p>
-              NO, no se paga porque trabajamos con alarmas Automonitoreadas, es decir que permiten
+              No, no se paga una tarifa mensual porque trabajamos con alarmas Automonitoreadas, es decir que permiten
               a los usuarios controlar y gestionar su propio sistema de alarma
               sin necesidad de conectarse a una central de monitoreo externo.
+              
             </p>
           </td>
           <td class="custom-celda4 medium-celda" cols="12" xs="12" sm="6" md="6" lg="6" xl="6">

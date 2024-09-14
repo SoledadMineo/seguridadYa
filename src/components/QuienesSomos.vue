@@ -5,8 +5,7 @@
         <v-card class="card" elevation="20">
           <v-img src="../assets/logoweb.jpg" height="100px"></v-img>
           <v-card-title class="titulo1">¿Quiénes Somos?</v-card-title>
-          <v-card-text class="texto"
-            ><strong>
+          <v-card-text class="texto">
               Somos una empresa mendocina con más de una década de trayectoria,
               brindando siempre el mejor servicio de seguridad con equipos
               homologados.
@@ -15,8 +14,7 @@
               Las instalaciones se realizan en el día, no se paga ningún abono
               mensual y desde tu celular podes automonitorar para controlar el
               sistema de alarmas.
-            </strong></v-card-text
-          >
+            </v-card-text>
         </v-card>
       </v-col>
     </v-row>
