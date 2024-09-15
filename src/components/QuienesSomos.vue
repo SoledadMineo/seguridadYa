@@ -5,7 +5,8 @@
         <v-card class="card" elevation="20">
           <v-img src="../assets/ultimo.png" height="100px"></v-img>
           <v-card-title class="titulo1">¿Quiénes Somos?</v-card-title>
-          <v-card-text class="texto">
+          <v-card-text class="texto"
+            ><strong>
               Somos una empresa mendocina con más de una década de trayectoria,
               brindando siempre el mejor servicio de seguridad con equipos
               homologados.
@@ -14,7 +15,8 @@
               Las instalaciones se realizan en el día, no se paga ningún abono
               mensual y desde tu celular podes automonitorar para controlar el
               sistema de alarmas.
-            </v-card-text>
+            </strong></v-card-text
+          >
         </v-card>
       </v-col>
     </v-row>
@@ -56,7 +58,7 @@
 
       <v-col cols="12" md="3">
         <v-card class="card1" elevation="20">
-          <v-img src="../assets/alarmas.png" height="100px"></v-img>
+          <v-img src="../assets/pngegg(2).png" height="100px"></v-img>
           <v-card-title class="titulo">Financiación Propia</v-card-title>
           <v-card-text>
             Ofrecemos financiación propia acorde a su presupuesto. Todos
