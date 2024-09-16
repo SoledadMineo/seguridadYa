@@ -190,7 +190,7 @@ a {
   .centered-column {
     flex-direction: column; /* Asegura que los elementos se coloquen uno debajo del otro en pantallas pequeñas */
     align-items: center; /* Mantén todo centrado horizontalmente en pantallas pequeñas */
-    background-size: 100% 1%;
+    background-size: 100% 2%;
     margin: 0%;
     padding: 0%;
     margin-top: 2%;
