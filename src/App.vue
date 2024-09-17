@@ -148,16 +148,18 @@
         </div>
       </footer>
       <div class="creador">
-        
-        <a href="https://api.whatsapp.com/send?phone=5492616921408">
+        <a
+          href="https://api.whatsapp.com/send?phone=5492616921408"
+          class="creador-link"
+        >
+          <h5>Desarrollado por LaSo Solution</h5>
           <v-img
-            src="../src/assets/LaSo.png"
+            src="../src/assets/LaSoBlanco.png"
             alt="Enlace"
             class="logo"
-            style="width: 60px; height: 60px"
+            style="width: 50px; height: 50px"
           />
         </a>
-        <p>Desarrollado por LaSo Solution</p>
       </div>
     </v-app>
   </div>
@@ -296,15 +298,25 @@ a {
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 10px;
-  text-align: center;
-  justify-content: right;
-}
-.creador .logo{
-  align-items: center;
+  font-size: 11px;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centrado horizontal */
   justify-content: center;
+  padding-left: 9%;
+}
+.creador-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: white; /* Asegura que el texto del enlace sea blanco */
 }
 
+.creador-link h5 {
+  margin-right: 10px; /* Ajusta el margen según sea necesario */
+}
 @media (max-width: 1280px) {
   .main-content {
     margin-top: 4rem;
