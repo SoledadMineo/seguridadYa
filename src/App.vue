@@ -147,6 +147,18 @@
           </a>
         </div>
       </footer>
+      <div class="creador">
+        
+        <a href="https://api.whatsapp.com/send?phone=5492616921408">
+          <v-img
+            src="../src/assets/LaSo.png"
+            alt="Enlace"
+            class="logo"
+            style="width: 60px; height: 60px"
+          />
+        </a>
+        <p>Desarrollado por LaSo Solution</p>
+      </div>
     </v-app>
   </div>
 </template>
@@ -279,9 +291,19 @@ a {
   text-decoration: none;
   color: black;
 }
-/* html {
-  scroll-behavior: smooth;
-} */
+.creador {
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  justify-content: right;
+}
+.creador .logo{
+  align-items: center;
+  justify-content: center;
+}
 
 @media (max-width: 1280px) {
   .main-content {
