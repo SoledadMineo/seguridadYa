@@ -272,7 +272,8 @@ export default {
 }
 .whatsapp-button:hover,
 .whatsapp-button:focus {
-  transform: scale(1.1); /* Escalar el botón al pasar el mouse */
+  transform: scale(1.2); /* Aumenta el tamaño del botón al 110% */
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 a {
   text-decoration: none;
