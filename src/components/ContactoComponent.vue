@@ -125,7 +125,7 @@ export default {
   margin-top: 3%;
   background-image: url("../assets/cinta2.png");
   background-repeat: no-repeat;
-  background-size: 100% 7%;
+  background-size: 100% 8%;
 }
 .custom-button {
   display: flex;
@@ -190,7 +190,7 @@ a {
   .centered-column {
     flex-direction: column; /* Asegura que los elementos se coloquen uno debajo del otro en pantallas pequeñas */
     align-items: center; /* Mantén todo centrado horizontalmente en pantallas pequeñas */
-    background-size: 100% 2%;
+    background-size: 100% 3%;
     margin: 0%;
     padding: 0%;
     margin-top: 2%;
