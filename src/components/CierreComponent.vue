@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor" >
+  <div class="contenedor">
     <v-container id="cierre">
       <v-row class="celda" align="strech">
         <v-col cols="12" xs="4" sm="6" md="6" lg="5" xl="5">
@@ -85,7 +85,7 @@ export default {
   }
   .cardImagen {
     width: 75%;
-}
+  }
 }
 
 @media (max-width: 1280px) {
@@ -96,31 +96,30 @@ export default {
     font-size: 30px;
   }
 }
-  @media (max-width: 960px) {
-    .titulo {
-      font-size: 50px;
-    }
-    .subtitulo {
-      font-size: 30px;
-    }
-    .texto {
-      font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
-      margin-right: 5%;
-    }
+@media (max-width: 960px) {
+  .titulo {
+    font-size: 50px;
   }
-  @media (max-width: 600px) {
-    .titulo {
-      font-size: 40px;
-    }
-    .subtitulo {
-      font-size: 25px;
-    }
-    .cardImagen {
-      padding: 2%;
-    }
-    .texto {
-      margin: 0%;
-    }
+  .subtitulo {
+    font-size: 30px;
   }
-
+  .texto {
+    font-size: 16px; /* Reducir tamaño de fuente para el párrafo */
+    margin-right: 5%;
+  }
+}
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 40px;
+  }
+  .subtitulo {
+    font-size: 25px;
+  }
+  .cardImagen {
+    padding: 2%;
+  }
+  .texto {
+    margin: 0%;
+  }
+}
 </style>
