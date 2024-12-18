@@ -26,7 +26,7 @@
             ></v-img>
             <p>
               seguridadyamza@gmail.com<br />
-              contacto@seguridad-ya.com
+              contacto@seguridadyamendoza.com
             </p>
           </div>
 
