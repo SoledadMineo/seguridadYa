@@ -26,7 +26,7 @@
             ></v-img>
             <p>
               seguridadyamza@gmail.com<br />
-              contacto@seguridad-ya.com
+              contacto@seguridadyamendoza.com
             </p>
           </div>
 
@@ -37,7 +37,7 @@
               width="25"
               height="25"
             ></v-img>
-            <p>+54 9 2616 67-5624</p>
+            <p>+54 9 261 667-5624</p>
           </div>
           <br />
           <a
@@ -97,7 +97,7 @@ export default {
             lng: -68.84137, // Longitud de tu empresa
           },
           map: this.map,
-          title: "Seguridad Ya", // Texto que aparece al pasar el cursor sobre el pin
+          title: "Seguridad Ya Mendoza", // Texto que aparece al pasar el cursor sobre el pin
         });
 
         // Agregar un evento click al marcador
