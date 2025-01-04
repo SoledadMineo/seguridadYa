@@ -84,8 +84,8 @@ export default {
         /* eslint-disable-next-line no-undef */
         this.map = new google.maps.Map(mapElement, {
           center: {
-            lat: -32.887669,
-            lng: -68.84137,
+            lat: -32.8876412,
+            lng: -68.841778,
           },
           zoom: 17,
         });
@@ -93,8 +93,8 @@ export default {
         /* eslint-disable-next-line no-undef */
         const marker = new google.maps.Marker({
           position: {
-            lat: -32.887669, // Latitud de tu empresa
-            lng: -68.84137, // Longitud de tu empresa
+            lat: -32.8876412, // Latitud de tu empresa
+            lng: -68.841778, // Longitud de tu empresa
           },
           map: this.map,
           title: "Seguridad Ya Mendoza", // Texto que aparece al pasar el cursor sobre el pin

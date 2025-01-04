@@ -3,7 +3,7 @@
     <v-row justify="center"
       ><v-col cols="12" md="6">
         <v-card class="card" elevation="20">
-          <v-img src="../assets/ultimo.png" height="100px"></v-img>
+          <v-img src="../assets/LogoSYM.png" height="100px"></v-img>
           <v-card-title class="titulo1">¿Quiénes Somos?</v-card-title>
           <v-card-text class="texto">
               Somos una empresa mendocina con más de una década de trayectoria,
